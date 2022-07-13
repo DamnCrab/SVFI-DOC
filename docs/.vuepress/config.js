@@ -95,8 +95,8 @@ module.exports = {
     // archive: false, // 是否打开归档功能，默认true。 如打开，会做的事情有：1.自动生成归档页面（在@pages文件夹）。如关闭，则反之。
 
     author: { // 文章默认的作者信息，可在md文件中单独配置此信息 String | {name: String, href: String}
-      name: 'Evan Xu', // 必需
-      href: 'https://github.com/xugaoyi' // 可选的
+      name: 'Justin62628', // 必需
+      href: 'https://github.com/Justin62628' // 可选的
     },
     social: { // 社交图标，显示于博主信息栏和页脚栏
       // iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
@@ -119,8 +119,8 @@ module.exports = {
       ]
     },
     footer: { // 页脚信息
-      createYear: 2019, // 博客创建年份
-      copyrightInfo: 'Evan Xu | MIT License', // 博客版权信息，支持a标签
+      createYear: 2022, // 博客创建年份
+      copyrightInfo: 'Justin62628 | MIT License', // 博客版权信息，支持a标签
     },
     htmlModules,
   },
@@ -155,7 +155,7 @@ module.exports = {
     [
       'vuepress-plugin-baidu-tongji', // 百度统计
       {
-        hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
+        // hm: baiduCode || '01293bffa6c3962016c08ba685c79d78'
       }
     ],
 
