@@ -19,7 +19,7 @@ features: # 可选的
 postList: none
 ---
 <p align="center">
-  <a class="become-sponsor" href="/pages/1b12ed/">支持这个项目</a>
+  <a class="become-sponsor" href="https://store.steampowered.com/app/1692080/SVFI/">STEAM购买</a>
 </p>
 
 <style>
@@ -37,8 +37,8 @@ postList: none
 <p align="center">
   <!-- <a href="https://www.npmjs.com/package/vuepress-theme-vdoing" target="_blank"><img src="https://img.shields.io/npm/v/vuepress-theme-vdoing" alt="npm" class="no-zoom"></a> -->
   <!-- <a href="https://www.npmjs.com/package/vuepress-theme-vdoing" target="_blank"><img src="https://img.shields.io/npm/dt/vuepress-theme-vdoing" alt="npm" class="no-zoom"></a> -->
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/stars/xugaoyi/vuepress-theme-vdoing' alt='GitHub stars' class="no-zoom"></a>
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing" target="_blank"><img src='https://img.shields.io/github/forks/xugaoyi/vuepress-theme-vdoing' alt='GitHub forks' class="no-zoom"></a>
+  <a href="https://github.com/Justin62628/Squirrel-RIFE" target="_blank"><img src='https://img.shields.io/github/stars/Justin62628/Squirrel-RIFE' alt='GitHub stars' class="no-zoom"></a>
+  <a href="https://github.com/Justin62628/Squirrel-RIFE" target="_blank"><img src='https://img.shields.io/github/forks/Justin62628/Squirrel-RIFE' alt='GitHub forks' class="no-zoom"></a>
 </p>
 
 ## 🎖特别用户
@@ -70,32 +70,37 @@ postList: none
 <br/>
 
 ## 🎉上新推荐
-* `v1.12.x`
-  - 新增配置项`pageStyle`，用于切换页面的风格样式，可选`卡片`、 `线条`风格。[详情](/pages/a20ce8/#pagestyle)
-  - 新增配置项`bodyBgImgInterval`，用于在设置了多张背景大图时修改大图切换的时间间隔。[详情](/pages/a20ce8/#bodybgimginterval)
-  - 新增配置项`defaultMode`，用于修改默认外观模式(v1.12.3)。[详情](/pages/a20ce8/#defaultmode)
-* `v1.11.x`：新增配置项`extendFrontmatter`，用于扩展自动生成front matter。[详情](/pages/a20ce8/#extendfrontmatter)
-* `v1.10.x`：新增右侧目录栏对h2~h6标题的适配，并优化了UI，[详情](/pages/8dfab5/)。
-* `v1.9.x`：新增配置文件对TypeScript的支持，参考[config.ts](https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/docs/.vuepress/config.ts)。新增[标题标记](/pages/3216b0/#titletag)。
-* `v1.8.x`：新增 Markdown中使用的组件：[代码块选项卡](/pages/197691/#代码块选项卡) 。
-* `v1.7.x`：新增 [自定义html模块](/pages/a20ce8/#自定义html模块) 配置，可用于插入广告模块。
-* `v1.6.x`：支持[`四级目录`](/pages/33d574/#级别说明)，提高[站点结构](/pages/33d574/#级别说明)可塑性。
-* `v1.5.x`：新增[`笔记`容器](/pages/d0d7eb/)，轻松插入笔记框。
-* `v1.4.x`：新增了文章内容区块的 [背景底纹配置](/pages/a20ce8/#文章内容块的背景底纹)，让你的文章看起来像笔记本的风格~
-* `v1.2.x`：这个版本对整体的UI细节做了很多优化，比如标签栏和分类栏等
-* `v1.1.x`：从这个版本开始主题新增`超好用`、`高颜值`的Markdown容器，快去 [体验](/pages/d0d7eb/) 吧~
+* `Squirrel Anime Enhance 3.20.4`：质量速度滑块和低显存模式绑定
+* `Squirrel Anime Enhance 3.20.1`
+	- 支持MP4、MKV、PNG序列等多文件格式输出
+	- 支持任务队列，多文件输入
+	- 支持超分算法：RealCUGAN，Real-ESRGAN及Waifu2x
 
-更多上新请查阅：[**更新日志**](https://github.com/xugaoyi/vuepress-theme-vdoing/releases)
+
+更多上新请查阅：[**更新日志**](https://github.com/Justin62628/Squirrel-RIFE/releases)
 
 <br/>
 
-## ⚡️未来...
+## ⚡️系统要求
 
-::: tip
+  -  Windows 10 及以上操作系统
+
+  -  Windows 10 or above
+
+  -  NVIDIA 显卡需要 GeForce Experience 所安装的驱动版本大于等于460.89
+
+  -  NVIDIA GPU(driver > 460.89)
+
+  -  2GB 以上显存, 4GB 左右的空余运行内存以及4GB+的磁盘剩余空间
+
+  -  2GB+ of video card memory, 4GB+ of DDR3 memory and 4GB+ of free disk space
+
+
+<!-- ::: tip
 期待 [VuePress v2.0](https://github.com/vuepress/vuepress-next) 以及 [VitePress](https://github.com/vuejs/vitepress) 的正式发布...
 
 届时，VuePress 1.x 编译慢的缺点将得到极大的改善。我将会视情况把主题升级至 VuePress v2.0 或 VitePress。还希望大家多多 [:sparkling_heart:支持](/pages/1b12ed/) 哟，持续关注吧~
-:::
+::: -->
 
 <br/>
 
@@ -115,29 +120,40 @@ postList: none
 
 ## ⚡ 反馈与交流
 
-在使用过程中有任何问题和想法，请给我提 [Issue](https://github.com/xugaoyi/vuepress-theme-vdoing/issues)。
-你也可以在Issue查看别人提的问题和给出解决方案。
+在软件使用过程中有任何问题和想法，请在 [Steam论坛](https://steamcommunity.com/app/1692080/discussions/1/)提问。
+你也可以查看别人提的问题和给出解决方案。
 
 或者加入我们的交流群：
 
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="middle">
+      <!-- <td align="center" valign="middle">
         <img src="https://cdn.staticaly.com/gh/xugaoyi/blog-gitalk-comment@master/img/0.4pp7r95mdai0.jpeg" class="no-zoom" style="width:120px;margin: 10px;">
         <p>vdoing微信群(添加我微信备注"进群")</p>
-      </td>
-      <td align="center" valign="middle">
+      </td> -->
+     <!-- <td align="center" valign="middle">
         <img :src="$withBase('/img/qrcode/qqq.webp')" alt="群号: 694387113" class="no-zoom" style="width:120px;margin: 10px;">
         <p>vdoing QQ群: 694387113</p>
-      </td>
+      </td> -->
     </tr>
   </tbody>
 </table>
 
+## 🤝 参考
+
+  -  Video Frame Interpolation Algorithm: RIFE
+  -  NCNN Support: RIFE-NCNN
+  -  SWIG Wraps: Everything-ncnn-vulkan-python
+  -  UI Design: QCandyUi
+  -  Steamworks Interface: SteamworksPy
+  -  Encode Supports: FFmpeg, QSVEnc, NVEnc, dovi_tool, dlb_mp4base, hdr10plus_parser
+  -  Super Resolution Algorithm: waifu2x, RealESR, RealCUGAN
+  -  View More at LICENSE and LICENSES_BUNDLE FILE
+
 
 <!-- AD -->
-<div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div>
+<!-- <div class="wwads-cn wwads-horizontal page-wwads" data-id="136"></div> -->
 <style>
   .page-wwads{
     width:100%!important;
