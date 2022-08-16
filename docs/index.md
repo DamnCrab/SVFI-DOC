@@ -44,11 +44,6 @@ postList: none
 ## 🎖特别用户
 ::: cardList 3
 ```yaml
-# - name: OpenHarmony
-#   desc: 开放原子开源基金会
-#   link: https://docs.openharmony.cn/pages/000000/
-#   bgColor: '#f1f1f1'
-#   textColor: '#2A3344'
 - name: MyBatis-Plus官网
   desc: 🚀为简化开发而生
   link: https://baomidou.com/
