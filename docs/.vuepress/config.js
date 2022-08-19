@@ -11,12 +11,15 @@ module.exports = {
   description: 'SVFI用户使用文档',
   base: '/SVFI-DOC/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
   head: [ // 注入到页面<head> 中的标签，格式[tagName, { attrName: attrValue }, innerHTML?]
-    ['link', { rel: 'icon', href: '/img/favicon.ico' }], //favicons，资源放在public文件夹
+    ['link', { rel: 'icon', href: '/img/svfi.ico' }], //favicons，资源放在public文件夹
     ['meta', { name: 'keywords', content: 'vuepress,theme,blog,vdoing' }],
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
 
     ['meta', { name: 'wwads-cn-verify', content: '6c4b761a28b734fe93831e3fb400ce87' }], // 广告相关，你可以去掉
     ['script', { src: 'https://cdn.wwads.cn/js/makemoney.js', type: 'text/javascript' }], // 广告相关，你可以去掉
+
+    ['meta', { name: 'referrer', content: 'no-referrer' }],
+
   ],
 
   // 主题配置
@@ -24,14 +27,13 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '快速入门', items: [
+        text: '快速入门', link: '/pages/dc46b8', items: [
           { text: '什么是补帧', link: '/pages/88ed7f/' },
           { text: '什么是超分', link: '/pages/681961/' },
           { text: '快速上手SVFI', link: '/pages/0e988c/' },
           {
-            text: '相关文章（科普）', items: [
-              { text: '什么是文件格式', link: '/pages/76d9d4/' },
-              { text: '什么是封装', link: '/pages/1eb9b6/' },
+            text: '相关文章（科普）', link: '/pages/8cc1b5', items: [
+              { text: '什么是编码、编码器与封装格式', link: '/pages/76d9d4/' },
               { text: '什么是压制', link: '/pages/7b7d11/' },
               { text: '什么是HDR', link: '/pages/89244b/' },
             ]
@@ -39,22 +41,17 @@ module.exports = {
         ]
       },
       {
-        text: '指南', items: [
-          { text: '常见操作提示与标准化流程', items:[
-            { text: '恢复任务进度', link: '/pages/0ff864/' },
-          ] 
-        },
-          { text: '高级内容详解', items:[
-            { text: '首页设置详解', link: '/pages/eb1022/' },
-          ] 
-        },
+        text: '指南', link: '/pages/f8b952/', items: [
+          { text: '高级内容详解', link: '/pages/052617/'},
         ]
       },
-      { text: '常见问题解答', link: '/pages/9cc27d/' },
+      { text: '常见问题解答', link: '/pages/9cc27d/', items: [
+        { text: '使用技巧与预设', link: '/pages/18309a/'},
+      ] },
       { text: '支持', link: '/pages/1b12ed/' },
     ],
     sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
-    logo: '/img/logo.webp', // 导航栏logo
+    logo: '/img/svfi.ico', // 导航栏logo
     repo: 'Justin62628/Squirrel-RIFE', // 导航栏右侧生成Github链接
     searchMaxSuggestions: 10, // 搜索结果显示最大数
     lastUpdated: '上次更新', // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)

@@ -42,23 +42,34 @@ postList: none
 </p>
 
 ## 🌎 效果演示 Demonstration on BiliBili
-::: cardList 3
+
+::: cardImgList
 ```yaml
-- name: 《原神》
+config:
+    target: _blank
+    imgHeight: auto
+    objectFit: contain
+    lineClamp: 1
+
+data:
+- img: /img/bilibili/yuan.jpg
+  name: 《原神》
   desc: 剧情CM短片 8K60帧 SVFI补帧超分
   link: https://www.bilibili.com/video/BV1FS4y1C7RD
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
-- name: 赛马娘
-  desc: 第二季 NCOP 8K60帧
+  author: SVFI视觉 
+  avatar: /img/svfi.ico
+- img: /img/bilibili/umaron.jpg
+  name: 赛马娘
+  desc:  第二季 NCOP 8K60帧
   link: https://www.bilibili.com/video/BV1QY411b7e4
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
-- name: Re：从零开始的异世界生活
+  author: SVFI视觉 
+  avatar: /img/svfi.ico
+- img: /img/bilibili/emilia.jpg
+  name:  Re：从零开始的异世界生活
   desc: 第二季后半 NCED Believe in you
   link: https://www.bilibili.com/video/BV1kF411p7FB
-  bgColor: '#f1f1f1'
-  textColor: '#2A3344'
+  author: SVFI视觉 
+  avatar: /img/svfi.ico
 ```
 :::
 
@@ -68,12 +79,12 @@ postList: none
 - name: Squirrel Anime Enhance
   desc: 🚀开源超分软件，专注于兼容的超分工具
   link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
-  bgColor: '#f1f1f1'
+  bgColor: '#eaeef1'
   textColor: '#2A3344'
 - name: SVFI Demo 预览版
   desc: SVFI的预览版，支持1000帧以内的高质量、高自定义的补帧和超分
   link: https://store.steampowered.com/search/?sort_by=_ASC&term=SVFI+Demo
-  bgColor: '#f1f1f1'
+  bgColor: '#eaeef1'
   textColor: '#2A3344'
 ```
 :::
