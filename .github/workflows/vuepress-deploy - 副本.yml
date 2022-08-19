@@ -1,6 +1,6 @@
 name: SVFI-DOC BUILDER
 on:
-push:
+ push:
   branches:
     - master
 permissions: read-all|write-all
