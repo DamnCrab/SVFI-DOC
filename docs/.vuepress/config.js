@@ -43,6 +43,7 @@ module.exports = {
       {
         text: '指南', link: '/pages/f8b952/', items: [
           { text: '高级内容详解', link: '/pages/052617/'},
+          { text: '命令行进阶', link: '/pages/ceb849/'},
         ]
       },
       { text: '常见问题解答', link: '/pages/9cc27d/', items: [
