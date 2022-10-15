@@ -1,2 +1,4 @@
 # SVFI-DOC
-[![Bookmark Style Card](https://svg.bookmark.style/api?url=http://doc.svfi.group/&style=horizontal)](http://doc.svfi.group/)
+![web-visual-bookmark@2x.png](https://s2.loli.net/2022/10/15/LTEnyDSPHCqfW54.png)
+
+
