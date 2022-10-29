@@ -3,5 +3,4 @@
 
 <h2 align="center">SVFI-DOC</h2>
 
-<h5 align="center">SVFI文档自动构建</h5>
-boki
+<h5 align="center">SVFI用户文档项目</h5>

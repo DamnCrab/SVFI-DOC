@@ -95,16 +95,9 @@ data:
 
   -  Windows 10 及以上操作系统
 
-  -  Windows 10 or above
-
   -  NVIDIA GTX 750ti 以上的N卡或五年内发布的A卡
 
-  -  NVIDIA GPU( > GTX 750ti) or AMD GPU released within 5 years
-
   -  2GB 以上显存, 4GB 以上的空余运行内存以及10GB+的磁盘剩余空间
-
-  -  2GB+ of VRAM, 4GB+ of RAM and 10GB+ of free disk space
-
 
 ## ⚡ 反馈与交流
 
@@ -123,4 +116,3 @@ data:
 
 ## 👓 一些注意事项
 - 根据Steam用户使用条款(EULA)，SVFI发行版输出内容不可用于商业用途
-- According to EULA, SVFI's output is not allowed for commercial use.
