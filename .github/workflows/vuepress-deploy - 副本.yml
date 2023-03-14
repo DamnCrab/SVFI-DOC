@@ -19,4 +19,4 @@ jobs:
         ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
-        CNAME: https://doc.svfi.group/
+        CNAME: https://doc.svfi.group
