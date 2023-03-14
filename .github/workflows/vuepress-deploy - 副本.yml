@@ -16,7 +16,7 @@ jobs:
     - name: vuepress-deploy
       uses: jenkey2011/vuepress-deploy@master
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: docs/.vuepress/dist/
-        CNAME: https://en.svfi.group
+        CNAME: https://doc.svfi.group/
