@@ -84,6 +84,10 @@ module.exports = {
 				text: '指南',
 				link: '/pages/f8b952/',
 				items: [{
+						text: '必读导引',
+						link: '/pages/f8b952/'
+					},
+					{
 						text: '高级内容详解',
 						link: '/pages/052617/'
 					},
