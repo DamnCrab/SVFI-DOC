@@ -53,7 +53,7 @@ export default hopeTheme({
       // sidebar
       // sidebar: enSidebar,
       sidebar:"heading",
-      headerDepth: 4,
+      // headerDepth: 4,
       footer: "",
 
       displayFooter: true,

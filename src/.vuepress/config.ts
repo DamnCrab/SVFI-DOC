@@ -2,7 +2,8 @@ import {defineUserConfig} from "vuepress";
 import {searchProPlugin} from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
 import {path} from '@vuepress/utils'
-import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
+
 export default defineUserConfig({
     base: "/",
     locales: {
@@ -34,9 +35,9 @@ export default defineUserConfig({
                 },
             ],
         }),
-      registerComponentsPlugin({
-        componentsDir: path.resolve(__dirname, './components')
-      }),
+        registerComponentsPlugin({
+            componentsDir: path.resolve(__dirname, './components')
+        }),
     ],
     markdown: {
         headers: {
