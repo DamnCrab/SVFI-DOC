@@ -6,46 +6,38 @@ export default hopeTheme({
   hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Justin62628",
+    url: "https://github.com/Justin62628",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "/logo.svg",
+  logo: "/img/logo.webp",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "Justin62628/Squirrel-RIFE",
 
   docsDir: "src",
 
+  // 是否展示编辑此页链接
+  editLink: false,
+
+  // i18n
   locales: {
-    "/": {
-      // navbar
-      navbar: enNavbar,
-
-      // sidebar
-      sidebar: enSidebar,
-
-      footer: "Default footer",
-
-      displayFooter: true,
-
-      metaLocales: {
-        editLink: "Edit this page on GitHub",
-      },
-    },
-
     /**
      * Chinese locale config
      */
-    "/zh/": {
+    "/": {
       // navbar
       navbar: zhNavbar,
 
       // sidebar
-      sidebar: zhSidebar,
+      // sidebar: zhSidebar,
+      // sidebar 按md结构生成侧边栏
+      sidebar:"heading",
+      // 检测md结构深度
+      headerDepth: 4,
 
-      footer: "默认页脚",
+      footer: "",
 
       displayFooter: true,
 
@@ -54,6 +46,24 @@ export default hopeTheme({
         editLink: "在 GitHub 上编辑此页",
       },
     },
+    "/en/": {
+      // navbar
+      navbar: enNavbar,
+
+      // sidebar
+      // sidebar: enSidebar,
+      sidebar:"heading",
+      headerDepth: 4,
+      footer: "",
+
+      displayFooter: true,
+
+      metaLocales: {
+        editLink: "Edit this page on GitHub",
+      },
+    },
+
+
   },
 
   encrypt: {

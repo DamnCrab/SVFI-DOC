@@ -1843,6 +1843,15 @@
     "@vuepress/core" "2.0.0-beta.66"
     prismjs "^1.29.0"
 
+"@vuepress/plugin-register-components@^2.0.0-beta.66":
+  version "2.0.0-beta.66"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-2.0.0-beta.66.tgz#aff5b1592eebead890c65ae24779e0c8c4b5786d"
+  integrity sha512-AQP813aOEByVcZXTsYXuzdC0rw/UjRETyTMwad83cAFM+lNle9bVBbMlC6FfXwb+hYo4Sbc9JJUvvaPUxc51jg==
+  dependencies:
+    "@vuepress/core" "2.0.0-beta.66"
+    "@vuepress/utils" "2.0.0-beta.66"
+    chokidar "^3.5.3"
+
 "@vuepress/plugin-theme-data@2.0.0-beta.66":
   version "2.0.0-beta.66"
   resolved "https://registry.yarnpkg.com/@vuepress/plugin-theme-data/-/plugin-theme-data-2.0.0-beta.66.tgz#52c87db594763b5c38913f5a2e417599b080b536"
@@ -4852,6 +4861,11 @@ slash@^4.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-4.0.0.tgz#2422372176c4c6c5addb5e2ada885af984b396a7"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
 
+slimsearch@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/slimsearch/-/slimsearch-1.0.0.tgz#e05feefd2bc311f0ccfe0e52742b246085b45df4"
+  integrity sha512-ig1Du+U5LFngeDokhUupBqmEz3aKRJ4v+R2t6ZOi3aPGaFivYxxOiDcJX7fR0xPxjmTe94rAA6RW5gKlX5Gcsg==
+
 "source-map-js@>=0.6.2 <2.0.0", source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
@@ -5498,6 +5512,23 @@ vuepress-plugin-sass-palette@2.0.0-beta.233:
     "@vuepress/utils" "2.0.0-beta.66"
     chokidar "^3.5.3"
     sass "^1.63.6"
+    vuepress-shared "2.0.0-beta.233"
+
+vuepress-plugin-search-pro@^2.0.0-beta.233:
+  version "2.0.0-beta.233"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-search-pro/-/vuepress-plugin-search-pro-2.0.0-beta.233.tgz#122624f640204b24bec0dc203a85f491dfc86f54"
+  integrity sha512-mCnnq0YkBxwJqlUJJIj+offtOq1yHN0qj3NRGiGSj4q41WSvKwodU2yHaT/1beLmfCN4nH55MTPxsuhwrBD/Dg==
+  dependencies:
+    "@vuepress/client" "2.0.0-beta.66"
+    "@vuepress/shared" "2.0.0-beta.66"
+    "@vuepress/utils" "2.0.0-beta.66"
+    "@vueuse/core" "^10.2.1"
+    cheerio "1.0.0-rc.12"
+    chokidar "^3.5.3"
+    slimsearch "^1.0.0"
+    vue "^3.3.4"
+    vue-router "^4.2.4"
+    vuepress-plugin-sass-palette "2.0.0-beta.233"
     vuepress-shared "2.0.0-beta.233"
 
 vuepress-plugin-seo2@2.0.0-beta.233:
