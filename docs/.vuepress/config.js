@@ -43,89 +43,80 @@ module.exports = {
 	// 主题配置
 	themeConfig: {
 		nav: [{
-			text: '首页',
-			link: '/'
-		},
-		{
-			text: '快速入门',
-			link: '/pages/dc46b8',
-			items: [
-				{
-					text: '什么是帧率、分辨率和码率',
-					link: '/pages/dc46b8/'
-				},
-				{
-					text: '什么是补帧',
-					link: '/pages/88ed7f/'
-				},
-				{
-					text: '什么是超分',
-					link: '/pages/681961/'
-				},
-				{
-					text: '快速上手SVFI',
-					link: '/pages/0e988c/'
-				}
-			]
-		},
-		{
-			text: '相关文章科普',
-			link: '/pages/8cc1b5',
-			items: [
-				{
-					text: '图像表示与画质',
-					link: '/pages/8cc1b5/'
-				},
-				{
-					text: '什么是编码、编码器与封装格式',
-					link: '/pages/76d9d4/'
-				},
-				{
-					text: '什么是压制',
-					link: '/pages/7b7d11/'
-				},
-				{
-					text: '什么是HDR',
-					link: '/pages/89244b/'
-				},
-			]
-		},
-		{
-			text: '软件使用指南',
-			link: '/pages/f8b952/',
-			items: [
-				{
-					text: '必读导引',
-					link: '/pages/f8b952/'
-				},
-				{
-					text: '高级内容详解',
-					link: '/pages/052617/'
-				},
-				{
-					text: '命令行进阶',
-					link: '/pages/ceb849/'
-				},
-			]
-		},
-		{
-			text: '常见问题与预设',
-			link: '/pages/9cc27d/',
-			items: [
-				{
-					text: 'FAQ',
-					link: '/pages/9cc27d/',
-				},
-				{
+				text: '首页',
+				link: '/'
+			},
+			{
+				text: '快速入门',
+				link: '/pages/dc46b8',
+				items: [{
+						text: '什么是补帧',
+						link: '/pages/88ed7f/'
+					},
+					{
+						text: '什么是超分',
+						link: '/pages/681961/'
+					},
+					{
+						text: '快速上手SVFI',
+						link: '/pages/0e988c/'
+					},
+					{
+						text: '快速上手SVFI超分',
+						link: '/pages/0e989d/'
+					},
+					{
+						text: '相关文章（科普）',
+						link: '/pages/8cc1b5',
+						items: [{
+								text: '什么是编码、编码器与封装格式',
+								link: '/pages/76d9d4/'
+							},
+							{
+								text: '什么是压制',
+								link: '/pages/7b7d11/'
+							},
+							{
+								text: '什么是HDR',
+								link: '/pages/89244b/'
+							},
+						]
+					}
+				]
+			},
+			{
+				text: '指南',
+				link: '/pages/f8b952/',
+				items: [{
+						text: '必读导引',
+						link: '/pages/f8b952/'
+					},
+					{
+						text: '高级内容详解',
+						link: '/pages/052617/'
+					},
+					{
+						text: '命令行进阶',
+						link: '/pages/ceb849/'
+					},
+					{
+						text: '分享与导入设置',
+						link: '/pages/cec850/'
+					},
+				]
+			},
+			{
+				text: '常见问题解答',
+				link: '/pages/9cc27d/',
+				items: [{
 					text: '使用技巧与预设',
 					link: '/pages/18309a/'
-				},
-			]
-		},
-		{
-			text: '支持',
-			link: '/pages/1b12ed/'
-		},
+				}, ]
+			},
+			{
+				text: '支持',
+				link: '/pages/1b12ed/'
+			},
 		],
 		sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
 		logo: '/img/svfi.ico', // 导航栏logo
@@ -169,15 +160,15 @@ module.exports = {
 		social: { // 社交图标，显示于博主信息栏和页脚栏
 			// iconfontCssFile: '//at.alicdn.com/t/font_1678482_u4nrnp8xp6g.css', // 可选，阿里图标库在线css文件地址，对于主题没有的图标可自由添加
 			icons: [{
-				iconClass: 'icon-youjian',
-				title: '发邮件',
-				link: '2410377391@qq.com'
-			},
-			{
-				iconClass: 'icon-github',
-				title: 'GitHub',
-				link: 'https://github.com/Justin62628/Squirrel-RIFE'
-			},
+					iconClass: 'icon-youjian',
+					title: '发邮件',
+					link: '2410377391@qq.com'
+				},
+				{
+					iconClass: 'icon-github',
+					title: 'GitHub',
+					link: 'https://github.com/Justin62628/Squirrel-RIFE'
+				},
 			]
 		},
 		footer: { // 页脚信息
@@ -231,7 +222,7 @@ module.exports = {
 
 		['one-click-copy', { // 代码块复制按钮
 			copySelector: ['div[class*="language-"] pre',
-				'div[class*="aside-code"] aside'], // String or Array
+			'div[class*="aside-code"] aside'], // String or Array
 			copyMessage: '复制成功', // default is 'Copy successfully and then paste it for use.'
 			duration: 1000, // prompt message display time.
 			showInMobile: false // whether to display on the mobile side, default: false.
