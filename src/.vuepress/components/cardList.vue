@@ -77,7 +77,7 @@ interface CardItem {
 .card-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
+  gap: 0.7rem;
 }
 
 @media (max-width: 600px) {
@@ -87,16 +87,19 @@ interface CardItem {
 }
 
 .card {
-  width: 100%;
+  box-sizing: border-box;
   text-decoration: none;
   color: inherit;
   background-color: #fff;
   border-radius: 0.5rem;
   margin: 0.5rem;
-  box-shadow: 0.1rem 0.1rem 0.5rem 0 rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
+  box-shadow: 0.1rem 0.1rem 0.5rem 0 rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+
   &:hover {
     text-decoration: none;
+    transform: translateY(-0.2rem);
+    transition: transform 0.4s ease;
   }
 }
 
@@ -127,25 +130,30 @@ interface CardItem {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  &-name{
+
+  &-name {
     font-size: 1rem;
     margin: 0;
   }
-  &-desc{
+
+  &-desc {
     font-size: 0.8rem;
     margin: 0;
   }
 }
-.author{
+
+.author {
   padding: 0.8rem 1rem;
   display: flex;
   align-items: center;
-  img{
+
+  img {
     width: 24px;
     height: 24px;
     border-radius: 50%;
   }
-  p{
+
+  p {
     font-size: 0.8rem;
     margin: 0 0 0 0.5rem;
   }
