@@ -36,7 +36,10 @@ export default defineUserConfig({
             ],
         }),
         registerComponentsPlugin({
-            componentsDir: path.resolve(__dirname, './components')
+            componentsDir: path.resolve(__dirname, './components'),
+            components: {
+                'card-list': path.resolve(__dirname, './components/cardList.vue')
+            }
         }),
     ],
     markdown: {

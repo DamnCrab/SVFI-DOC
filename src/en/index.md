@@ -37,49 +37,49 @@ postList: none
 
 ## 🌎 Demonstrations on BiliBili
 
-::: cardImgList
-```yaml
-config:
-    target: _blank
-    imgHeight: auto
-    objectFit: contain
-    lineClamp: 1
-
-data:
-- img: /img/bilibili/yuan.jpg
-  name: Genshin Impact
-  desc: Drama CM short film, 8K 60fps
-  link: https://www.bilibili.com/video/BV1FS4y1C7RD
-  author: SVFI Vision
-  avatar: /img/svfi.ico
-- img: /img/bilibili/umaron.jpg
-  name: Umaron
-  desc: Season 2 NCOP 8K 60fps
-  link: https://www.bilibili.com/video/BV1QY411b7e4
-  author: SVFI Vision
-  avatar: /img/svfi.ico
-- img: /img/bilibili/emilia.jpg
-  name: Re Zero-Starting Life in Another World
-  desc: Season 2 NCED Believe in you
-  link: https://www.bilibili.com/video/BV1kF411p7FB
-  author: SVFI Vision
-  avatar: /img/svfi.ico
-```
-:::
+<cardList :items="[
+{
+img: '/img/bilibili/yuan.jpg',
+name: 'Genshin Impact',
+desc: 'Drama CM short film, 8K 60fps',
+link: 'https://www.bilibili.com/video/BV1FS4y1C7RD',
+author: 'SVFI Vision',
+avatar: '/img/svfi.ico'
+},
+{
+img: '/img/bilibili/umaron.jpg',
+name: 'Umaron',
+desc: 'Season 2 NCOP 8K 60fps',
+link: 'https://www.bilibili.com/video/BV1QY411b7e4',
+author: 'SVFI Vision',
+avatar: '/img/svfi.ico',
+},
+{
+img: '/img/bilibili/emilia.jpg',
+name: 'Re Zero-Starting Life in Another World',
+desc: 'Season 2 NCED Believe in you',
+link: 'https://www.bilibili.com/video/BV1kF411p7FB',
+author: 'SVFI Vision',
+avatar: '/img/svfi.ico'
+}
+]"/>
 
 ## 🎖 Free Apps!
-::: cardList 2
-```yaml
-- name: Squirrel Anime Enhance
-  desc: 🚀Open source super resolution application
-  link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
-  bgColor: '#eaeef1'
-  textColor: '#2A3344'
-- name: SVFI Demo
-  desc: The demo version of SVFI, high quality, freely customized VFI and SR output
-  link: https://store.steampowered.com/search/?sort_by=_ASC&term=SVFI+Demo
-  bgColor: '#eaeef1'
-  textColor: '#2A3344'
+
+::: card
+```card
+title: Squirrel Anime Enhance
+desc: 🚀Open source super resolution application
+logo: /img/svfi.ico
+link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
+color: #eaeef1
+```
+```card
+title: SVFI Demo
+desc: The demo version of SVFI, high quality, freely customized VFI and SR output
+logo: /img/svfi.ico
+link: https://store.steampowered.com/search/?sort_by=_ASC&term=SVFI+Demo
+color: #eaeef1
 ```
 :::
 
