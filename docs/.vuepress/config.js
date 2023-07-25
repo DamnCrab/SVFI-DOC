@@ -65,6 +65,10 @@ module.exports = {
 				{
 					text: '快速上手SVFI',
 					link: '/pages/0e988c/'
+				},
+				{
+					text: '快速上手SVFI超分',
+					link: '/pages/0e989d/'
 				}
 			]
 		},
@@ -105,6 +109,10 @@ module.exports = {
 				{
 					text: '命令行进阶',
 					link: '/pages/ceb849/'
+				},
+				{
+					text: '分享与导入设置',
+					link: '/pages/cec850/'
 				},
 			]
 		},
