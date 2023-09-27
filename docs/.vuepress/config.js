@@ -111,6 +111,10 @@ module.exports = {
 					link: '/pages/ceb849/'
 				},
 				{
+					text: '相关缩写说明',
+					link: '/pages/e676be/',
+				},				
+				{
 					text: '分享与导入设置',
 					link: '/pages/cec850/'
 				},
@@ -134,6 +138,10 @@ module.exports = {
 			text: '支持',
 			link: '/pages/1b12ed/'
 		},
+		{
+			text: '关于',
+			link: '/pages/01e584/',
+		}
 		],
 		sidebarDepth: 2, // 侧边栏显示深度，默认1，最大2（显示到h3标题）
 		logo: '/img/svfi.ico', // 导航栏logo
