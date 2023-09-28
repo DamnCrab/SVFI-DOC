@@ -26,6 +26,14 @@ en请放在src/en目录下
 
 主题配置文件 src/.vuepress/theme.js
 
+## 自定义组件
+
+项目自定义组件 src/.vuepress/components
+
+只安装了less作为css预处理器，如果需要其他预处理器，直接安装即可。
+
+需要在config.js中进行注册
+
 ## 评论插件
 
 插件项目地址：https://plugin-comment2.vuejs.press/zh/
