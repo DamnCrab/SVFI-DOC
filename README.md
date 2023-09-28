@@ -4,6 +4,10 @@
 
 由于vuepress还处于beta阶段，相关依赖具有版本关联性，因此不要随意升级依赖版本。
 
+## 使用的主题
+
+https://theme-hope.vuejs.press/zh/
+
 ## i18n
 
 en请放在src/en目录下
