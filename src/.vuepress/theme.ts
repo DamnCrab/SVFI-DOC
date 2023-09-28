@@ -30,9 +30,6 @@ export default hopeTheme({
       // navbar
       navbar: zhNavbar,
 
-      // sidebar
-      // sidebar: zhSidebar,
-      // sidebar 按md结构生成侧边栏
       sidebar:"heading",
       // 检测md结构深度
       headerDepth: 4,
@@ -47,11 +44,7 @@ export default hopeTheme({
       },
     },
     "/en/": {
-      // navbar
       navbar: enNavbar,
-
-      // sidebar
-      // sidebar: enSidebar,
       sidebar:"heading",
       // headerDepth: 4,
       footer: "",
@@ -77,10 +70,10 @@ export default hopeTheme({
     // You should generate and use your own comment service
     comment: {
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "DamnCrab/SVFI-DOC-Discussion",
+      repoId: "R_kgDOKZcVbw",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDOKZcVb84CZsl2",
     },
 
     // All features are enabled for demo, only preserve features you need here
