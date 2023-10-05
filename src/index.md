@@ -101,19 +101,6 @@ color: #eaeef1
 在软件使用过程中有任何问题和想法，请在 [Steam论坛](https://steamcommunity.com/app/1692080/discussions/1/)提问。
 或者加入[BBS论坛](https://bbs.svfi.group/)
 
-## 🤝 参考 Reference & Acknowledgement
-
-- Video Frame Interpolation Algorithm: [RIFE](https://github.com/hzwer/arXiv2020-RIFE)
-- NCNN Support: [RIFE-NCNN](https://github.com/nihui/rife-ncnn-vulkan)
-- SWIG Wraps: [Everything-ncnn-vulkan-python](https://github.com/orgs/media2x/repositories)
-- UI Design: [QCandyUi](https://github.com/shuoGG1239/QCandyUi)
-- Steamworks Interface: [SteamworksPy](https://github.com/philippj/SteamworksPy)
-- Encode
-  Supports: [FFmpeg](https://github.com/FFmpeg/FFmpeg), [QSVEnc](https://github.com/rigaya/QSVEnc), [NVEnc](https://github.com/rigaya/NVEnc), [dovi_tool](https://github.com/quietvoid/dovi_tool), [dlb_mp4base](https://github.com/DolbyLaboratories/dlb_mp4base), [hdr10plus_parser](https://github.com/quietvoid/hdr10plus_parser)
-- Super Resolution
-  Algorithm: [waifu2x](https://github.com/nagadomi/waifu2x), [RealESR](https://github.com/xinntao/Real-ESRGAN), [RealCUGAN](https://github.com/bilibili/ailab/blob/main/Real-CUGAN/LICENSE)
-- View More at `LICENSE` and `LICENSES_BUNDLE` FILE
-
 ## 👓 一些注意事项
 
 - 根据Steam用户使用条款(EULA)，SVFI发行版输出内容不可用于商业用途
