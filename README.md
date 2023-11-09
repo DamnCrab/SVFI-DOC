@@ -1,5 +1,13 @@
 # SVFI-DOC Vuepress2 版本
 
+## 文档维护流程
+
+- `git pull`
+- 编辑`md`文件
+- `npm run docs:dev`并检查教程
+  - 图片大小宽度统一定为600px
+- `git push`或者发pr
+
 ## 说明
 
 由于vuepress2还处于beta阶段，相关依赖具有版本关联性，因此不要随意升级依赖版本。

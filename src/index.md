@@ -31,6 +31,7 @@ postList: none
 ::: center
 <p>
   <a href="https://github.com/Justin62628/Squirrel-RIFE" target="_blank"><img src='https://img.shields.io/github/stars/Justin62628/Squirrel-RIFE' alt='GitHub stars' class="no-zoom"></a>
+  &nbsp;
   <a href="https://github.com/Justin62628/Squirrel-RIFE" target="_blank"><img src='https://img.shields.io/github/forks/Justin62628/Squirrel-RIFE' alt='GitHub forks' class="no-zoom"></a>
 </p>
 :::
