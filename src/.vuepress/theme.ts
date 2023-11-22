@@ -80,24 +80,44 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      card: true,
       chart: true,
       codetabs: true,
+      component: true,
+      container: true,
       demo: true,
       echarts: true,
       figure: true,
       flowchart: true,
       gfm: true,
       imgLazyload: true,
+      imgMark: true,
       imgSize: true,
       include: true,
-      katex: true,
       mark: true,
       mermaid: true,
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+      mathjax: {
+        output: "chtml",
+      },
+      revealJs: {
+        plugins: ["highlight", "math", "search", "notes", "zoom"],
+        themes: [
+          "auto",
+          "beige",
+          "black",
+          "blood",
+          "league",
+          "moon",
+          "night",
+          "serif",
+          "simple",
+          "sky",
+          "solarized",
+          "white",
+        ],
+      },
       stylize: [
         {
           matcher: "Recommended",
@@ -116,6 +136,6 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
       vuePlayground: true,
-    },
+    }
   },
 });

@@ -1,8 +1,12 @@
 import {defineUserConfig} from "vuepress";
 import {searchProPlugin} from "vuepress-plugin-search-pro";
 import theme from "./theme.js";
-import {path} from '@vuepress/utils'
+import { getDirname, path } from '@vuepress/utils'
+// @ts-ignore
+const __dirname = getDirname(import.meta.url)
+
 import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
+import { gitPlugin } from "@vuepress/plugin-git";
 
 export default defineUserConfig({
     base: "/",
@@ -40,6 +44,9 @@ export default defineUserConfig({
             components: {
                 'card-list': path.resolve(__dirname, './components/cardList.vue')
             }
+        }),
+        gitPlugin({
+            // 配置项
         }),
     ],
     markdown: {
