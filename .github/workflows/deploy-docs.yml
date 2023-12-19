@@ -81,5 +81,5 @@ jobs:
           remote-password: ${{ secrets.FTP_PASSWORD }}
           remote-port: 21
           local-path: "src/.vuepress/dist/"
-          remote-path: "wwwroot/dist/"
+          remote-path: "/wwwroot/dist/"
           debug: true
