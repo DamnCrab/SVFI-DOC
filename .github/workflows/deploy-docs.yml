@@ -57,7 +57,7 @@ jobs:
           protocol: ftp
           port: 21
           local-dir: "src/.vuepress/dist/"
-          server-dir: "./wwwroot/svfi"
+          server-dir: "./wwwroot/svfi/"
           log-level: "verbose"
           dangerous-clean-slate: true
           timeout: 90000
