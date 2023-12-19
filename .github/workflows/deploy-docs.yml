@@ -62,12 +62,23 @@ jobs:
         #     **/.git*/**
         #     **/node_modules/**
         #     **/.nojekyll*
-        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+        
+        # uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
+        # with:
+        #   ftp_host: ${{ secrets.FTP_SERVER }}
+        #   ftp_username: ${{ secrets.FTP_USERNAME }}
+        #   ftp_password: ${{ secrets.FTP_PASSWORD }}
+        #   local_source_dir: "src/.vuepress/dist/"
+        #   dist_target_dir: "wwwroot/dist/"
+        #   delete: "true"
+        #   exclude: "'^logs/' '^README.md' '.nojekyll'"
+
+        uses: milanmk/actions-file-deployer@master
         with:
-          ftp_host: ${{ secrets.FTP_SERVER }}
-          ftp_username: ${{ secrets.FTP_USERNAME }}
-          ftp_password: ${{ secrets.FTP_PASSWORD }}
-          local_source_dir: "src/.vuepress/dist/"
-          dist_target_dir: "wwwroot/dist/"
-          delete: "true"
-          exclude: "'^logs/' '^README.md' '.nojekyll'"
+          remote-protocol: "ftp"
+          remote-host: ${{ secrets.FTP_SERVER }}
+          remote-user: ${{ secrets.FTP_USERNAME }}
+          remote-password: ${{ secrets.FTP_PASSWORD }}
+          local-path: "src/.vuepress/dist/"
+          remote-path: "wwwroot/dist/"
+          debug: true
