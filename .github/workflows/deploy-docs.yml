@@ -49,19 +49,20 @@ jobs:
           folder: src/.vuepress/dist
           
       - name: 部署到国内站
-        # uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        # with:
-        #   server: ${{ secrets.FTP_SERVER }}
-        #   username: ${{ secrets.FTP_USERNAME }}
-        #   password: ${{ secrets.FTP_PASSWORD }}
-        #   local-dir: src/.vuepress/dist/
-        #   server-dir: /wwwroot/dist/
-        #   timeout: 90000
-        #   exclude: |
-        #     **/.git*
-        #     **/.git*/**
-        #     **/node_modules/**
-        #     **/.nojekyll*
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          local-dir: "src/.vuepress/dist"
+          server-dir: "/wwwroot/dist"
+          timeout: 90000
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.nojekyll*
         
         # uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
         # with:
@@ -73,13 +74,13 @@ jobs:
         #   delete: "true"
         #   exclude: "'^logs/' '^README.md' '.nojekyll'"
 
-        uses: milanmk/actions-file-deployer@master
-        with:
-          remote-protocol: "ftp"
-          remote-host: ${{ secrets.FTP_SERVER }}
-          remote-user: ${{ secrets.FTP_USERNAME }}
-          remote-password: ${{ secrets.FTP_PASSWORD }}
-          remote-port: 21
-          local-path: "src/.vuepress/dist"
-          remote-path: "/wwwroot/dist"
-          debug: true
+        # uses: milanmk/actions-file-deployer@master
+        # with:
+        #   remote-protocol: "ftp"
+        #   remote-host: ${{ secrets.FTP_SERVER }}
+        #   remote-user: ${{ secrets.FTP_USERNAME }}
+        #   remote-password: ${{ secrets.FTP_PASSWORD }}
+        #   remote-port: 21
+        #   local-path: "src/.vuepress/dist"
+        #   remote-path: "/wwwroot/dist"
+        #   debug: true
