@@ -49,14 +49,17 @@ jobs:
           folder: src/.vuepress/dist
           
       - name: 部署到国内站
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.1.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftp
           port: 21
           local-dir: "src/.vuepress/dist/"
-          server-dir: "./"
+          server-dir: "./wwwroot/svfi"
+          log-level: "verbose"
+          dangerous-clean-slate: true
           timeout: 90000
           exclude: |
             **/.git*
