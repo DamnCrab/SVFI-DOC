@@ -49,16 +49,25 @@ jobs:
           folder: src/.vuepress/dist
           
       - name: 部署到国内站
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        # uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        # with:
+        #   server: ${{ secrets.FTP_SERVER }}
+        #   username: ${{ secrets.FTP_USERNAME }}
+        #   password: ${{ secrets.FTP_PASSWORD }}
+        #   local-dir: src/.vuepress/dist/
+        #   server-dir: /wwwroot/dist/
+        #   timeout: 90000
+        #   exclude: |
+        #     **/.git*
+        #     **/.git*/**
+        #     **/node_modules/**
+        #     **/.nojekyll*
+        uses: kevinpainchaud/simple-ftp-deploy-action@v1.2.1
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: src/.vuepress/dist/
-          server-dir: /wwwroot/dist/
-          timeout: 90000
-          exclude: |
-            **/.git*
-            **/.git*/**
-            **/node_modules/**
-            **/.nojekyll*
+          ftp_host: ${{ secrets.FTP_SERVER }}
+          ftp_username: ${{ secrets.FTP_USERNAME }}
+          ftp_password: ${{ secrets.FTP_PASSWORD }}
+          local_source_dir: "src/.vuepress/dist/"
+          dist_target_dir: "wwwroot/dist/"
+          delete: "true"
+          exclude: "'^logs/' '^README.md' '.nojekyll'"
