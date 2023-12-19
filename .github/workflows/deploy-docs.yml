@@ -55,7 +55,7 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: src/.vuepress/dist/
-          server-dir: wwwroot/dist/
+          server-dir: /wwwroot/dist/
           timeout: 90000
           exclude: |
             **/.git*
