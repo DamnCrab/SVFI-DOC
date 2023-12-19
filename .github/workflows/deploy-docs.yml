@@ -69,7 +69,7 @@ jobs:
         #   ftp_username: ${{ secrets.FTP_USERNAME }}
         #   ftp_password: ${{ secrets.FTP_PASSWORD }}
         #   local_source_dir: "src/.vuepress/dist/"
-        #   dist_target_dir: "wwwroot/dist/"
+        #   dist_target_dir: "./wwwroot/dist/"
         #   delete: "true"
         #   exclude: "'^logs/' '^README.md' '.nojekyll'"
 
