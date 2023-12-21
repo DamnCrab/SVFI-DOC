@@ -49,15 +49,28 @@ jobs:
           folder: src/.vuepress/dist
           
       - name: 部署到国内站
-        uses: easingthemes/ssh-deploy@main
+        uses: kostya-ten/ssh-server-deploy@v4
         with:
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-            ARGS: "-rlgoDzvc -i --delete"
-            SOURCE: "src/.vuepress/dist/"
-            REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-            REMOTE_USER: root
-            REMOTE_PORT: 16767
-            TARGET: ${{ secrets.REMOTE_TARGET }}
+          host: ${{ secrets.REMOTE_HOST }}
+          port: 16767
+          username: root
+          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          scp_source: "src/.vuepress/dist/"
+          scp_target: ${{ secrets.REMOTE_TARGET }}
+          before_script: |
+            df -h
+          after_script: |
+            whoami
+            
+        # uses: easingthemes/ssh-deploy@main
+        # with:
+        #     SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        #     ARGS: "-rlgoDzvc -i --delete"
+        #     SOURCE: "src/.vuepress/dist/"
+        #     REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        #     REMOTE_USER: root
+        #     REMOTE_PORT: 16767
+        #     TARGET: ${{ secrets.REMOTE_TARGET }}
             
         # uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         # with:
