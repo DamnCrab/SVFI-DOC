@@ -54,7 +54,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: sftp
+          protocol: ftps
           port: 2022
           local-dir: "src/.vuepress/dist/"
           server-dir: "/cn2.svfi.group/index/"
