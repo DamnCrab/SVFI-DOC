@@ -55,10 +55,9 @@ jobs:
             ARGS: "-rlgoDzvc -i --delete"
             SOURCE: "src/.vuepress/dist/"
             REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+            REMOTE_USER: "root"
             REMOTE_PORT: 16767
-            REMOTE_USER: ${{ secrets.REMOTE_USER }}
             TARGET: ${{ secrets.REMOTE_TARGET }}
-            EXCLUDE: "/dist/, /node_modules/"
             
         # uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         # with:
