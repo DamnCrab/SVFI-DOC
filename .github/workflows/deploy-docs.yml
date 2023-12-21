@@ -54,7 +54,7 @@ jobs:
           host: ${{ secrets.REMOTE_HOST }}
           port: 16767
           username: root
-          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          password: ${{ secrets.SERVER_PASSWORD }}
           scp_source: "src/.vuepress/dist/"
           scp_target: ${{ secrets.REMOTE_TARGET }}
           before_script: |
