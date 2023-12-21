@@ -49,7 +49,7 @@ jobs:
           folder: src/.vuepress/dist
           
       - name: 部署到国内站
-        uses: SamKirkland/FTP-Deploy-Action@v4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
