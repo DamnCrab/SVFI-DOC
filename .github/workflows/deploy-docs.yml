@@ -54,10 +54,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftp
-          port: 21
+          protocol: sftp
+          port: 2022
           local-dir: "src/.vuepress/dist/"
-          server-dir: "./wwwroot/svfi/"
+          server-dir: "/cn2.svfi.group/index/"
           log-level: "verbose"
           dangerous-clean-slate: true
           timeout: 90000
