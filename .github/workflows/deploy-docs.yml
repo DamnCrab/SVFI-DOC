@@ -55,7 +55,7 @@ jobs:
             ARGS: "-rlgoDzvc -i --delete"
             SOURCE: "src/.vuepress/dist/"
             REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-            REMOTE_USER: "root"
+            REMOTE_USER: root
             REMOTE_PORT: 16767
             TARGET: ${{ secrets.REMOTE_TARGET }}
             
