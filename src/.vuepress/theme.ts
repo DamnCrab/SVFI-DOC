@@ -12,6 +12,8 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
+  favicon: "/img/svfi.ico",
+
   logo: "/img/logo.webp",
 
   repo: "Justin62628/Squirrel-RIFE",
@@ -83,7 +85,7 @@ export default hopeTheme({
       chart: true,
       codetabs: true,
       component: true,
-      container: true,
+      hint: true,
       demo: true,
       echarts: true,
       figure: true,
