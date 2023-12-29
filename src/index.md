@@ -67,25 +67,22 @@ postList: none
 
 ## 🎖 白嫖列表
 
-::: card
-
-```card
+```component VPCard
 title: Squirrel Anime Enhance
 desc: 🚀开源超分软件，专注于兼容的超分工具
 logo: /img/svfi.ico
 link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
-color: #eaeef1
+background: #eaeef1
 ```
 
-```card
+```component VPCard
 title: SVFI Demo 预览版
-desc: SVFI的预览版，支持1000帧以内的高质量、高自定义的补帧和超分
+desc: SVFI预览版，支持1000帧以内预览输出
 logo: /img/svfi.ico
 link: https://store.steampowered.com/search/?sort_by=_ASC&term=SVFI+Demo
-color: #eaeef1
+background: #eaeef1
 ```
 
-:::
 
 <br/>
 

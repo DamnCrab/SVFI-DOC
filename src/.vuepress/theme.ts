@@ -67,6 +67,27 @@ export default hopeTheme({
   },
 
   plugins: {
+
+    // Enable some components
+    components: {
+      // 你想使用的组件
+      components: [
+        "ArtPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "PDF",
+        "Replit",
+        "Share",
+        "SiteInfo",
+        "StackBlitz",
+        "VPBanner",
+        "VPCard",
+        // "VidStack",  // need some additional dependencies
+        "XiGua",
+      ],
+    },
+
     // You should generate and use your own comment service
     comment: {
       provider: "Giscus",
@@ -136,6 +157,17 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
       vuePlayground: true,
-    }
+      checkLinks: {
+        // 仅在开发模式下检查链接
+        status: "dev",
+        ignore: [
+          // 忽略以 `/api/` 开头的链接
+          /^\/api\//,
+          // 忽略 `/playground.html`
+          "/playground.html",
+        ],
+      },
+    },
+
   },
 });
