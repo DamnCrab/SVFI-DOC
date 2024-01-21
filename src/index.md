@@ -65,6 +65,35 @@ postList: none
 }
 ]"/>
 
+## 🌎 教程演示 Demonstration on BiliBili
+
+<cardList :items="[
+{
+	img: '/img/bilibili/SVFI6.0.jpg',
+    name: '使用教程',
+	desc: 'SVFI 6.0版本简明使用教程',
+	link: 'https://www.bilibili.com/video/BV1jM411f778',
+	author: 'SVFI视觉 ',
+	avatar: '/img/svfi.ico'
+},
+{
+	img: '/img/bilibili/option.jpg',
+	name: '选项教程',
+	desc: '软件选项详细讲解',
+	link: 'https://www.bilibili.com/video/BV1NP4y1m7zk',
+	author: 'SVFI视觉',
+	avatar: '/img/svfi.ico',
+},
+{
+	img: '/img/bilibili/Settings.jpg',
+	name: '设置教程',
+	desc: '重复帧去除功能演示+如何设置',
+	link: 'https://www.bilibili.com/video/BV1Gt4y1G7Un',
+	author: 'SVFI视觉',
+	avatar: '/img/svfi.ico'
+}
+]"/>
+
 ## 🎖 白嫖列表
 
 ```component VPCard
@@ -75,13 +104,6 @@ link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
 background: #eaeef1
 ```
 
-```component VPCard
-title: SVFI Demo 预览版
-desc: SVFI预览版，支持1000帧以内预览输出
-logo: /img/svfi.ico
-link: https://store.steampowered.com/search/?sort_by=_ASC&term=SVFI+Demo
-background: #eaeef1
-```
 
 
 <br/>
