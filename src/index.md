@@ -88,7 +88,7 @@ postList: none
 	img: '/img/bilibili/Settings.jpg',
 	name: '设置教程',
 	desc: '重复帧去除功能演示+如何设置',
-	link: 'https://www.bilibili.com/video/BV1kF411p7FB',
+	link: 'https://www.bilibili.com/video/BV1Gt4y1G7Un',
 	author: 'SVFI视觉',
 	avatar: '/img/svfi.ico'
 }
@@ -104,13 +104,6 @@ link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
 background: #eaeef1
 ```
 
-```component VPCard
-title: SVFI Demo 预览版
-desc: SVFI预览版，支持1000帧以内预览输出
-logo: /img/svfi.ico
-link: https://store.steampowered.com/search/?sort_by=_ASC&term=SVFI+Demo
-background: #eaeef1
-```
 
 
 <br/>
