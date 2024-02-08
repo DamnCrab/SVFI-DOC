@@ -65,7 +65,7 @@ postList: none
 }
 ]"/>
 
-## 🌎 教程演示 Demonstration on BiliBili
+## 🌎 教程演示 Tutorial on BiliBili
 
 <cardList :items="[
 {
