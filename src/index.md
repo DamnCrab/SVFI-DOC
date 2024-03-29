@@ -94,6 +94,13 @@ postList: none
 }
 ]"/>
 
+## 📕 本文档建议阅读顺序
+
+- 软件学习：[快速入门的所有文章](/pages/fps-resolution-bitrate/) -> [必读导引](/pages/mustread/) -> [预设](/pages/svfi-presets/) -> [高级内容详解](/pages/advanced-settings/)
+- 问题排查：[Q&A](/pages/QA/) -> [使用技巧](/pages/useful-tips/)
+- 进阶学习：[其他进阶说明](/pages/other-advanced-settings/) -> [SVFI命令行使用](/pages/svfi-cli/)
+
+
 ## 🎖 白嫖列表
 
 ```component VPCard
