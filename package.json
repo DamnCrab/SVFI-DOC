@@ -30,6 +30,7 @@
     "flowchart.ts": "^1.0.1",
     "mathjax-full": "^3.2.2",
     "mermaid": "^10.6.1",
-    "reveal.js": "^5.0.2"
+    "reveal.js": "^5.0.2",
+    "vue3-compare-image": "^1.2.2"
   }
 }

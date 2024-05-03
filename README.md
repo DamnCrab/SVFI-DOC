@@ -1,5 +1,9 @@
 # SVFI-DOC Vuepress2 版本
 
+## Install
+
+- `pnpm install`
+
 ## 文档维护流程
 
 - `git pull`
@@ -12,7 +16,7 @@
 
 由于vuepress2还处于beta阶段，相关依赖具有版本关联性，因此不要随意升级依赖版本。
 
-请使用pnpm安装依赖
+**请使用pnpm安装依赖**
 
 ## 使用的主题
 

@@ -42,7 +42,8 @@ export default defineUserConfig({
         registerComponentsPlugin({
             componentsDir: path.resolve(__dirname, './components'),
             components: {
-                'card-list': path.resolve(__dirname, './components/cardList.vue')
+                'card-list': path.resolve(__dirname, './components/cardList.vue'),
+                'img-slider': path.resolve(__dirname, './components/imgSlider.vue'),
             }
         }),
         gitPlugin({
