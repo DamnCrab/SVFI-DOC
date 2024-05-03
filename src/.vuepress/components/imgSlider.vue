@@ -2,7 +2,19 @@
   <div class="card-gallery">
     <a class="card" v-for="(item, index) in items" :key="index">
       <div class="image-wrapper">
-        <VueCompareImage :leftImage="item.first" :rightImage="item.second" class="slider"/>
+        <ImgComparisonSlider class="slider">
+          <img
+            slot="first"
+            style="width: 100%"
+            :src="item.first"
+          />
+          <img
+            slot="second"
+            style="width: 100%"
+            :src="item.second"
+          />
+          <!-- eslint-enable -->
+        </ImgComparisonSlider>
       </div>
       <div class="info">
         <p class="info-name">{{ item.name }}</p>
@@ -13,8 +25,7 @@
 </template>
 
 <script setup lang="ts">
-// import { ImgComparisonSlider } from '@img-comparison-slider/vue';
-import { VueCompareImage } from 'vue3-compare-image'
+import { ImgComparisonSlider } from '@img-comparison-slider/vue';
 import {defineProps, computed} from 'vue';
 
 const props = defineProps({
