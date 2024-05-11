@@ -125,8 +125,7 @@ background: #eaeef1
 
 ## ⚡ 反馈与交流
 
-在软件使用过程中有任何问题和想法，请在 [Steam论坛](https://steamcommunity.com/app/1692080/discussions/1/)提问。
-或者加入[BBS论坛](https://bbs.svfi.group/)
+在软件使用过程中有任何问题和想法，请在 [Steam论坛](https://steamcommunity.com/app/1692080/discussions/1/)提问，此为唯一售后渠道。
 
 ## 👓 一些注意事项
 
