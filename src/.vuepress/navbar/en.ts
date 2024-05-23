@@ -10,15 +10,7 @@ export const enNavbar = navbar([
       "/en/10.Getting Started/10.Getting Started/20.What is VFI.md",
       "/en/10.Getting Started/10.Getting Started/30.What is SR.md",
       "/en/10.Getting Started/10.Getting Started/40.Quick tour of SVFI.md",
-    ],
-  },
-  {
-    text: "Related Articles",
-    icon: "fa-solid fa-atom",
-    children: [
-      "/en/10.Getting Started/20.Related Articles/01.Image representation and quality.md",
-      "/en/10.Getting Started/20.Related Articles/03.Encodings, Encoders, and Encapsulation Formats.md",
-      "/en/10.Getting Started/20.Related Articles/07.what is encoding.md",
+      "/en/10.Getting Started/10.Getting Started/50.Quick tour of SVFI SR.md",
     ],
   },
   {
@@ -28,6 +20,7 @@ export const enNavbar = navbar([
       "/en/20.Manuals/10.Quick Start.md",
       "/en/20.Manuals/20.Option Manuals.md",
       "/en/20.Manuals/21.Advanced CLI.md",
+      "/en/20.Manuals/23.Other Advanced Settings.md",
     ],
   },
   {
@@ -36,7 +29,9 @@ export const enNavbar = navbar([
     children: [
       "/en/30.FAQ/01.Q&A.md",
       "/en/30.FAQ/10.Tips.md",
+      "/en/30.FAQ/20.Presets.md",
     ],
   },
-  "/en/40.Support/01.Support.md"
+  "/en/40.Support/01.About SVFI.md",
+  "/en/40.Support/10.Support.md",
 ]);
