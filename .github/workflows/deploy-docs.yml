@@ -48,17 +48,21 @@ jobs:
           branch: gh-pages
           folder: src/.vuepress/dist
           
-      - name: 部署到国内站
-        uses: kostya-ten/ssh-server-deploy@v4
-        with:
-          host: ${{ secrets.REMOTE_HOST }}
-          port: 16767
-          username: root
-          password: ${{ secrets.SERVER_PASSWORD }}
-          scp_source: "src/.vuepress/dist/"
-          scp_target: ${{ secrets.REMOTE_TARGET }}
-          before_script: |
-            df -h
-          after_script: |
-            whoami
-            ${{ secrets.REMOTE_SCRIPT }}
+      #- name: 部署到国内站
+      #  uses: kostya-ten/ssh-server-deploy@v4
+      #  with:
+      #    host: ${{ secrets.REMOTE_HOST }}
+      #    port: 16767
+      #    username: root
+      #    password: ${{ secrets.SERVER_PASSWORD }}
+      #    scp_source: "src/.vuepress/dist/"
+      #    scp_target: ${{ secrets.REMOTE_TARGET }}
+      #    before_script: |
+      #      df -h
+      #    after_script: |
+      #      whoami
+      #      ${{ secrets.REMOTE_SCRIPT }}
+
+      - name: Send HTTP request to trigger git pull
+        run: |
+          curl -X GET "${{ secrets.UPDATER_ADDR }}"
