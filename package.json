@@ -27,6 +27,7 @@
     "@img-comparison-slider/vue": "^8.0.0",
     "@vue/repl": "^2.8.0",
     "chart.js": "^4.4.0",
+    "conventional-changelog-cli": "^5.0.0",
     "echarts": "^5.4.3",
     "flowchart.ts": "^1.0.1",
     "mathjax-full": "^3.2.2",
