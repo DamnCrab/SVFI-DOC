@@ -53,7 +53,7 @@ jobs:
         env:
             SSH_PRIVATE_KEY: ${{ env.SERVER_PRIVATE_KEY }}
             ARGS: '-avz --delete'
-            SOURCE: 'dist/'
+            SOURCE: 'src/.vuepress/dist'
             REMOTE_HOST: ${{ env.SERVER_HOST }}
             REMOTE_USER: ${{ env.USER_NAME }}
-            TARGET: /home/note # 服务器目标路径
+            TARGET: ${{ env.SERVER_DEPOLY_DIR }}
