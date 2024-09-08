@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-heroImage: /img/logo.webp
+heroImage: /img/logo.png
 heroText: Squirrel-RIFE Video Frame Interpolation
 tagline:
 actionText: 专注于动漫超分补帧 →
@@ -45,7 +45,7 @@ postList: none
 	desc: '剧情CM短片 8K60帧 SVFI补帧超分',
 	link: 'https://www.bilibili.com/video/BV1FS4y1C7RD',
 	author: 'SVFI视觉 ',
-	avatar: '/img/svfi.ico'
+	avatar: '/img/logo.png'
 },
 {
 	img: '/img/bilibili/umaron.jpg',
@@ -53,7 +53,7 @@ postList: none
 	desc: '第二季 NCOP 8K60帧',
 	link: 'https://www.bilibili.com/video/BV1QY411b7e4',
 	author: 'SVFI视觉',
-	avatar: '/img/svfi.ico',
+	avatar: '/img/logo.png',
 },
 {
 	img: '/img/bilibili/emilia.jpg',
@@ -61,7 +61,7 @@ postList: none
 	desc: '第二季后半 NCED Believe in you',
 	link: 'https://www.bilibili.com/video/BV1kF411p7FB',
 	author: 'SVFI视觉',
-	avatar: '/img/svfi.ico'
+	avatar: '/img/logo.png'
 }
 ]"/>
 
@@ -74,15 +74,7 @@ postList: none
 	desc: 'SVFI 6.0版本简明使用教程',
 	link: 'https://www.bilibili.com/video/BV1jM411f778',
 	author: 'SVFI视觉 ',
-	avatar: '/img/svfi.ico'
-},
-{
-	img: '/img/bilibili/option.jpg',
-	name: '选项教程',
-	desc: '软件选项详细讲解',
-	link: 'https://www.bilibili.com/video/BV1NP4y1m7zk',
-	author: 'SVFI视觉',
-	avatar: '/img/svfi.ico',
+	avatar: '/img/logo.png'
 },
 {
 	img: '/img/bilibili/Settings.jpg',
@@ -90,15 +82,15 @@ postList: none
 	desc: '重复帧去除功能演示+如何设置',
 	link: 'https://www.bilibili.com/video/BV1Gt4y1G7Un',
 	author: 'SVFI视觉',
-	avatar: '/img/svfi.ico'
+	avatar: '/img/logo.png'
 }
 ]"/>
 
 ## 📕 本文档建议阅读顺序
 
-- 软件学习：[快速入门的所有文章](/pages/fps-resolution-bitrate/) -> [必读导引](/pages/mustread/) -> [预设](/pages/svfi-presets/) -> [高级内容详解](/pages/advanced-settings/)
-- 问题排查：[Q&A](/pages/QA/) -> [使用技巧](/pages/useful-tips/)
-- 进阶学习：[其他进阶说明](/pages/other-advanced-settings/) -> [SVFI命令行使用](/pages/svfi-cli/)
+- 视频处理基础与软件入门：[快速入门的所有文章](/pages/fps-resolution-bitrate/) -> [必读导引](/pages/mustread/) -> [预设](/pages/svfi-presets/) -> [高级内容详解](/pages/advanced-settings/)
+- 软件报错、输出不一致等问题排查：[Q&A](/pages/QA/) -> [使用技巧](/pages/useful-tips/)
+- 软件进阶学习：[相关文章科普](/pages/wiki-image-quality/) -> [其他进阶说明](/pages/other-advanced-settings/) -> [SVFI命令行使用](/pages/svfi-cli/)
 
 
 ## 🎖 白嫖列表
@@ -106,7 +98,7 @@ postList: none
 ```component VPCard
 title: Squirrel Anime Enhance
 desc: 🚀开源超分软件，专注于兼容的超分工具
-logo: /img/svfi.ico
+logo: /img/logo.png
 link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
 background: #eaeef1
 ```

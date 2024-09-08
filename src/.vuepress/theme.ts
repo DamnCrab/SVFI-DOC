@@ -12,9 +12,9 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  favicon: "/img/svfi.ico",
+  favicon: "/img/logo.png",
 
-  logo: "/img/logo.webp",
+  logo: "/img/logo.png",
 
   repo: "Justin62628/Squirrel-RIFE",
 
