@@ -12,7 +12,7 @@ features:
   - title: Ready to use
     details: Automatic preset system, even beginners can use it, and adjust settings automatically according to input to obtain the best effect
   - title: High-quality output
-    details: High-granularity setting options to meet your geek heart and high-quality control requirements
+    details: High-granularity setting options to meet your geek-level and high-quality control requirements
   - title: Fast and worry-free
     details: A lot of optimizations to avoid the unpleasantness such as jelly and screen flashing caused by common frame interpolation software
 
