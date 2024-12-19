@@ -39,28 +39,28 @@ postList: none
 
 <cardList :items="[
 {
-img: '/img/bilibili/yuan.jpg',
-name: 'Genshin Impact',
-desc: 'Drama CM short film, 8K 60fps',
-link: 'https://www.bilibili.com/video/BV1FS4y1C7RD',
-author: 'SVFI Vision ',
-avatar: '/img/logo.png'
+	img: '/img/bilibili/mayoiuta.jpg',
+	name: 'BanG Dream! It\'s MyGO!!!!!',
+	desc: 'Mayoiuta',
+	link: 'https://www.bilibili.com/video/BV1Qr421g7LT/?share_source=copy_web',
+	author: 'SVFI Vision',
+	avatar: '/img/logo.png'
 },
 {
-img: '/img/bilibili/umaron.jpg',
-name: 'Umaron',
-desc: 'Season 2 NCOP 8K 60fps',
-link: 'https://www.bilibili.com/video/BV1QY411b7e4',
-author: 'SVFI Vision',
-avatar: '/img/logo.png',
+	img: '/img/bilibili/melody.jpg',
+	name: 'BanG Dream! It\'s MyGO!!!!!',
+	desc: 'Melody',
+	link: 'https://www.bilibili.com/video/BV1HT42117aQ',
+	author: 'SVFI Vision',
+	avatar: '/img/logo.png',
 },
 {
-img: '/img/bilibili/emilia.jpg',
-name: 'Re Zero-Starting Life in Another World',
-desc: 'Season 2 NCED Believe in you',
-link: 'https://www.bilibili.com/video/BV1kF411p7FB',
-author: 'SVFI Vision',
-avatar: '/img/logo.png'
+	img: '/img/bilibili/utakotoba.jpg',
+	name: 'BanG Dream! It\'s MyGO!!!!!',
+	desc: 'Utakotoba',
+	link: 'https://www.bilibili.com/video/BV14r421K7ik',
+	author: 'SVFI Vision',
+	avatar: '/img/logo.png'
 }
 ]"/>
 
