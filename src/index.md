@@ -40,26 +40,26 @@ postList: none
 
 <cardList :items="[
 {
-	img: '/img/bilibili/yuan.jpg',
-    name: '《原神》',
-	desc: '剧情CM短片 8K60帧 SVFI补帧超分',
-	link: 'https://www.bilibili.com/video/BV1FS4y1C7RD',
-	author: 'SVFI视觉 ',
+	img: '/img/bilibili/mayoiuta.jpg',
+	name: 'BanG Dream! It\'s MyGO!!!!!',
+	desc: '迷星叫（Mayoiuta）',
+	link: 'https://www.bilibili.com/video/BV1Qr421g7LT/',
+	author: 'SVFI视觉',
 	avatar: '/img/logo.png'
 },
 {
-	img: '/img/bilibili/umaron.jpg',
-	name: '赛马娘',
-	desc: '第二季 NCOP 8K60帧',
-	link: 'https://www.bilibili.com/video/BV1QY411b7e4',
+	img: '/img/bilibili/melody.jpg',
+	name: 'BanG Dream! It\'s MyGO!!!!!',
+	desc: '迷路日々（Melody）',
+	link: 'https://www.bilibili.com/video/BV1HT42117aQ',
 	author: 'SVFI视觉',
 	avatar: '/img/logo.png',
 },
 {
-	img: '/img/bilibili/emilia.jpg',
-	name: 'Re：从零开始的异世界生活',
-	desc: '第二季后半 NCED Believe in you',
-	link: 'https://www.bilibili.com/video/BV1kF411p7FB',
+	img: '/img/bilibili/utakotoba.jpg',
+	name: 'BanG Dream! It\'s MyGO!!!!!',
+	desc: '詩超絆（Utakotoba）',
+	link: 'https://www.bilibili.com/video/BV14r421K7ik',
 	author: 'SVFI视觉',
 	avatar: '/img/logo.png'
 }
