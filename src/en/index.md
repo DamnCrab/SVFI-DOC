@@ -66,7 +66,7 @@ postList: none
 
 ## 📕 Suggested reading order of this document
 
-- Video Processing and Software Quick Start: [Quick start](/en/pages/fps-resolution-bitrate/) -> [Must-read guide](/en/pages/mustread/) -> [Presets](/en/pages/svfi-presets/) -> [Advanced Settings detailed explanation](/en/pages/advanced-settings/)
+- Video Processing and Software Quick Start: [Quick start](/en/pages/fps-resolution-bitrate/) -> [Must-read guide](/en/pages/mustread/) -> [Presets](/en/pages/svfi-presets/) -> [Advanced Settings detailed explanation](/en/pages/advanced-settings/) -> [Model Specification](/en/pages/model-spec/)
 - Software Crash and Problem troubleshooting: [Q&A](/en/pages/QA/) -> [Useful tips](/en/pages/useful-tips/)
 - Advanced learning: [Other advanced instructions](/en/pages/other-advanced-settings/) -> [SVFI command line usage](/en/pages/svfi-cli/)
 

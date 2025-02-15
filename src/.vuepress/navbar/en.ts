@@ -19,6 +19,7 @@ export const enNavbar = navbar([
     children: [
       "/en/20.Manuals/10.Quick Start.md",
       "/en/20.Manuals/20.Option Manuals.md",
+      "/en/20.Manuals/22.Model Spec.md",
       "/en/20.Manuals/21.Advanced CLI.md",
       "/en/20.Manuals/23.Other Advanced Settings.md",
     ],

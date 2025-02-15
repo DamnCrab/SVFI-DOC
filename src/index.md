@@ -88,7 +88,7 @@ postList: none
 
 ## 📕 本文档建议阅读顺序
 
-- 视频处理基础与软件入门：[快速入门的所有文章](/pages/fps-resolution-bitrate/) -> [必读导引](/pages/mustread/) -> [预设](/pages/svfi-presets/) -> [高级内容详解](/pages/advanced-settings/)
+- 视频处理基础与软件入门：[快速入门的所有文章](/pages/fps-resolution-bitrate/) -> [必读导引](/pages/mustread/) -> [预设](/pages/svfi-presets/) -> [高级内容详解](/pages/advanced-settings/) -> [模型选择介绍](/pages/model-spec/)
 - 软件报错、输出不一致等问题排查：[Q&A](/pages/QA/) -> [使用技巧](/pages/useful-tips/)
 - 软件进阶学习：[相关文章科普](/pages/wiki-image-quality/) -> [其他进阶说明](/pages/other-advanced-settings/) -> [SVFI命令行使用](/pages/svfi-cli/)
 
@@ -102,7 +102,6 @@ logo: /img/logo.png
 link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
 background: #eaeef1
 ```
-
 
 
 <br/>
