@@ -15,23 +15,25 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          # 如果你文档需要 Git 子模块，取消注释下一行
-          # submodules: true
+        uses: actions/checkout@v4
 
-      - name: 安装 pnpm
-        uses: pnpm/action-setup@v2
+      # Install pnpm package manager / 安装 pnpm 包管理器
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
         with:
-          run_install: true
-          version: 8
+          version: 10
+          run_install: false
 
-      - name: 设置 Node.js
-        uses: actions/setup-node@v3
+        # Setup Node.js environment / 设置 Node.js 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: pnpm
+          node-version: '20'  # Use Node.js 24 / 使用 Node.js 24
+          cache: 'pnpm'       # Cache pnpm dependencies / 缓存 pnpm 依赖
+
+      # Install project dependencies / 安装项目依赖
+      - name: Install dependencies
+        run: pnpm install
 
 
       - name: 构建文档
