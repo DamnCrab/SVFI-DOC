@@ -52,10 +52,19 @@ jobs:
           pnpm run docs:build
           > src/.vuepress/dist/.nojekyll
 
-      - name: Upload artifact
+      # 上传构建产物以供 GitHub Pages 使用
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: src/.vuepress/dist
+
+      # 上传相同的构建产物用于 Cloudflare 部署
+      - name: Upload Cloudflare artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cloudflare-pages
+          path: src/.vuepress/dist
+          retention-days: 1
 
   deploy-gh-pages:
     needs: build
@@ -79,12 +88,12 @@ jobs:
       - name: Download artifact
         uses: actions/download-artifact@v4
         with:
-          name: github-pages
-          path: .
+          name: cloudflare-pages
+          path: dist
       - name: 部署到 Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           accountId: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy . --project-name=svfi-doc --branch=vuepress2.0
+          command: pages deploy dist --project-name=svfi-doc --branch=vuepress2.0
 
