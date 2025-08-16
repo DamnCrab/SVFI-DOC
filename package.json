@@ -5,23 +5,23 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress build src",
-    "docs:clean-dev": "vuepress dev src --clean-cache",
-    "docs:dev": "vuepress dev src",
-    "docs:update-package": "yarn dlx vp-update"
+    "docs:build": "vuepress-vite build src",
+    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
+    "docs:dev": "vuepress-vite dev src",
+    "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
+    "@types/node": "^20.11.25",
+    "@vuepress/bundler-vite": "2.0.0-rc.24",
     "@vuepress/client": "2.0.0-rc.0",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.112",
     "@vuepress/plugin-git": "2.0.0-rc.0",
     "@vuepress/plugin-register-components": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-rc.0",
-    "less": "^4.2.0",
-    "less-loader": "^11.1.4",
-    "vue": "^3.4.0",
-    "vuepress": "2.0.0-rc.0",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.7",
-    "vuepress-theme-hope": "2.0.0-rc.7"
+    "less": "^4.4.0",
+    "vue": "^3.5.17",
+    "vuepress": "2.0.0-rc.24",
+    "vuepress-theme-hope": "2.0.0-rc.94"
   },
   "dependencies": {
     "@img-comparison-slider/vue": "^8.0.0",
