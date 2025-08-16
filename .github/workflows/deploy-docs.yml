@@ -90,10 +90,11 @@ jobs:
         with:
           name: cloudflare-pages
           path: dist
+      - name: Create wrangler.toml
+        run: echo 'name = "svfi-doc"\n[site]\nbucket = "dist"' > wrangler.toml
       - name: 部署到 Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           accountId: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy dist --project-name=svfi-doc --branch=vuepress2.0
 
