@@ -5,9 +5,10 @@ import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
 
 // @ts-ignore
 const __dirname = import.meta.dirname || getDirname(import.meta.url)
+const baseUrl:"/" | `/${string}/` = (process.env.BASEURL || "/") as any
 
 export default defineUserConfig({
-    base: "/",
+    base: baseUrl,
     locales: {
         "/": {
             lang: "zh-CN",
