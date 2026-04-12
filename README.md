@@ -2,6 +2,7 @@
 
 ## Install
 
+- Node.js **20.19+** (Vite 7 / VuePress bundler). Check with `node -v`. If you have multiple Node installs on Windows, ensure the intended one comes first on `PATH` (for example `C:\Program Files\nodejs` before an older `D:\Program\nodejs`).
 - `pnpm install`
 
 ## 文档维护流程

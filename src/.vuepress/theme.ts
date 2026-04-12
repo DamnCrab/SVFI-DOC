@@ -1,6 +1,6 @@
 import {hopeTheme} from "vuepress-theme-hope";
 import {enNavbar, zhNavbar} from "./navbar";
-// import {enSidebar, zhSidebar} from "./sidebar/index.js";
+import {enSidebar, zhSidebar} from "./sidebar";
 
 export default hopeTheme({
     hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
@@ -23,15 +23,15 @@ export default hopeTheme({
     // 是否展示编辑此页链接
     editLink: false,
 
-    toc:{
-        levels:4
+    toc: {
+        // Number = single level only; use [min, max] for a range (here h1–h4).
+        levels: [1, 3],
     },
 
     locales: {
         "/": {
             navbar: zhNavbar,
-
-            // sidebar: "heading",
+            sidebar: zhSidebar,
             footer: "",
             displayFooter: true,
             metaLocales: {
@@ -40,7 +40,7 @@ export default hopeTheme({
         },
         "/en/": {
             navbar: enNavbar,
-            // sidebar: "heading",
+            sidebar: enSidebar,
             footer: "",
             displayFooter: true,
             metaLocales: {
