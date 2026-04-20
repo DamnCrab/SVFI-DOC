@@ -9,8 +9,12 @@
 
 - `git pull`
 - 编辑`md`文件
-- `pnpm run docs:dev`并检查教程
-  - 图片大小宽度统一定为600px
+- 检查教程
+```powershell
+$env:PATH = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+$env:Path = "C:\Program Files\nodejs;" + $env:Path; node -v; cd "D:\60-fps-Project\Projects\SVFI-DOC"; pnpm run docs:dev
+```
+- 图片大小宽度统一定为600px
 - `git push`或者发pr
 
 ## 说明
