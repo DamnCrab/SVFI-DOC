@@ -5,7 +5,7 @@
   "license": "MIT",
   "type": "module",
   "engines": {
-    "node": ">=20.19.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "docs:build": "vuepress-vite build src",
@@ -33,7 +33,7 @@
     "vue": "^3.5.17",
     "vuepress": "2.0.0-rc.24",
     "vuepress-theme-hope": "2.0.0-rc.94",
-    "wrangler": "4.30.0"
+    "wrangler": "^4.30.0"
   },
   "dependencies": {
     "@img-comparison-slider/vue": "^8.0.0",
