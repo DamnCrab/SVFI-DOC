@@ -87,9 +87,9 @@ postList: none
 
 ## 📕 Suggested reading order of this document
 
-- Video Processing and Software Quick Start: [Quick start](/en/pages/fps-resolution-bitrate/) -> [Must-read guide](/en/pages/mustread/) -> [Presets](/en/pages/svfi-presets/) -> [Basic task settings](/en/pages/task-basic/) -> [Frame interpolation models](/en/pages/vfi-models/) -> [Super-resolution models](/en/pages/sr-models/) -> [Image restoration models](/en/pages/restore-models/)
+- Video Processing and Software Quick Start: [Quick start](/en/pages/fps-resolution-bitrate/) -> [Must-read guide](/en/pages/mustread/) -> [Presets](/en/pages/svfi-presets/) -> [Basic task settings](/en/pages/task-basic/) -> [Frame interpolation models](/en/pages/vfi-models/) -> [Super-resolution models](/en/pages/sr-models/) -> [Image restoration models](/en/pages/restore-models/) -> [Real-time window models](/en/pages/realtime-models/)
 - Software Crash and Problem troubleshooting: [Q&A](/en/pages/QA/) -> [Useful tips](/en/pages/useful-tips/)
-- Advanced learning: [Related articles](/en/pages/wiki-image-quality/) -> [Other advanced instructions](/en/pages/other-advanced-settings/) -> [SVFI command line usage](/en/pages/svfi-cli/)
+- Advanced learning: [Related articles](/en/pages/wiki-image-quality/) -> [Real-time window scaling](/en/pages/realtime-window/) -> [Other advanced instructions](/en/pages/other-advanced-settings/) -> [SVFI command line usage](/en/pages/svfi-cli/)
 
 
 ## 🎖 Free tools

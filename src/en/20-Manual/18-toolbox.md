@@ -3,6 +3,12 @@ title: Toolbox settings
 permalink: /en/pages/toolbox/
 ---
 
+The toolbox is the wrench page in Advanced settings. It covers leftover-process cleanup, video-to-GIF, concatenating chunks, audio muxing, plus remote SR and streaming.
+
+<div align=center>
+<img src="/screenshots/en/41-toolbox.png"  width=600>
+</div>
+
 ## Terminate Remaining Processes
 
 Will end all tasks, including tasks that are opened by other SVFI instances.
@@ -45,13 +51,17 @@ If the task fails during the final merge, you can directly select the task item 
 
 - Secondary encoding audio: Compress the audio to aac format, 640kbps
 
-## Remote task port service
+## Remote task port service and streaming
 
-Click the button to obtain a web link that can control SVFI on this machine from another device.
+Both sit on the right of the Advanced toolbox page (red box below).
 
 <div align=center>
-<img src="/screenshots/en/30-remote-sr.png"  width=600>
+<img src="/screenshots/en/41-toolbox-B.png"  width=600>
 </div>
+
+### Remote task port service
+
+Click **Start Remote SR Service** to get a web link that can control SVFI on this machine from another device.
 
 Currently only **image super-resolution** is supported over the remote UI.
 
@@ -60,3 +70,14 @@ Typical use case: upload a photo from your phone, pick a model, and run super-re
 ::: warning
 Do not share this link publicly.
 :::
+
+### Streaming
+
+Start a local HLS stream of the selected task so you can watch the output (in-progress chunks or a finished file) in a player or browser on this machine or another device.
+
+1. Select the task in the input list.
+2. Turn **Enable Streaming** on.
+3. Pick an audio track and subtitle track if needed.
+4. When ready, a stream URL appears; open it in an HLS-capable player.
+
+Turn streaming off before you remove or replace that task.

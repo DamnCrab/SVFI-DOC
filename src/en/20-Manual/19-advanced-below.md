@@ -3,6 +3,12 @@ title: Options below advanced settings
 permalink: /en/pages/advanced-below/
 ---
 
+Debug, global settings, Turbo, and the export / restore buttons at the bottom of the Advanced panel.
+
+<div align=center>
+<img src="/screenshots/en/42-advanced-below-options.png"  width=600>
+</div>
+
 ## Output Current Settings
 
 Export the settings information as an `.ini` file, which can be shared with other users to contribute their settings. The usage method is to directly drag it into the software, and it will prompt that the preset has been successfully applied.

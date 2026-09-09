@@ -21,7 +21,7 @@ permalink: /zh/pages/restore-models/
 
 - basicvsrpp_ntire_t3_decompress_max_4x_trt 四倍放大去压缩模型t3 (TensorRT加速)（较难编译，不建议使用）
 
-## 视觉对比演示
+### 视觉对比演示
 
 <imgSlider :items="[
 {

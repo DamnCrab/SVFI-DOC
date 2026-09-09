@@ -47,6 +47,7 @@ export const zhSidebar: SidebarOptions = [
             "17-preset-bar.md",
             "18-toolbox.md",
             "19-advanced-below.md",
+            "191-realtime-window.md",
             "20-preferences.md",
             "21-advanced-cli.md",
             "23-other-advanced-settings.md",
@@ -61,6 +62,7 @@ export const zhSidebar: SidebarOptions = [
             "10-vfi-models.md",
             "20-sr-models.md",
             "30-restore-models.md",
+            "40-realtime-models.md",
         ],
     },
     {

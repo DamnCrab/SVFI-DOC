@@ -20,7 +20,7 @@ This series of algorithms consume a lot of video memory, it is recommended to us
 - basicvsrpp_ntire_t3_decompress_max_4x 4x upscale deencoding model t3 (recommended)
 - basicvsrpp_ntire_t3_decompress_max_4x_trt 4x upscale deencoding model t3 (TensorRT acceleration) (difficult to compile, not recommended)
 
-## Visual comparison
+### Visual comparison
 
 <imgSlider :items="[
 {

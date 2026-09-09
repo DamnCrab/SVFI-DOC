@@ -3,6 +3,12 @@ title: 软件偏好设置说明
 permalink: /zh/pages/preferences/
 ---
 
+左侧栏最下方齿轮进入偏好设置。队列、任务与个人相关选项如下。
+
+<div align=center>
+<img src="/screenshots/zh/43-preferences.png"  width=600>
+</div>
+
 ## 休息间隔
 
 每隔 X 小时让设备休息15分钟，期间暂停任务

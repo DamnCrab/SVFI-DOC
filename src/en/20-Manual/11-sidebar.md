@@ -44,3 +44,7 @@ View the software achievements and expandable or owned DLCs
 <div align=center>
 <img src="/screenshots/en/15-steam-page.png"  width=600>
 </div>
+
+## Realtime
+
+Real-time super-resolution or frame generation on any window. See [Real-time window scaling](/en/pages/realtime-window/).

@@ -3,6 +3,12 @@ title: 高级设置下方选项说明
 permalink: /zh/pages/advanced-below/
 ---
 
+高级设置面板最下方的调试、全局设置、涡轮增速，以及导出/恢复设置按钮。
+
+<div align=center>
+<img src="/screenshots/zh/42-advanced-below-options.png"  width=600>
+</div>
+
 ## 导出当前设置到文本文件
 
 导出设置信息为ini文件, 可分享给其他用户方便贡献自己的设置。使用方法直接拖入软件内, 会提示成功应用预设。

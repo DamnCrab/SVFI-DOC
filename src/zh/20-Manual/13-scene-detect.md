@@ -40,7 +40,7 @@ permalink: /zh/pages/scene-detect/
 
 ## 手动选择转场支持
 
-关闭“转场识别”按钮时显示
+关闭“转场识别”按钮时显示。
 
 JSON路径选项填写 Transition Chooser（TC）导出视频`转场列表文件`的路径，见[使用教程](https://youtu.be/opig4Ur_mxM?si=P85QMhrOn09r44Hb)。
 
@@ -48,6 +48,22 @@ JSON路径选项填写 Transition Chooser（TC）导出视频`转场列表文件
 
 <div align=center>
 <img src="/screenshots/zh/23-scene-detect-tc.png"  width=600>
+</div>
+
+也可以不依赖外部 TC：关闭自动转场识别后，用软件自带的离线检测生成 JSON，再在任务播放器里微调。
+
+1. 关闭**开启转场识别**，在转场设置中点击 **执行自动转场检测**，对当前输入视频做一次离线识别。完成后 JSON 路径会自动填入。
+2. 在任务列表中右键该条目，选择 **开启内部播放器来切分任务段**（也可直接打开播放器）。
+
+<div align=center>
+<img src="/screenshots/zh/22-auto-scene-detect-A.png"  width=600>
+</div>
+
+3. 打开播放器后，切到 **转场确认**。时间轴上的标记是检测结果。
+4. 在时间轴上右键：**标记当前帧为转场** 或 **删除转场帧**，即可增删转场点。
+
+<div align=center>
+<img src="/screenshots/zh/22-auto-scene-detect-B.png"  width=600>
 </div>
 
 ## 其他转场检测设置

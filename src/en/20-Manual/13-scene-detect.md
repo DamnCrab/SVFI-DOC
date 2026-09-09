@@ -39,7 +39,7 @@ If the similarity is greater than the threshold, it is considered a transition f
 
 ## Manual selection of transition support
 
-Display when the "scene detection" button is turned off
+Shown when **Enable scene detection** is turned off.
 
 The JSON path option fills in the path of the video `transition list file` exported from Transition Chooser (TC), see [Usage Tutorial](https://youtu.be/opig4Ur_mxM?si=P85QMhrOn09r44Hb).
 
@@ -47,6 +47,22 @@ This method enables the import of transitions manually marked using TC software 
 
 <div align=center>
 <img src="/screenshots/en/23-scene-detect-tc.png"  width=600>
+</div>
+
+You can also skip an external TC pass: with automatic scene detection off, run SVFI’s offline detector, then fine-tune the marks in the task player.
+
+1. Turn off **Enable scene detection**, then click **Transition Detection** to run an offline pass on the current input. The JSON path is filled in when it finishes.
+2. Right-click the task in the list and choose **Open internal player to split task segments** (or turn the player on).
+
+<div align=center>
+<img src="/screenshots/en/22-auto-scene-detect-A.png"  width=600>
+</div>
+
+3. In the player, switch to **Transition Confirmation**. Marks on the timeline are the detection result.
+4. Right-click the timeline to **Mark current frame as transition** or **Delete transition frame**.
+
+<div align=center>
+<img src="/screenshots/en/22-auto-scene-detect-B.png"  width=600>
 </div>
 
 ## Other scene detection settings

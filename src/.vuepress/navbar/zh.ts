@@ -37,6 +37,7 @@ export const zhNavbar = navbar([
             "/zh/20-Manual/17-preset-bar.md",
             "/zh/20-Manual/18-toolbox.md",
             "/zh/20-Manual/19-advanced-below.md",
+            "/zh/20-Manual/191-realtime-window.md",
             "/zh/20-Manual/20-preferences.md",
             "/zh/20-Manual/21-advanced-cli.md",
             "/zh/20-Manual/23-other-advanced-settings.md",
@@ -49,6 +50,7 @@ export const zhNavbar = navbar([
             "/zh/25-Model-Spec/10-vfi-models.md",
             "/zh/25-Model-Spec/20-sr-models.md",
             "/zh/25-Model-Spec/30-restore-models.md",
+            "/zh/25-Model-Spec/40-realtime-models.md",
         ],
     },
     {

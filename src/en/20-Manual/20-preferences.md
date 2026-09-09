@@ -3,6 +3,12 @@ title: Software preference settings
 permalink: /en/pages/preferences/
 ---
 
+Open Preferences from the gear at the bottom of the left sidebar. Queue, task, and personal options are shown below.
+
+<div align=center>
+<img src="/screenshots/en/43-preferences.png"  width=600>
+</div>
+
 ## Rest Interval
 
 Let the device rest for 15 minutes every X hours (temporarily pause the task)

@@ -44,3 +44,7 @@ permalink: /zh/pages/sidebar/
 <div align=center>
 <img src="/screenshots/zh/15-steam-page.png"  width=600>
 </div>
+
+## 实时超补
+
+对任意窗口做实时超分或帧生成。详见[任意窗口实时播放](/zh/pages/realtime-window/)。
