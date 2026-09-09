@@ -12,9 +12,9 @@ export default hopeTheme({
 
 
 
-    favicon: "/img/logo.png",
+    favicon: "/brand/logo.png",
 
-    logo: "/img/logo.png",
+    logo: "/brand/logo.png",
 
     repo: "Justin62628/Squirrel-RIFE",
 

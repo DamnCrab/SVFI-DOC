@@ -24,27 +24,27 @@ Effect reference:
 
 <cardList :items="[
 {
-img: '/img/bilibili/yuan.jpg',
+img: '/external/bilibili/06-genshin.jpg',
 name: 'Genshin Impact',
 desc: 'Drama CM short film, 8K 60fps',
 link: 'https://www.bilibili.com/video/BV1FS4y1C7RD',
 author: 'SVFI Vision ',
-avatar: '/img/logo.png'
+avatar: '/brand/logo.png'
 },
 {
-img: '/img/bilibili/umaron.jpg',
+img: '/external/bilibili/07-umamusume.jpg',
 name: 'Umaron',
 desc: 'Season 2 NCOP 8K 60fps',
 link: 'https://www.bilibili.com/video/BV1QY411b7e4',
 author: 'SVFI Vision',
-avatar: '/img/logo.png',
+avatar: '/brand/logo.png',
 },
 {
-img: '/img/bilibili/emilia.jpg',
+img: '/external/bilibili/08-re0.jpg',
 name: 'Re Zero-Starting Life in Another World',
 desc: 'Season 2 NCED Believe in you',
 link: 'https://www.bilibili.com/video/BV1kF411p7FB',
 author: 'SVFI Vision',
-avatar: '/img/logo.png'
+avatar: '/brand/logo.png'
 }
 ]"/>

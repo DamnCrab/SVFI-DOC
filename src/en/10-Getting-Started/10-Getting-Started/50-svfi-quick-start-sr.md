@@ -34,5 +34,5 @@ If the resolution of the images in the folder is different, enable the output im
 
    - Click **Encode** to start the super resolution task.
 
-  ![Steps to perform super resolution on a video](/Statics/en/QuickGuide/basic-settings-sr.png)
+  ![Steps to perform super resolution on a video](/screenshots/en/05-sr-steps.png)
 

@@ -35,4 +35,4 @@ permalink: /zh/pages/svfi-quick-start-sr/
 
    - 点击**一键压制**开始超分任务
 
-   ![对视频进行超分的步骤](/Statics/UserGuide/45.png)
+   ![对视频进行超分的步骤](/screenshots/zh/05-sr-steps.png)

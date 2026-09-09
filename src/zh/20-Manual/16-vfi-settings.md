@@ -4,7 +4,7 @@ permalink: /zh/pages/vfi-settings/
 ---
 
 <div align=center>
-<img src="/Statics/UserGuide/SettingsVFI.png"  width=600>
+<img src="/screenshots/zh/28-vfi-settings.png"  width=600>
 </div>
 
 ## 安全帧率
@@ -117,11 +117,11 @@ permalink: /zh/pages/vfi-settings/
 **开启视频流畅度优化后(前进消重)补帧效果如下**
 
 <div align=center>
-<img src="/Statics/UserGuide/65.gif"  width=600>
+<img src="/demos/03-dedup-before.gif"  width=600>
 </div>
 
 <div align=center>
-<img src="/Statics/UserGuide/66.gif"  width=600>
+<img src="/demos/04-dedup-after.gif"  width=600>
 </div>
 
 ## 负载显卡（补帧）

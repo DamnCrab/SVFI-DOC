@@ -4,7 +4,7 @@ permalink: /en/pages/vfi-settings/
 ---
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SettingsVFI.png"  width=600>
+<img src="/screenshots/en/28-vfi-settings.png"  width=600>
 </div>
 
 ## Safe FPS
@@ -117,11 +117,11 @@ It is recommended that you choose the dedup mode carefully. If you are frame int
 **Frame interpolation effect after enabling video smoothness optimization (forward dedup)**
 
 <div align=center>
-<img src="/Statics/UserGuide/65.gif"  width=600>
+<img src="/demos/03-dedup-before.gif"  width=600>
 </div>
 
 <div align=center>
-<img src="/Statics/UserGuide/66.gif"  width=600>
+<img src="/demos/04-dedup-after.gif"  width=600>
 </div>
 
 ## Process GPU (VFI)

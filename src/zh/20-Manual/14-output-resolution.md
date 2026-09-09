@@ -4,7 +4,7 @@ permalink: /zh/pages/output-resolution/
 ---
 
 <div align=center>
-<img src="/Statics/UserGuide/SettingsResolution.png"  width=600>
+<img src="/screenshots/zh/24-output-resolution.png"  width=600>
 </div>
 
 ## 输出文件分辨率
@@ -95,7 +95,7 @@ realCUGAN专用，显卡显存不足时使用
 ### 切割块大小
 
 <div align=center>
-<img src="/Statics/UserGuide/58.png"  width=600>
+<img src="/screenshots/zh/25-tile-size.png"  width=600>
 </div>
 
 - 有为显存大小制定的预设，也可以选择自定义调节

@@ -9,15 +9,15 @@ Before you officially use the software, please be sure to read the following:
 
 - Be sure to set and confirm the output folder before starting the task
 
-![](/Statics/en/UserGuide/set-output-folder.png)
+![](/screenshots/en/06-set-output-folder.png)
 
 - Please note that the output video file format should be as consistent as possible with the video input file format
   
    **Example as follows**
 
-![](/Statics/en/UserGuide/input-video-example.png)
+![](/screenshots/en/07-input-example.png)
 
-![](/Statics/en/UserGuide/set-output-extension.png)
+![](/screenshots/en/08-output-format.png)
 
 ::: tip
 If there is no corresponding format, it is recommended that you choose the mkv format
@@ -26,7 +26,7 @@ If there is no corresponding format, it is recommended that you choose the mkv f
 - The remaining space of the system disk should not be less than 1G
 - Before starting the task, check whether the options "Keep Audios" and "Keep Subtitles" are enabled. If checked, the audio and subtitle tracks of the original video can be retained.
 
-![](/Statics/en/UserGuide/keep-audios.png)
+![](/screenshots/en/09-keep-audio.png)
 
 - If Only performing super-resolution is desired, please switch the "Interpolate ratio" as 1x, and click the “Encode” to start the task; for frame rate interpolation and super-resolution at the same time, click the Interpolate (consumes more video memory)
 

@@ -4,7 +4,7 @@ permalink: /en/pages/preset-bar/
 ---
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SettingsPreset.png"  width=600>
+<img src="/screenshots/en/29-preset-bar.png"  width=600>
 </div>
 
 ## New preset from current settings

@@ -28,7 +28,7 @@ For professional version users: It is recommended to be familiar with the releas
 
 > Click to show advanced settings, and after opening the advanced settings panel, click the `Output Current Settings` to text file below.
 
-![img](/Statics/en/UserGuide/output-settings.png)
+![img](/screenshots/en/37-export-settings.png)
 
 > The "Date.settings.ini" file in the pop up folder is your settings file.
 
@@ -38,7 +38,7 @@ For professional version users: It is recommended to be familiar with the releas
 
 > Simply drag the settings file into the software to complete the settings loading, and a successful loading will pop up the following reminder.
 
-![img](/Statics/en/UserGuide/config-loaded.png)
+![img](/screenshots/en/39-config-loaded.png)
 
 ::: warning
 Importing settings from the community version to the professional version, or importing settings from different versions of SVFI may cause task execution errors (reason: loading unavailable functions).

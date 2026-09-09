@@ -37,7 +37,7 @@ SVFI对动漫素材和实拍素材的定义区分如下：
 :::
 
 <div align=center>
-<img src="/Statics/UserGuide/57.png"  width=600>
+<img src="/screenshots/zh/31-sr-settings.png"  width=600>
 </div>
 
 ## 对超分模型的介绍
@@ -197,16 +197,16 @@ realESR的NCNN版本，A卡，I卡，N卡通用
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/aniscale_in.png',
-    second: '/Statics/UserGuide/SrCompare/aniscale_out.png',
+	first: '/compare/01-aniscale-a-in.png',
+    second: '/compare/01-aniscale-a-out.png',
 	name: 'Aniscale Demo 1',
     desc: '2x-AniScale-compact 二倍超分模型，画面细节保留效果很好，涂抹感很低画面锐化低（显存占用较低，速度较慢）'
 }]"/>
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/aniscale_1_in.png',
-    second: '/Statics/UserGuide/SrCompare/aniscale_1_out.png',
+	first: '/compare/02-aniscale-b-in.png',
+    second: '/compare/02-aniscale-b-out.png',
 	name: 'Aniscale Demo 2',
     desc: '同上'
 }
@@ -214,8 +214,8 @@ realESR的NCNN版本，A卡，I卡，N卡通用
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/animevideo-v3_in.png',
-    second: '/Statics/UserGuide/SrCompare/animevideo-v3_out.png',
+	first: '/compare/03-animevideo-v3-in.png',
+    second: '/compare/03-animevideo-v3-out.png',
 	name: 'realesr-animevideov3-x2',
     desc: '二倍超分模型，画面细节保留效果很好，会有略微的涂抹感画面锐化中等（显存占用较低，速度较快，不建议开启TTA）'
 }
@@ -228,7 +228,7 @@ SVFI支持自行添加符合要求的超分模型权重。
 
 [OpenModelDB](https://openmodeldb.info/)支持的模型结构如下图
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_1.png"  width=600>
+<img src="/external/openmodeldb/01-structures.png"  width=600>
 </div>
 其中与SVFI兼容的有Compact，SPAN，ATD，ONNX（TensorRT）.
 
@@ -236,13 +236,13 @@ SVFI支持自行添加符合要求的超分模型权重。
 
 - 搜索Aniscale，可以看到待测模型AniScale-2-Compact
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_2.png"  width=600>
+<img src="/external/openmodeldb/02-aniscale-search.png"  width=600>
 </div>
 
 - 点击进入第一代Aniscale
 - 关注右侧的模型信息Size，`64nf`代表特征数量（“模型通道数”），`16nc`代表卷积数量（“模型深度”）
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_3.png"  width=600>
+<img src="/external/openmodeldb/03-model-info.png"  width=600>
 </div>
 
 - SVFI载入Compact模型的策略如下：
@@ -254,7 +254,7 @@ SVFI支持自行添加符合要求的超分模型权重。
 
 - 导入SPAN模型同理
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_4.png"  width=600>
+<img src="/external/openmodeldb/04-span.png"  width=600>
 </div>
 
 SVFI目前只能载入`nf=48`的模型，其他模型暂时不支持。其他魔改模型也不支持

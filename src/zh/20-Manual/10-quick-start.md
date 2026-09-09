@@ -10,15 +10,15 @@ permalink: /zh/pages/mustread/
 
 - 启动任务前一定要设置并且确认输出文件夹
 
-![](/Statics/UserGuide/46.png)
+![](/screenshots/zh/06-set-output-folder.png)
 
 - 请您注意输出视频文件格式尽量与视频输入文件格式一致
   
    **示例如下**
 
-![](/Statics/UserGuide/1.png)
+![](/screenshots/zh/07-input-example.png)
 
-![](/Statics/UserGuide/47.png)
+![](/screenshots/zh/08-output-format.png)
 :::tip
 如果没有对应格式，建议您选择mkv格式
 :::
@@ -26,12 +26,12 @@ permalink: /zh/pages/mustread/
 - 系统盘剩余空间大小不要小于1G
 - 任务启动前检查“导出带音频”和“导出带字幕”选项是否开启，如勾选即可无损保留原视频的音频字幕轨
 
-![](/Statics/UserGuide/48.png)
+![](/screenshots/zh/09-keep-audio.png)
 
 ::: tip
 鼠标悬浮在选项上方会弹出对应说明浮窗。推荐在调整软件默认设置前认真阅读此类选项说明，将为您节省不少的时间！
 :::
-![](/Statics/UserGuide/49.png)
+![](/screenshots/zh/10-one-click-vfi.png)
 
 - 仅进行超分辨率请将补帧倍数选为1倍, 点击一键压制开始任务; 补帧超分同时进行点击一键补帧(消耗更多显存)
 

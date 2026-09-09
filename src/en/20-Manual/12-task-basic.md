@@ -4,7 +4,7 @@ permalink: /en/pages/task-basic/
 ---
 
 <div align=center>
-<img src="/Statics/en/UserGuide/BasicSettings.png"  width=600>
+<img src="/screenshots/en/16-task-basic.png"  width=600>
 </div>
 
 ## Auto preset
@@ -38,7 +38,7 @@ Some frame interpolation models or smoothness modes require a 1× ratio, so you 
 Please select the task entry whose progress you want to restore before clicking this button. Then click "**Automatically Configure**", and the software will automatically restore the current task progress.
 
 <div align=center>
-<img src="/Statics/en/UserGuide/AutoLoadProgress.png"  width=600>
+<img src="/screenshots/en/17-autoload-progress.png"  width=600>
 </div>
 
 ### Start point and End point
@@ -46,7 +46,7 @@ Please select the task entry whose progress you want to restore before clicking 
 You can select the time period that needs processing
 
 <div align=center>
-<img src="/Statics/en/UserGuide/TaskIOTimepoint.png"  width=600>
+<img src="/screenshots/en/18-io-timepoint.png"  width=600>
 </div>
 
 >Input format: **hours:minutes:seconds**
@@ -63,15 +63,15 @@ Used when automatic progress search fails or when it is necessary to manually sp
 - Start Frame = `Single output block size in the output quality setting (rendering setting) * (Start from Chunk - 1)`.
 
 <div align=center>
-<img src="/Statics/UserGuide/8.png"  width=600>
+<img src="/screenshots/shared/01-chunk-files.png"  width=600>
 </div>
 
 <div align=center>
-<img src="/Statics/en/UserGuide/TaskIOChunk.png"  width=600>
+<img src="/screenshots/en/20-io-chunk.png"  width=600>
 </div>
 
 <div align=center>
-<img src="/Statics/en/UserGuide/TaskChunkFrameCnt.png"  width=600>
+<img src="/screenshots/en/21-chunk-frame-count.png"  width=600>
 </div>
 
 
@@ -82,5 +82,5 @@ As shown in the above figure, a video chunk has 1000 frames.
 Set the start block and start input frame count to the system default value, and **the software will automatically search for the restoration point and restore the task progress**.
 
 <div align=center>
-<img src="/Statics/UserGuide/61.gif"  width=600>
+<img src="/demos/02-chunk-preview.gif"  width=600>
 </div>

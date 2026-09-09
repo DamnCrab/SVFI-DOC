@@ -50,7 +50,7 @@ permalink: /zh/pages/toolbox/
 点击按钮获取网页链接，该链接可用于操控机上SVFI。
 
 <div align=center>
-<img src="/Statics/UserGuide/SettingsRemoteSR.png"  width=600>
+<img src="/screenshots/zh/30-remote-sr.png"  width=600>
 </div>
 
 当前仅支持超分图片功能。

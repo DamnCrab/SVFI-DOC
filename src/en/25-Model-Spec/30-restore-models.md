@@ -24,8 +24,8 @@ This series of algorithms consume a lot of video memory, it is recommended to us
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/t3_in.png',
-    second: '/Statics/UserGuide/SrCompare/t3_out.png',
+	first: '/compare/04-t3-in.png',
+    second: '/compare/04-t3-out.png',
 	name: 'BasicVSR++ Track3 (T3)',
     desc: 'basicvsrpp-ntire-t3-decompress-max-4x, excellent restoration on highly compressed with slow speed'
 }
@@ -43,23 +43,23 @@ The activation process is as follows:
 
 1. Enable the super-resolution function and select the correct model
 <div align=center>
-<img src="/Statics/en/UserGuide/inpaint_1.png"  width=600>
+<img src="/screenshots/en/32-inpaint-select-model.png"  width=600>
 </div>
 
 2. Enable the player function
 <div align=center>
-<img src="/Statics/en/UserGuide/inpaint_2.png"  width=600>
+<img src="/screenshots/en/33-inpaint-player.png"  width=600>
 </div>
 
 3. Enable the mask function
 <div align=center>
-<img src="/Statics/en/UserGuide/inpaint_3.png"  width=600>
+<img src="/screenshots/en/34-inpaint-mask.png"  width=600>
 </div>
 
 4. Draw the mask and save it
 
 <div align=center>
-<img src="/Statics/en/UserGuide/inpaint_4.png"  width=600>
+<img src="/screenshots/en/35-inpaint-draw-mask.png"  width=600>
 </div>
 
 This model will automatically identify and remove static watermarks in each mask area. Please make sure there is enough **dynamic change content** in the mask area, otherwise it cannot be automatically identified.
@@ -73,8 +73,8 @@ This model has poor performance in identifying and removing watermarks on **soli
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/inpaint_in.png',
-    second: '/Statics/UserGuide/SrCompare/inpaint_out.png',
+	first: '/compare/05-inpaint-in.png',
+    second: '/compare/05-inpaint-out.png',
 	name: 'InPaint Watermark Removal Effect Demonstration',
     desc: 'It is recommended that the sequence length is greater than 30'
 }

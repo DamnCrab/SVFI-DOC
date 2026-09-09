@@ -80,4 +80,18 @@ $env:Path = "C:\Program Files\nodejs;" + $env:Path; node -v; cd "D:\60-fps-Proje
 
 ## Images
 
-Put assets in `src/.vuepress/public/`. Prefer `/Statics/...` for Chinese pages and `/Statics/en/...` for English pages.
+Put assets in `src/.vuepress/public/`. Keep `favicon.ico` at the public root.
+
+| Folder | Role |
+|--------|------|
+| `brand/` | Site logo |
+| `screenshots/zh/` | Chinese UI screenshots, numbered in doc order |
+| `screenshots/en/` | English UI screenshots; same numbers as the zh counterparts |
+| `screenshots/shared/` | Locale-agnostic UI shots |
+| `demos/` | GIFs of software behavior |
+| `compare/` | Before/after model sliders |
+| `external/bilibili/` | Bilibili covers |
+| `external/wiki/` | Third-party educational stills |
+| `external/openmodeldb/` | OpenModelDB website screenshots |
+
+Image width should be 600px. Relocate files with `git mv`.

@@ -4,7 +4,7 @@ permalink: /en/pages/sidebar/
 ---
 
 <div align=center>
-<img src="/Statics/en/UserGuide/left-title-bar.png"  width=600>
+<img src="/screenshots/en/11-sidebar.png"  width=600>
 </div>
 
 ## Settings
@@ -12,7 +12,7 @@ permalink: /en/pages/sidebar/
 Main settings page
 
 <div align=center>
-<img src="/Statics/en/UserGuide/MainPage.png"  width=600>
+<img src="/screenshots/en/12-main-page.png"  width=600>
 </div>
 
 ## Preview
@@ -20,7 +20,7 @@ Main settings page
 Output preview page
 
 <div align=center>
-<img src="/Statics/en/UserGuide/PreviewPage.png"  width=600>
+<img src="/screenshots/en/13-preview-page.png"  width=600>
 </div>
 
 ::: tip
@@ -34,7 +34,7 @@ Preview is not available when **Turbo mode** is enabled together with **NVIDIA f
 View the program output information
 
 <div align=center>
-<img src="/Statics/en/UserGuide/StatusPage.png"  width=600>
+<img src="/screenshots/en/14-status-page.png"  width=600>
 </div>
 
 ## User Page
@@ -42,5 +42,5 @@ View the program output information
 View the software achievements and expandable or owned DLCs
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SteamPage.png"  width=600>
+<img src="/screenshots/en/15-steam-page.png"  width=600>
 </div>

@@ -118,7 +118,7 @@ interface CardItem {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../../.vuepress/public/img/logo.png");
+    background-image: url("../../.vuepress/public/brand/logo.png");
     background-repeat: no-repeat;
     background-position: center;
   }

@@ -4,7 +4,7 @@ permalink: /en/pages/output-resolution/
 ---
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SettingsResolution.png"  width=600>
+<img src="/screenshots/en/24-output-resolution.png"  width=600>
 </div>
 
 ## Output Resolution Preset

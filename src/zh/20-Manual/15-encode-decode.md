@@ -4,7 +4,7 @@ permalink: /zh/pages/encode-decode/
 ---
 
 <div align=center>
-<img src="/Statics/UserGuide/SettingsQuality.png"  width=600>
+<img src="/screenshots/zh/26-encode-quality.png"  width=600>
 </div>
 
 用于设置压制和解码参数的质量
@@ -291,7 +291,7 @@ permalink: /zh/pages/encode-decode/
 ## IO控制
 
 <div align=center>
-<img src="/Statics/UserGuide/60.png"  width=600>
+<img src="/screenshots/zh/27-io-control.png"  width=600>
 </div>
 
 ### 手动指定缓冲区内存大小

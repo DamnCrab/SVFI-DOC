@@ -74,5 +74,5 @@ Assume the frame rate of the footage is around 24 fps.
 But the commonly used super resolution models are summarized as follows:
 
 <div align=center>
-<img src="/Statics/UserGuide/sr_usage_1.png"  width=600>
+<img src="/screenshots/shared/02-preset-sr-usage.png"  width=600>
 </div>

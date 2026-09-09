@@ -19,21 +19,21 @@ Among common image formats, PNG and BMP are based on the RGB model.
 For example, the original image:
 
 <div align=center>
-<img src="/Picture/Video/Source.webp" alt="Original" width="600">
+<img src="/external/wiki/01-source.webp" alt="Original" width="600">
 </div>
 
 Showing only the intensity of the R, G, and B channels looks like this:
 
 <div align=center>
-<img src="/Picture/Video/R.webp" alt="RGB-R" width="600">
+<img src="/external/wiki/02-rgb-r.webp" alt="RGB-R" width="600">
 </div>
 
 <div align=center>
-<img src="/Picture/Video/G.webp" alt="RGB-G" width="600">
+<img src="/external/wiki/03-rgb-g.webp" alt="RGB-G" width="600">
 </div>
 
 <div align=center>
-<img src="/Picture/Video/B.webp" alt="RGB-B" width="600">
+<img src="/external/wiki/04-rgb-b.webp" alt="RGB-B" width="600">
 </div>
 
 Information and detail are not always evenly distributed across the three channels. Look at the blush on Nan Kotobuki's face: how distinct it is differs on the three planes. On the red plane it is almost indistinguishable; the difference mainly comes from the green and blue planes. The surrounding white cheeks are nearly saturated in all three colors, but the blush is saturated only in red, while green and blue are not. That is why the red stands out.
@@ -47,19 +47,19 @@ YUV does a similar job: it converts RGB data into another representation. There 
 Luma only:
 
 <div align=center>
-<img src="/Picture/Video/Y.webp" alt="YUV-Y" width="600">
+<img src="/external/wiki/05-yuv-y.webp" alt="YUV-Y" width="600">
 </div>
 
 Blue chroma only:
 
 <div align=center>
-<img src="/Picture/Video/Cb.webp" alt="YUV-Cb" width="600">
+<img src="/external/wiki/06-yuv-cb.webp" alt="YUV-Cb" width="600">
 </div>
 
 Red chroma only:
 
 <div align=center>
-<img src="/Picture/Video/Cr.webp" alt="YUV-Cr" width="600">
+<img src="/external/wiki/07-yuv-cr.webp" alt="YUV-Cr" width="600">
 </div>
 
 In image and video processing and storage, YUV is generally preferred for these reasons:
@@ -99,7 +99,7 @@ In other words, even if the final output only needs low precision, the numbers i
 Insufficient 8-bit precision mainly shows up in darker areas as banding.
 
 <div align=center>
-<img src="/Picture/Video/8bit.webp" alt="Banding" width="600">
+<img src="/external/wiki/08-banding.webp" alt="Banding" width="600">
 </div>
 
 Notice the wave-like rings on the right. That is what insufficient color precision looks like.

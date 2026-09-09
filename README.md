@@ -40,7 +40,7 @@ https://theme-hope.vuejs.press/zh/
 
 ## 图片路径
 
-图片请放在src/.vuepress/public/目录下，尽可能根据公用图片、多语言图片进行整理。
+图片请放在 `src/.vuepress/public/` 下并按用途分目录：`brand/`（Logo）、`screenshots/zh|en|shared/`（功能截图）、`demos/`（动图）、`compare/`（效果对比）、`external/`（外来封面/科普/第三方站点）。中英文功能截图用相同序号。`favicon.ico` 留在 public 根目录。使用 `git mv` 搬家。
 
 ## 配置文件
 

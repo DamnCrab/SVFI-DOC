@@ -50,7 +50,7 @@ If the task fails during the final merge, you can directly select the task item 
 Click the button to obtain a web link that can control SVFI on this machine from another device.
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SettingsRemoteSR.png"  width=600>
+<img src="/screenshots/en/30-remote-sr.png"  width=600>
 </div>
 
 Currently only **image super-resolution** is supported over the remote UI.

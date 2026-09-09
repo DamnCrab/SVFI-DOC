@@ -28,11 +28,11 @@ permalink: /zh/pages/useful-tips/
 
 > 点击显示高级设置, 打开高级设置面板后, 点击下方的导出当前设置到文本文件。
 
-![img](/Statics/UserGuide/62.png)
+![img](/screenshots/zh/37-export-settings.png)
 
 > 弹出文件夹内的"日期.settings.ini"文件即为您的设置文件。
 
-![img](/Statics/UserGuide/63.png)
+![img](/screenshots/zh/38-settings-ini.png)
 
 > 建议您重命名导出的settings文件并妥善保管, 欢迎您将自己觉得好用的设置上传至Steam工坊的教程栏目中。
 
@@ -40,7 +40,7 @@ permalink: /zh/pages/useful-tips/
 
 > 只需将settings文件拖入到软件内即可完成设置载入, 成功载入会弹出如下提醒。
 
-![img](/Statics/UserGuide/64.png)
+![img](/screenshots/zh/39-config-loaded.png)
 
 ::: warning
 社区版的设置导入到专业版中,或导入不同版本SVFI的设置可能会导致任务执行出错(原因: 载入了不可用功能),

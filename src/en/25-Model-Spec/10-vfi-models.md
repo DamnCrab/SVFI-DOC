@@ -62,8 +62,8 @@ please enable "Is SR later than VFI" in the "Use AI SR" settings of advanced set
 **DRBA Demo**
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/Statics/UserGuide/69.gif" width="300" style="display:inline-block;" />
-  <img src="/Statics/UserGuide/70.gif" width="300" style="display:inline-block;" />
+  <img src="/demos/05-drba-in.gif" width="300" style="display:inline-block;" />
+  <img src="/demos/06-drba-out.gif" width="300" style="display:inline-block;" />
 </div>
 
 The left side of the GIF shows the input, and the right side shows the output. The background (linear motion part) maintains linear motion after interpolation, while the characters (non-linear motion part) maintain their non-linear motion pattern.

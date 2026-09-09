@@ -20,27 +20,27 @@ SVFI使用基于深度网络的人工智能算法[RealESR](https://github.com/xi
 
 <cardList :items="[
 {
-img: '/img/bilibili/yuan.jpg',
+img: '/external/bilibili/06-genshin.jpg',
 name: '《原神》',
 desc: '剧情CM短片 8K60帧 SVFI补帧超分',
 link: 'https://www.bilibili.com/video/BV1FS4y1C7RD',
 author: 'SVFI视觉 ',
-avatar: '/img/logo.png'
+avatar: '/brand/logo.png'
 },
 {
-img: '/img/bilibili/umaron.jpg',
+img: '/external/bilibili/07-umamusume.jpg',
 name: '赛马娘',
 desc: '第二季 NCOP 8K60帧',
 link: 'https://www.bilibili.com/video/BV1QY411b7e4',
 author: 'SVFI视觉',
-avatar: '/img/logo.png',
+avatar: '/brand/logo.png',
 },
 {
-img: '/img/bilibili/emilia.jpg',
+img: '/external/bilibili/08-re0.jpg',
 name: 'Re：从零开始的异世界生活',
 desc: '第二季后半 NCED Believe in you',
 link: 'https://www.bilibili.com/video/BV1kF411p7FB',
 author: 'SVFI视觉',
-avatar: '/img/logo.png'
+avatar: '/brand/logo.png'
 }
 ]"/>

@@ -79,7 +79,7 @@ For each resolved pair:
      - `title`: English title consistent with the page.
      - `permalink`: `/en/pages/<slug>/` matching the zh slug.
      - Copy other keys (e.g. `sidebar`, `toc`) from the zh file unless English historically differed—prefer **parity** with zh unless a comment or user says otherwise.
-4. **Images and static assets**: English pages often use `/Statics/en/...` while zh uses `/Statics/...`. When updating text, **keep English asset paths**; if zh adds a new image, place the English version under the same `/Statics/en/` convention used by sibling English pages.
+4. **Images and static assets**: English UI screenshots live under `/screenshots/en/`; Chinese under `/screenshots/zh/` (same numeric prefix). Shared GIFs, compares, and third-party stills use `/demos/`, `/compare/`, `/external/...` in both locales. When zh adds a new UI shot, add the English counterpart under `/screenshots/en/` with the same number.
 
 ### 6) Navbar consistency (optional)
 

@@ -4,7 +4,7 @@ permalink: /en/pages/scene-detect/
 ---
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SettingsScdet.png"  width=600>
+<img src="/screenshots/en/22-scene-detect.png"  width=600>
 </div>
 
 ## Enable scene detection
@@ -18,7 +18,7 @@ After enabling the scene detection option, the default value for the parameter b
 **As shown in the picture: jelly produced by missed judgment in transition**
 
 <div align=center>
-<img src="/Statics/UserGuide/14.gif"  width=600>
+<img src="/demos/01-scene-detect.gif"  width=600>
 </div>
 
 ::: warning
@@ -46,7 +46,7 @@ The JSON path option fills in the path of the video `transition list file` expor
 This method enables the import of transitions manually marked using TC software to replace the automatically recognized transitions, providing full control over where to fill frames and where not to in the input video.
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SettingsScdetTC.png"  width=600>
+<img src="/screenshots/en/23-scene-detect-tc.png"  width=600>
 </div>
 
 ## Other scene detection settings

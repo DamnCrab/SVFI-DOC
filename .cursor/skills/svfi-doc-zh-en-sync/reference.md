@@ -34,4 +34,4 @@ Same `<slug>` for paired pages. Slug must be ASCII with no HTML-escaping needed.
 
 ## Static images
 
-English docs typically reference assets under `/Statics/en/...`. Chinese docs may use `/Statics/...` without `en`. Preserve locale-specific paths when syncing body text.
+English UI screenshots use `/screenshots/en/...`. Chinese UI screenshots use `/screenshots/zh/...` with the same numeric prefix. Shared GIFs, compares, and third-party stills (`/demos/`, `/compare/`, `/external/...`) are the same path in both locales.

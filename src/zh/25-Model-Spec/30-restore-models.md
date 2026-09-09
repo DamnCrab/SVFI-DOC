@@ -25,8 +25,8 @@ permalink: /zh/pages/restore-models/
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/t3_in.png',
-    second: '/Statics/UserGuide/SrCompare/t3_out.png',
+	first: '/compare/04-t3-in.png',
+    second: '/compare/04-t3-out.png',
 	name: 'BasicVSR++ Track3 （T3）',
     desc: 'basicvsrpp-ntire-t3-decompress-max-4x 一倍修复模型，对高压缩画面修复效果极佳（速度较慢）'
 }
@@ -44,23 +44,23 @@ permalink: /zh/pages/restore-models/
 
 1. 开启超分功能并选择正确的模型
 <div align=center>
-<img src="/Statics/UserGuide/inpaint_1.png"  width=600>
+<img src="/screenshots/zh/32-inpaint-select-model.png"  width=600>
 </div>
 
 2. 开启播放器功能
 <div align=center>
-<img src="/Statics/UserGuide/inpaint_2.png"  width=600>
+<img src="/screenshots/zh/33-inpaint-player.png"  width=600>
 </div>
 
 3. 开启蒙版功能
 <div align=center>
-<img src="/Statics/UserGuide/inpaint_3.png"  width=600>
+<img src="/screenshots/zh/34-inpaint-mask.png"  width=600>
 </div>
 
 4. 绘制蒙版并保存
 
 <div align=center>
-<img src="/Statics/UserGuide/inpaint_4.png"  width=600>
+<img src="/screenshots/zh/35-inpaint-draw-mask.png"  width=600>
 </div>
 
 该模型会自动识别每块蒙版区域内的静态水印并去除。请务必保证蒙版区域内留有足够的**动态变化内容**，否则无法自动识别。
@@ -73,8 +73,8 @@ permalink: /zh/pages/restore-models/
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/inpaint_in.png',
-    second: '/Statics/UserGuide/SrCompare/inpaint_out.png',
+	first: '/compare/05-inpaint-in.png',
+    second: '/compare/05-inpaint-out.png',
 	name: 'InPaint去水印效果演示',
     desc: '建议序列长度大于30'
 }

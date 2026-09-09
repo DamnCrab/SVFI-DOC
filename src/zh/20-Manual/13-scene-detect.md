@@ -4,7 +4,7 @@ permalink: /zh/pages/scene-detect/
 ---
 
 <div align=center>
-<img src="/Statics/UserGuide/SettingsScdet.png"  width=600>
+<img src="/screenshots/zh/22-scene-detect.png"  width=600>
 </div>
 
 ## 开启转场识别
@@ -19,7 +19,7 @@ permalink: /zh/pages/scene-detect/
 **如图：转场漏判产生果冻**
 
 <div align=center>
-<img src="/Statics/UserGuide/14.gif"  width=600>
+<img src="/demos/01-scene-detect.gif"  width=600>
 </div>
 
 ::: warning
@@ -47,7 +47,7 @@ JSON路径选项填写 Transition Chooser（TC）导出视频`转场列表文件
 该方法能够导入使用TC软件手动标记的转场替换自动识别的转场，来手动实现对输入视频何处补帧何处不补的完全控制。
 
 <div align=center>
-<img src="/Statics/UserGuide/SettingsScdetTC.png"  width=600>
+<img src="/screenshots/zh/23-scene-detect-tc.png"  width=600>
 </div>
 
 ## 其他转场检测设置

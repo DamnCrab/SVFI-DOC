@@ -4,7 +4,7 @@ permalink: /zh/pages/task-basic/
 ---
 
 <div align=center>
-<img src="/Statics/UserGuide/BasicSettings.png"  width=600>
+<img src="/screenshots/zh/16-task-basic.png"  width=600>
 </div>
 
 ## 自动预设
@@ -40,7 +40,7 @@ permalink: /zh/pages/task-basic/
 点击此按钮前请您先点击要恢复进度的任务条目。随后点击“**自动寻找进度**”，软件将自动恢复当前任务进度。
 
 <div align=center>
-<img src="/Statics/UserGuide/AutoLoadProgress.png"  width=600>
+<img src="/screenshots/zh/17-autoload-progress.png"  width=600>
 </div>
 
 ### 起始补帧时刻和结束补帧时刻
@@ -48,7 +48,7 @@ permalink: /zh/pages/task-basic/
 可以选择需要补帧的时间段
 
 <div align=center>
-<img src="/Statics/UserGuide/TaskIOTimepoint.png"  width=600>
+<img src="/screenshots/zh/18-io-timepoint.png"  width=600>
 </div>
 
 >输入格式: **小时:分钟:秒**
@@ -65,15 +65,15 @@ permalink: /zh/pages/task-basic/
 - 起始输入帧数 = 输出质量设置（渲染设置）中`单一输出区块大小 * (起始区块计数 - 1)`
 
 <div align=center>
-<img src="/Statics/UserGuide/8.png"  width=600>
+<img src="/screenshots/shared/01-chunk-files.png"  width=600>
 </div>
 
 <div align=center>
-<img src="/Statics/UserGuide/TaskIOChunk.png"  width=600>
+<img src="/screenshots/zh/20-io-chunk.png"  width=600>
 </div>
 
 <div align=center>
-<img src="/Statics/UserGuide/TaskChunkFrameCnt.png"  width=600>
+<img src="/screenshots/zh/21-chunk-frame-count.png"  width=600>
 </div>
 
 如上图，一个视频chunk有1000帧
@@ -83,5 +83,5 @@ permalink: /zh/pages/task-basic/
 将起始区块和起始输入帧数归为系统默认值，**软件将自动搜索复原点并恢复任务进度**
 
 <div align=center>
-<img src="/Statics/UserGuide/61.gif"  width=600>
+<img src="/demos/02-chunk-preview.gif"  width=600>
 </div>

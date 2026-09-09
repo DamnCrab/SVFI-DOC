@@ -76,5 +76,5 @@ permalink: /zh/pages/svfi-presets/
 但大家常使用的超分模型统计如下：
 
 <div align=center>
-<img src="/Statics/UserGuide/sr_usage_1.png"  width=600>
+<img src="/screenshots/shared/02-preset-sr-usage.png"  width=600>
 </div>

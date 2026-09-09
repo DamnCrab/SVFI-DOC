@@ -37,7 +37,7 @@ In particular, we consider animations made with 3D/3G backgrounds + 2D character
 :::
 
 <div align=center>
-<img src="/Statics/en/UserGuide/sr-settings.png"  width=600>
+<img src="/screenshots/en/31-sr-settings.png"  width=600>
 </div>
 
 ## Introduction to the Super-Resolution Model
@@ -178,16 +178,16 @@ In theory, the effect is the same as the non-TRT version, but there are differen
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/aniscale_in.png',
-    second: '/Statics/UserGuide/SrCompare/aniscale_out.png',
+	first: '/compare/01-aniscale-a-in.png',
+    second: '/compare/01-aniscale-a-out.png',
 	name: 'Aniscale Demo 1',
     desc: '2x-AniScale-compact, 2x super-resolution model, good details, low smearing and sharpening'
 }]"/>
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/aniscale_1_in.png',
-    second: '/Statics/UserGuide/SrCompare/aniscale_1_out.png',
+	first: '/compare/02-aniscale-b-in.png',
+    second: '/compare/02-aniscale-b-out.png',
 	name: 'Aniscale Demo 2',
     desc: 'Same as above'
 }
@@ -195,8 +195,8 @@ In theory, the effect is the same as the non-TRT version, but there are differen
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/animevideo-v3_in.png',
-    second: '/Statics/UserGuide/SrCompare/animevideo-v3_out.png',
+	first: '/compare/03-animevideo-v3-in.png',
+    second: '/compare/03-animevideo-v3-out.png',
 	name: 'ealesr-animevideov3-x2',
     desc: 'Two-times super-resolution model, good details, slight smearing, medium sharpening'
 }
@@ -209,7 +209,7 @@ SVFI supports adding super-resolution model weights that meet the requirements b
 
 [OpenModelDB](https://openmodeldb.info/) supports the model structure as shown in the following figure
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_1.png"  width=600>
+<img src="/external/openmodeldb/01-structures.png"  width=600>
 </div>
 Among them, the ones compatible with SVFI are Compact, SPAN, ATD, ONNX (TensorRT).
 
@@ -217,13 +217,13 @@ Among them, the ones compatible with SVFI are Compact, SPAN, ATD, ONNX (TensorRT
 
 - Search for Aniscale, and you can see the model to be tested, AniScale-2-Compact
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_2.png"  width=600>
+<img src="/external/openmodeldb/02-aniscale-search.png"  width=600>
 </div>
 
 - Click to enter the first generation of Aniscale.
 - Pay attention to the model information Size on the right side, `64nf` represents the number of features ("model channel number"), and `16nc` represents the number of convolutions ("model depth").
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_3.png"  width=600>
+<img src="/external/openmodeldb/03-model-info.png"  width=600>
 </div>
 
 - The strategy for SVFI to load Compact models is as follows:
@@ -235,7 +235,7 @@ Among them, the ones compatible with SVFI are Compact, SPAN, ATD, ONNX (TensorRT
 
 - The same is true for importing the SPAN model.
 <div align=center>
-<img src="/Statics/UserGuide/openmodeldb_4.png"  width=600>
+<img src="/external/openmodeldb/04-span.png"  width=600>
 </div>
 
 SVFI can currently only load models with `nf=48`, and other models are not supported for the time being. Other modified models are also not supported.

@@ -4,7 +4,7 @@ permalink: /en/pages/encode-decode/
 ---
 
 <div align=center>
-<img src="/Statics/en/UserGuide/SettingsQuality.png"  width=600>
+<img src="/screenshots/en/26-encode-quality.png"  width=600>
 </div>
 
 Used to tune encoding (compression) and decoding quality.
@@ -290,7 +290,7 @@ Under normal circumstances, the end will miss (output frame rate / input frame r
 ## IO control
 
 <div align=center>
-<img src="/Statics/en/UserGuide/io-control.png"  width=600>
+<img src="/screenshots/en/27-io-control.png"  width=600>
 </div>
 
 ### Assign RAM buffer manually

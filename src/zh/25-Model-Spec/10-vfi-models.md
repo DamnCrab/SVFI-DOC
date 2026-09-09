@@ -66,8 +66,8 @@ SVFI集成若干补帧算法，如RIFE、GMFSS、Tariff等
 **DRBA效果演示**
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/Statics/UserGuide/69.gif" width="300" style="display:inline-block;" />
-  <img src="/Statics/UserGuide/70.gif" width="300" style="display:inline-block;" />
+  <img src="/demos/05-drba-in.gif" width="300" style="display:inline-block;" />
+  <img src="/demos/06-drba-out.gif" width="300" style="display:inline-block;" />
 </div>
 
 GIF左侧为输入，右侧为导出效果,可以看见画面中的背景(线性运动部分)在补偿后依然保持线性运动，而画面中的人物(非线性运动部分)依然保持非线性的运动规则

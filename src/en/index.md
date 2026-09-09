@@ -1,7 +1,7 @@
 ---
 home: true
 title: Home Page
-heroImage: /img/logo.png
+heroImage: /brand/logo.png
 heroText: Squirrel-RIFE Video Frame Interpolation
 tagline:
 actionText: Focus on anime super-resolution and frame interpolation →
@@ -39,28 +39,28 @@ postList: none
 
 <cardList :items="[
 {
-	img: '/img/bilibili/hitoshizuku.jpg',
+	img: '/external/bilibili/01-hitoshizuku.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
 	desc: 'Hitoshizuku',
 	link: 'https://www.bilibili.com/video/BV1Gm41127gL/',
 	author: 'SVFI Vision',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 },
 {
-	img: '/img/bilibili/melody.jpg',
+	img: '/external/bilibili/02-melody.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
 	desc: 'Melody',
 	link: 'https://www.bilibili.com/video/BV1HT42117aQ',
 	author: 'SVFI Vision',
-	avatar: '/img/logo.png',
+	avatar: '/brand/logo.png',
 },
 {
-	img: '/img/bilibili/utakotoba.jpg',
+	img: '/external/bilibili/03-utakotoba.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
 	desc: 'Utakotoba',
 	link: 'https://www.bilibili.com/video/BV14r421K7ik',
 	author: 'SVFI Vision',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 }
 ]"/>
 
@@ -68,20 +68,20 @@ postList: none
 
 <cardList :items="[
 {
-	img: '/img/bilibili/SVFI6.0.jpg',
+	img: '/external/bilibili/04-tutorial-6.jpg',
     name: 'Usage tutorial',
 	desc: 'A concise tutorial for SVFI 6.0',
 	link: 'https://www.bilibili.com/video/BV1jM411f778',
 	author: 'SVFI Vision ',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 },
 {
-	img: '/img/bilibili/Settings.jpg',
+	img: '/external/bilibili/05-tutorial-settings.jpg',
 	name: 'Settings tutorial',
 	desc: 'Duplicate-frame removal demo and how to configure it',
 	link: 'https://www.bilibili.com/video/BV1Gt4y1G7Un',
 	author: 'SVFI Vision',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 }
 ]"/>
 
@@ -97,7 +97,7 @@ postList: none
 ```component VPCard
 title: Squirrel Anime Enhance
 desc: 🚀 Open-source super-resolution software focused on compatible SR tools
-logo: /img/logo.png
+logo: /brand/logo.png
 link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
 background: #eaeef1
 ```

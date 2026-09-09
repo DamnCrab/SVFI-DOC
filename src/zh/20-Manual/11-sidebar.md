@@ -4,7 +4,7 @@ permalink: /zh/pages/sidebar/
 ---
 
 <div align=center>
-<img src="/Statics/UserGuide/68.png"  width=600>
+<img src="/screenshots/zh/11-sidebar.png"  width=600>
 </div>
 
 ## 设置
@@ -12,7 +12,7 @@ permalink: /zh/pages/sidebar/
 主设置页
 
 <div align=center>
-<img src="/Statics/UserGuide/MainPage.png"  width=600>
+<img src="/screenshots/zh/12-main-page.png"  width=600>
 </div>
 
 ## 预览
@@ -20,7 +20,7 @@ permalink: /zh/pages/sidebar/
 输出预览页
 
 <div align=center>
-<img src="/Statics/UserGuide/PreviewPage.png"  width=600>
+<img src="/screenshots/zh/13-preview-page.png"  width=600>
 </div>
 
 ::: tip
@@ -34,7 +34,7 @@ permalink: /zh/pages/sidebar/
 查看程序输出信息
 
 <div align=center>
-<img src="/Statics/UserGuide/StatusPage.png"  width=600>
+<img src="/screenshots/zh/14-status-page.png"  width=600>
 </div>
 
 ## 用户页
@@ -42,5 +42,5 @@ permalink: /zh/pages/sidebar/
 查看已获得的软件成就与可扩展或已拥有的DLC
 
 <div align=center>
-<img src="/Statics/UserGuide/SteamPage.png"  width=600>
+<img src="/screenshots/zh/15-steam-page.png"  width=600>
 </div>

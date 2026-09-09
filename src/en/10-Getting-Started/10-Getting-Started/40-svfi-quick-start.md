@@ -17,17 +17,17 @@ Whether you have any previous experience with frame interpolation, please believ
 - Confirm that your graphics card meets the minimum requirements of this software: **GTX 750Ti** or above, and NVIDIA graphics cards with the **Maxwell** architecture or above. If you do not meet this requirement, please refund in time and use other frame interpolation software.
 - Find SVFI in the Steam content library page
 
-![](/Statics/en/QuickGuide/launch.png)
+![](/screenshots/en/01-steam-library.png)
 
 - Start SVFI
 
-![](/Statics/en/QuickGuide/select-launch.png)
+![](/screenshots/en/02-launch.png)
 
 - Wait for the software to start, and you will see the following blank operation page. This is the **main interface** of SVFI. Please note that this tutorial applies to SVFI 6.x and later, and the software version number you see may differ from the screenshots.
   - To interpolate frames for a **video**, you first need to select the option ❶ "Input video file" below, and select the video to be processed in the popped up file selection window.
   - You can also "drag" the video directly into the window ❷.
 
-![](/Statics/en/QuickGuide/input-a-video.png)
+![](/screenshots/en/03-input-video.png)
 
 ::: warning
 SVFI only supports 8bit RGB image sequence input, and neither image sequences nor videos support transparent channel processing
@@ -41,7 +41,7 @@ SVFI only supports 8bit RGB image sequence input, and neither image sequences no
 
   - You will find that the frame rate of the input video is already displayed on the left side of option ❸. You can directly select the frame rate ratio for frame interpolation in option ❸ "Interpolate ratio", or manually fill in the frame rate in ❹ "Output FPS". **You can enter any value, for example 60 or 120**; SVFI will handle everything for you.
 
-![](/Statics/en/QuickGuide/basic-settings.png)
+![](/screenshots/en/04-basic-settings.png)
 
 - Congratulations, you have completed all the necessary settings. Now click ❺ **Interpolate** and you can go make a cup of coffee and wait for the output result in the output folder.
   - Before clicking ❺ **Interpolate**, in order to prevent errors, please close any other software that may occupy the graphic card memory.

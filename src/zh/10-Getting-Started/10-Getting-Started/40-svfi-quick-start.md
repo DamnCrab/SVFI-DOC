@@ -19,17 +19,17 @@ permalink: /zh/pages/svfi-quick-start/
 - 确认自己的显卡符合本软件的最低要求：**GTX 750Ti**及以上，**Maxwell**架构以上的NVIDIA显卡，或同规格的AMD显卡。如不符合此要求，请及时退款止损，并换用其他补帧软件。
 - 在Steam的内容库页面找到SVFI。
 
-![](/Statics/QuickGuide/clip_image002.png)
+![](/screenshots/zh/01-steam-library.png)
 
 - 启动SVFI
 
-![](/Statics/QuickGuide/clip_image003.png)
+![](/screenshots/zh/02-launch.png)
 
 - 等待软件启动，您将会看到以下的空白操作页面。这是SVFI的**主界面**。请注意，此教程针对SVFI 6.x以上的版本，您看到的软件版本号也许与截图不同。
   - 要对一个**视频**进行补帧，您首先需要选择下面的选项❶“输入视频文件”，在弹出的文件选择窗口选择要补帧的视频。
   - 您也可以将视频直接“拖”入窗口❷中。
 
-![](/Statics/QuickGuide/clip_image008.png)
+![](/screenshots/zh/03-input-video.png)
 
 ::: warning
 SVFI仅支持8bit RGB图像序列输入，图片序列和视频均不支持透明通道处理
@@ -43,7 +43,7 @@ SVFI仅支持8bit RGB图像序列输入，图片序列和视频均不支持透�
 
   - 您会发现选项❸左边已经显示了输入视频的帧率。您可以直接在选项❸“补帧倍率”中选择补帧的帧率倍数，或者在❹“输出帧率”中手动填写帧率。**填多少都可以，比如60、120**，SVFI会帮你处理好一切。
 
-![](/Statics/QuickGuide/clip_image009.png)
+![](/screenshots/zh/04-basic-settings.png)
 
 - 恭喜您已经完成了所有必要设置，现在点击❺**一键补帧**，就可以去泡杯咖啡，在输出文件夹等待输出结果。
   - 在点击❺**一键补帧**之前，为了防止报错，请关闭其他任何可能占用显存的软件。

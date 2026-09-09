@@ -4,7 +4,7 @@ permalink: /zh/pages/preset-bar/
 ---
 
 <div align=center>
-<img src="/Statics/UserGuide/SettingsPreset.png"  width=600>
+<img src="/screenshots/zh/29-preset-bar.png"  width=600>
 </div>
 
 ## 基于当前设置新建预设

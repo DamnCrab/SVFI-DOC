@@ -1,7 +1,7 @@
 ---
 home: true
 title: 首页
-heroImage: /img/logo.png
+heroImage: /brand/logo.png
 heroText: Squirrel-RIFE Video Frame Interpolation
 tagline:
 actionText: 专注于动漫超分补帧 →
@@ -40,28 +40,28 @@ postList: none
 
 <cardList :items="[
 {
-	img: '/img/bilibili/hitoshizuku.jpg',
+	img: '/external/bilibili/01-hitoshizuku.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
 	desc: '壱雫空（Hitoshizuku）',
 	link: 'https://www.bilibili.com/video/BV1Gm41127gL/',
 	author: 'SVFI视觉',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 },
 {
-	img: '/img/bilibili/melody.jpg',
+	img: '/external/bilibili/02-melody.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
 	desc: '迷路日々（Melody）',
 	link: 'https://www.bilibili.com/video/BV1HT42117aQ',
 	author: 'SVFI视觉',
-	avatar: '/img/logo.png',
+	avatar: '/brand/logo.png',
 },
 {
-	img: '/img/bilibili/utakotoba.jpg',
+	img: '/external/bilibili/03-utakotoba.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
 	desc: '詩超絆（Utakotoba）',
 	link: 'https://www.bilibili.com/video/BV14r421K7ik',
 	author: 'SVFI视觉',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 }
 ]"/>
 
@@ -69,20 +69,20 @@ postList: none
 
 <cardList :items="[
 {
-	img: '/img/bilibili/SVFI6.0.jpg',
+	img: '/external/bilibili/04-tutorial-6.jpg',
     name: '使用教程',
 	desc: 'SVFI 6.0版本简明使用教程',
 	link: 'https://www.bilibili.com/video/BV1jM411f778',
 	author: 'SVFI视觉 ',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 },
 {
-	img: '/img/bilibili/Settings.jpg',
+	img: '/external/bilibili/05-tutorial-settings.jpg',
 	name: '设置教程',
 	desc: '重复帧去除功能演示+如何设置',
 	link: 'https://www.bilibili.com/video/BV1Gt4y1G7Un',
 	author: 'SVFI视觉',
-	avatar: '/img/logo.png'
+	avatar: '/brand/logo.png'
 }
 ]"/>
 
@@ -98,7 +98,7 @@ postList: none
 ```component VPCard
 title: Squirrel Anime Enhance
 desc: 🚀开源超分软件，专注于兼容的超分工具
-logo: /img/logo.png
+logo: /brand/logo.png
 link: https://github.com/Justin62628/Squirrel-RIFE/releases/tag/v3.20.4
 background: #eaeef1
 ```
