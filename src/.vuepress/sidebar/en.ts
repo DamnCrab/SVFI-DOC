@@ -47,9 +47,19 @@ export const enSidebar: SidebarOptions = [
             "18-toolbox.md",
             "19-advanced-below.md",
             "20-preferences.md",
-            "22-model-spec.md",
             "21-advanced-cli.md",
             "23-other-advanced-settings.md",
+        ],
+    },
+    {
+        text: "Model specs",
+        icon: "fa-solid fa-cube",
+        collapsible: true,
+        prefix: "en/25-Model-Spec/",
+        children: [
+            "10-vfi-models.md",
+            "20-sr-models.md",
+            "30-restore-models.md",
         ],
     },
     {

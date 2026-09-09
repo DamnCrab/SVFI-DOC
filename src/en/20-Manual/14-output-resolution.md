@@ -57,7 +57,7 @@ Specify which graphics card to use for super-resolution.
 
 ## Super-Resolution Algorithm
 
-See [Model Specification](/en/pages/model-spec/)
+See [Super-resolution models](/en/pages/sr-models/)
 
 ## Introduction to Other Super-Resolution Options
 

@@ -47,6 +47,7 @@ Paired pages use the **same relative path** after the locale folder:
 | `src/zh/10-Getting-Started/10-Getting-Started/<file>.md` | `src/en/10-Getting-Started/10-Getting-Started/<file>.md` |
 | `src/zh/10-Getting-Started/20-Related-Articles/<file>.md` | `src/en/10-Getting-Started/20-Related-Articles/<file>.md` |
 | `src/zh/20-Manual/<file>.md` | `src/en/20-Manual/<file>.md` |
+| `src/zh/25-Model-Spec/<file>.md` | `src/en/25-Model-Spec/<file>.md` |
 | `src/zh/30-FAQ/<file>.md` | `src/en/30-FAQ/<file>.md` |
 | `src/zh/40-Support/<file>.md` | `src/en/40-Support/<file>.md` |
 
@@ -96,9 +97,9 @@ Order of `children` entries should stay aligned between locales. Use `git mv` wh
 
 ## Examples
 
-**Example A**: `git diff` shows `src/zh/20-Manual/22-model-spec.md` changed.
+**Example A**: `git diff` shows `src/zh/25-Model-Spec/10-vfi-models.md` changed.
 
-- Map to `src/en/20-Manual/22-model-spec.md`.
+- Map to `src/en/25-Model-Spec/10-vfi-models.md`.
 - Read diff and zh file; update the English file to match structure and translate new paragraphs.
 
 **Example B**: `src/zh/index.md` changed.

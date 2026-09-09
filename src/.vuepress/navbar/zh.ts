@@ -38,9 +38,17 @@ export const zhNavbar = navbar([
             "/zh/20-Manual/18-toolbox.md",
             "/zh/20-Manual/19-advanced-below.md",
             "/zh/20-Manual/20-preferences.md",
-            "/zh/20-Manual/22-model-spec.md",
             "/zh/20-Manual/21-advanced-cli.md",
             "/zh/20-Manual/23-other-advanced-settings.md",
+        ],
+    },
+    {
+        text: "模型说明",
+        icon: "fa-solid fa-cube",
+        children: [
+            "/zh/25-Model-Spec/10-vfi-models.md",
+            "/zh/25-Model-Spec/20-sr-models.md",
+            "/zh/25-Model-Spec/30-restore-models.md",
         ],
     },
     {

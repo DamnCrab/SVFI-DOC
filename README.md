@@ -32,7 +32,7 @@ https://theme-hope.vuejs.press/zh/
 - 中文文档放在 `src/zh/`
 - 英文文档放在 `src/en/`
 - 页面 permalink 使用 `/zh/pages/<slug>/` 或 `/en/pages/<slug>/`（slug 只用 ASCII，避免需要 HTML 转义的字符）
-- Markdown 文件名与目录名使用 ASCII kebab-case，例如 `src/zh/20-Manual/22-model-spec.md`
+- Markdown 文件名与目录名使用 ASCII kebab-case，例如 `src/zh/25-Model-Spec/10-vfi-models.md`
 
 ## 路由
 

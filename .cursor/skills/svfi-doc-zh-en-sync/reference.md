@@ -11,6 +11,7 @@ Children arrays in `src/.vuepress/navbar/zh.ts` and `src/.vuepress/navbar/en.ts`
 | `10-Getting-Started/10-Getting-Started/` | same |
 | `10-Getting-Started/20-Related-Articles/` | same |
 | `20-Manual/` | same |
+| `25-Model-Spec/` | same |
 | `30-FAQ/` | same |
 | `40-Support/` | same |
 
@@ -18,7 +19,7 @@ Wiki-style articles (`01-image-quality.md`, `03-encoder.md`, `07-what-is-encode.
 
 ## Filename pairing rule
 
-Pair by identical path after `src/zh/` vs `src/en/` (e.g. `20-Manual/22-model-spec.md` or `30-FAQ/10-tips.md`).
+Pair by identical path after `src/zh/` vs `src/en/` (e.g. `25-Model-Spec/10-vfi-models.md` or `30-FAQ/10-tips.md`).
 
 Do not pair by Chinese/English title text.
 

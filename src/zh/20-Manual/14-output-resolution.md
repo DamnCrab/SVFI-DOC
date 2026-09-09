@@ -55,7 +55,7 @@ permalink: /zh/pages/output-resolution/
 
 ## 超分算法介绍
 
-见[模型选择说明](/zh/pages/model-spec/)
+见[超分模型说明](/zh/pages/sr-models/)
 
 ## 其他超分选项介绍
 

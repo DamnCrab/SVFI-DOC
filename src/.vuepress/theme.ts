@@ -168,6 +168,8 @@ export default hopeTheme({
                 "/": "/zh/",
                 "/zh/pages/advanced-settings/": "/zh/pages/task-basic/",
                 "/en/pages/advanced-settings/": "/en/pages/task-basic/",
+                "/zh/pages/model-spec/": "/zh/pages/vfi-models/",
+                "/en/pages/model-spec/": "/en/pages/vfi-models/",
             },
         },
     },

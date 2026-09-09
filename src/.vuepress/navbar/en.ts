@@ -38,9 +38,17 @@ export const enNavbar = navbar([
       "/en/20-Manual/18-toolbox.md",
       "/en/20-Manual/19-advanced-below.md",
       "/en/20-Manual/20-preferences.md",
-      "/en/20-Manual/22-model-spec.md",
       "/en/20-Manual/21-advanced-cli.md",
       "/en/20-Manual/23-other-advanced-settings.md",
+    ],
+  },
+  {
+    text: "Model specs",
+    icon: "fa-solid fa-cube",
+    children: [
+      "/en/25-Model-Spec/10-vfi-models.md",
+      "/en/25-Model-Spec/20-sr-models.md",
+      "/en/25-Model-Spec/30-restore-models.md",
     ],
   },
   {

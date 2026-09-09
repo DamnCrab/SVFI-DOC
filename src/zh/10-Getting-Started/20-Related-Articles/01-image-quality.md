@@ -18,15 +18,23 @@ permalink: /zh/pages/wiki-image-quality/
 
 比如说原图：
 
-![原图](/Picture/Video/Source.webp)
+<div align=center>
+<img src="/Picture/Video/Source.webp" alt="原图" width="600">
+</div>
 
 分别只显示R G B通道的强度，效果如下：
 
-![RGB-R](/Picture/Video/R.webp)
+<div align=center>
+<img src="/Picture/Video/R.webp" alt="RGB-R" width="600">
+</div>
 
-![RGB-G](/Picture/Video/G.webp)
+<div align=center>
+<img src="/Picture/Video/G.webp" alt="RGB-G" width="600">
+</div>
 
-![RGB-B](/Picture/Video/B.webp)
+<div align=center>
+<img src="/Picture/Video/B.webp" alt="RGB-B" width="600">
+</div>
 
 三个通道下，信息量和细节程度不一定是均匀分布的。比如说可以注意南小鸟脸上的红晕，在3个平面上的区分程度就不同——红色平面下几乎无从区分，造成区别的主要是绿色和蓝色的平面。外围白色的脸颊，三色都近乎饱和；但是红晕部分，只有红色饱和，绿色和蓝色不饱和。这是造成红色凸显的原因。
 
@@ -38,15 +46,21 @@ YUV模型干的是类似的事儿。通过对RGB数据的合理转换，得到�
 
 只有亮度通道：
 
-![YUV-Y](/Picture/Video/Y.webp)
+<div align=center>
+<img src="/Picture/Video/Y.webp" alt="YUV-Y" width="600">
+</div>
 
 只有蓝色色度：
 
-![YUV-Cb](/Picture/Video/Cb.webp)
+<div align=center>
+<img src="/Picture/Video/Cb.webp" alt="YUV-Cb" width="600">
+</div>
 
 只有红色色度：
 
-![YUV-Cr](/Picture/Video/Cr.webp)
+<div align=center>
+<img src="/Picture/Video/Cr.webp" alt="YUV-Cr" width="600">
+</div>
 
 在图像视频的加工与储存中，YUV格式一般更受欢迎，理由如下：
 
@@ -84,7 +98,9 @@ YUV模型干的是类似的事儿。通过对RGB数据的合理转换，得到�
 
 8bit精度不足，主要表现在亮度较低的区域，容易形成色带。
 
-![色带](/Picture/Video/8bit.webp)
+<div align=center>
+<img src="/Picture/Video/8bit.webp" alt="色带" width="600">
+</div>
 
 注意这图右边那一圈圈跟波浪一样的效果。这就是颜色精度不足的表现。
 

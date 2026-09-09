@@ -130,7 +130,7 @@ permalink: /zh/pages/vfi-settings/
 
 ## 补帧算法介绍
 
-见[模型选择说明](/zh/pages/model-spec/)
+见[补帧模型说明](/zh/pages/vfi-models/)
 
 ## 其他补帧选项介绍
 

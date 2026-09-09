@@ -130,7 +130,7 @@ Specify which graphics card to use for frame interpolation
 
 ## Introduction to Frame Interpolation Algorithms
 
-See [Model Specification](/en/pages/model-spec/)
+See [Frame interpolation models](/en/pages/vfi-models/)
 
 ## Other Frame Interpolation Options Introduction
 

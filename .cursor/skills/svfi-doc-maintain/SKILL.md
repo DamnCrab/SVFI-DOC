@@ -23,6 +23,7 @@ Section folders (same names in both locales):
 | `10-Getting-Started/10-Getting-Started/` | Getting started articles |
 | `10-Getting-Started/20-Related-Articles/` | Related articles (wiki) |
 | `20-Manual/` | User manuals |
+| `25-Model-Spec/` | VFI / SR / restoration model notes |
 | `30-FAQ/` | FAQ and presets |
 | `40-Support/` | About / support |
 
@@ -30,12 +31,12 @@ Homepages: `src/zh/index.md`, `src/en/index.md`.
 
 ### Filenames
 
-- ASCII kebab-case only: `22-model-spec.md`
-- Keep the numeric prefix: `22-model-spec.md`
+- ASCII kebab-case only: `10-vfi-models.md`
+- Keep the numeric prefix: `10-vfi-models.md`
 - No spaces, Chinese, `&`, or other characters that need HTML escaping
 - Paired zh/en pages should share the same relative path after `src/zh/` and `src/en/` when both exist
 
-Example: `src/20.指南/22.模型选择说明.md` → `src/zh/20-Manual/22-model-spec.md` (English: `src/en/20-Manual/22-model-spec.md`)
+Example: `src/20.指南/22.模型选择说明.md` → split under `src/zh/25-Model-Spec/` (English: `src/en/25-Model-Spec/`)
 
 ### Permalinks
 
@@ -59,7 +60,7 @@ When adding a page, update both:
 - `src/.vuepress/navbar/zh.ts` and `src/.vuepress/navbar/en.ts`
 - `src/.vuepress/sidebar/zh.ts` and `src/.vuepress/sidebar/en.ts`
 
-Keep `children` order aligned across locales. Paths are file paths under `src/`, e.g. `/zh/20-Manual/22-model-spec.md`.
+Keep `children` order aligned across locales. Paths are file paths under `src/`, e.g. `/zh/25-Model-Spec/10-vfi-models.md`.
 
 ## Preview
 
