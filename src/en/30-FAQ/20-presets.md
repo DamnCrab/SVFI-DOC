@@ -1,8 +1,6 @@
 ---
 title: Presets
 permalink: /en/pages/svfi-presets/
-sidebar: false
-toc: false
 ---
 ## Recommended Presets for Frame Interpolation Tasks
 

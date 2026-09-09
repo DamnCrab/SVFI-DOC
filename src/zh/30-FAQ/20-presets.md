@@ -1,8 +1,6 @@
 ---
 title: 预设
 permalink: /zh/pages/svfi-presets/
-sidebar: false
-toc: false
 ---
 
 ## 补帧任务预设推荐

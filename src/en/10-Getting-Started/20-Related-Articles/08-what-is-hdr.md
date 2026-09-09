@@ -1,8 +1,6 @@
 ---
 title: What is HDR
 permalink: /en/pages/wiki-what-is-hdr/
-sidebar: false
-toc: false
 ---
 
 Please read <https://wangwei1237.github.io/2021/01/26/HDR-introduction/>

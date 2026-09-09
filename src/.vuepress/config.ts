@@ -1,4 +1,5 @@
 import {defineUserConfig} from "vuepress";
+import {viteBundler} from "@vuepress/bundler-vite";
 import theme from "./theme.js";
 import {getDirname, path} from '@vuepress/utils'
 import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
@@ -7,8 +8,23 @@ import {registerComponentsPlugin} from '@vuepress/plugin-register-components'
 const __dirname = import.meta.dirname || getDirname(import.meta.url)
 const baseUrl:"/" | `/${string}/` = (process.env.BASEURL || "/") as any
 
+const sassSilence = {
+    quietDeps: true,
+    silenceDeprecations: ["if-function"],
+}
+
 export default defineUserConfig({
     base: baseUrl,
+    bundler: viteBundler({
+        viteOptions: {
+            css: {
+                preprocessorOptions: {
+                    scss: sassSilence,
+                    sass: sassSilence,
+                },
+            },
+        },
+    }),
     locales: {
         "/": {
             lang: "zh-CN",

@@ -1,8 +1,6 @@
 ---
 title: What is SR
 permalink: /en/pages/what-is-sr/
-sidebar: false
-toc: false
 ---
 
 
@@ -19,7 +17,7 @@ For the processing task of the same video, SVFI will perform super resolution fi
 :::
 
 ::: right
-[Description of SVFI built-in super resolution algorithm](/en/pages/advanced-settings/#introduction-to-the-super-resolution-model)
+[Description of SVFI built-in super resolution algorithm](/en/pages/output-resolution/#super-resolution-algorithm)
 :::
 
 Effect reference:

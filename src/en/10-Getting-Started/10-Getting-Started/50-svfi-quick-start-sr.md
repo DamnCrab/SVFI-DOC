@@ -1,8 +1,6 @@
 ---
 title: Get Started with SVFI SR
 permalink: /en/pages/svfi-quick-start-sr/
-sidebar: false
-toc: false
 ---
 ::: tip
 This feature requires the purchase of the [Professional DLC](https://store.steampowered.com/app/1718750/SVFI_Professional/).
@@ -28,7 +26,7 @@ If the resolution of the images in the folder is different, enable the output im
 
 2. Super resolution of videos
 
-   - Refer to [the introduction of various super resolution algorithms and their corresponding effects of different models](/en/pages/advanced-settings/#introduction-to-the-super-resolution-model). Select the desired super resolution algorithm and super resolution model.
+   - Refer to [the introduction of various super resolution algorithms and their corresponding effects of different models](/en/pages/output-resolution/#super-resolution-algorithm). Select the desired super resolution algorithm and super resolution model.
 
    - Drag the video into the software or click **Input Video File** to select the video to be super resolved.
 

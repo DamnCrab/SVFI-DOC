@@ -4,7 +4,7 @@ permalink: /en/pages/svfi-cli/
 ---
 
 ::: warning
-This page is for advanced users. Please read the [detailed explanation of advanced content](/en/pages/advanced-settings/) first.
+This page is for advanced users. Please read the [Basic task settings](/en/pages/task-basic/) first.
 :::
 SVFI supports running via the command line
 ::: tip

@@ -1,8 +1,6 @@
 ---
 title: Get Started with SVFI
 permalink: /en/pages/svfi-quick-start/
-sidebar: false
-toc: false
 ---
 ## SVFI Quick Start Guide
 

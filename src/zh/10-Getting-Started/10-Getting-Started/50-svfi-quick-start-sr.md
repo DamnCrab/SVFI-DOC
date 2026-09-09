@@ -1,8 +1,6 @@
 ---
 title: 快速上手SVFI超分
 permalink: /zh/pages/svfi-quick-start-sr/
-sidebar: false
-toc: false
 ---
 
 ::: tip
@@ -29,7 +27,7 @@ toc: false
 
 2. 对视频进行超分
 
-   - 参考[各种超分算法与其不同模型对应效果的介绍](/zh/pages/advanced-settings/#对超分模型的介绍)。选择心仪的超分算法和超分模型
+   - 参考[各种超分算法与其不同模型对应效果的介绍](/zh/pages/output-resolution/#超分算法介绍)。选择心仪的超分算法和超分模型
 
    - 将视频拖入到软件内或点击**输入视频文件**来选择要进行超分的视频
 

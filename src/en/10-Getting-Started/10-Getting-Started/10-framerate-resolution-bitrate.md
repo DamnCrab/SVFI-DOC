@@ -1,7 +1,6 @@
 ---
 title: What is frame rate, resolution and bitrate
 permalink: /en/pages/fps-resolution-bitrate/
-sidebar: false
 ---
 
 ::: tip

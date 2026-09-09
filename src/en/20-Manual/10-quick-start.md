@@ -40,7 +40,7 @@ If you encounter problems during the use of the software, please read [Common Pr
 
 ## Explanation of advanced options
 
-If you want to know more about advanced setting options, please read [Detailed Explanation of Advanced Settings](/en/pages/advanced-settings/)
+If you want to know more about advanced setting options, please read the [Basic task settings](/en/pages/task-basic/)
 
 ## Command line option description
 

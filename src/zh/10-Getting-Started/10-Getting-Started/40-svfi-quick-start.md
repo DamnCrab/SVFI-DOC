@@ -1,8 +1,6 @@
 ---
 title: 快速上手SVFI
 permalink: /zh/pages/svfi-quick-start/
-sidebar: false
-toc: false
 ---
 
 ## SVFI 上手指南

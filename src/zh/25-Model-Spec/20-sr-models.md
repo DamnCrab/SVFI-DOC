@@ -1,82 +1,7 @@
 ---
-title: 模型选择介绍
-permalink: /zh/pages/model-spec/
-
+title: 超分模型说明
+permalink: /zh/pages/sr-models/
 ---
-以下内容是软件内置AI模型的特性介绍
-
-
-# 补帧算法
-
-SVFI集成若干补帧算法，如RIFE、GMFSS、Tariff等
-
-这些算法在不同类型的素材上性能不同，分别用于实拍及动画素材的算法及模型见[预设](/zh/pages/svfi-presets/)及下方介绍
-
-## 补帧模型介绍
-
-- RIFE：高速，常用的补帧算法
-
-| 模型名称                | 优点                                           | 缺点                                      |
-|-------------------------|------------------------------------------------|-------------------------------------------|
-| 4.25+                   | 最新一代算法，适用于绝大多数实拍补帧场景       |                                         |
-| 4.18                    | 开启双向光流与动态光流时，实拍补帧质量或更高   | 部分功能需手动开启，兼容性略低            |
-| rpr_v7_2.3_ultra        | 第三代算法，组合模型，适应复杂画面能力强       |                                         |
-| rpr_v7_2.3_ultra#2      | 组合模型，更能适应复杂画面                    |                                         |
-| 4.6-4.7                 | 第二代算法，流畅稳定，支持非整数倍帧率场景     | 精细度不如新一代算法                      |
-| 4.8                     | 针对动漫素材训练优化，动漫补帧效果优秀         | 对实拍补帧效果不佳                        |
-| 4.9                     | 动漫与实拍素材均有优化，补实拍效果提升         | 速度与上一代基本一致                      |
-| 2.3                     | 初代经典算法                                   | 兼容性差，不支持非整数倍帧率场景          |
-
-::: tip
-带有`ncnn`字样的模型使用[ncnn](https://github.com/Tencent/ncnn)作为前向推理框架，其兼容N卡及A卡，不带有此字样的模型无法用于A卡及核显。
-:::
-
-- ncnn-rife：支持各种显卡版本的RIFE，兼容性好，速度快，质量比RIFE略差。
-
-- GIMMVfi: 不错的实拍补帧模型 [GIMM-VFI](https://github.com/GSeanCDAT/GIMM-VFI/tree/main)
-
-- GMFSS：速度慢，动漫补帧质量最高
-
-| 模型名称    | 优点                                                 | 缺点                     |
-|-------------|------------------------------------------------------|--------------------------|
-| pg104       | 最新的GMFSS动漫模型，当前最强大的动漫补帧模型       | 慢                        |
-| Umss_v1     | 与pg104一样，专精于动漫补帧，部分场景更流畅、杂质更少 | 速度略慢于pg104           |
-| union_v     | 结构稳定，画面流畅                                   | 模糊略多于basic           |
-
-
-::: warning
-该系列模型消耗显存资源较多，不建议使用该系列模型进行4K及以上分辨率的补帧。
-
-如果需要超分补帧同时进行，请勾选**输出分辨率设置**的**先补帧后超分**，或手动拆分为两个步骤执行。
-
-若遇到瑕疵加剧的情况，则建议使用默认设置：先超分再补帧
-:::
-
-- Tariff：当前主推的新一代补帧算法
-
-| 模型名称 | 优点 | 缺点 |
-|----------|------|------|
-| UPG | 质量媲美GMFSS pg 104，效果快一倍 | - |
-| PWR | 比UPG快一倍 | 平移画面可能会出现抖动 |
-
-- DRBA: 保留动漫原始节奏的补帧模型
-
-| 模型名称          | 优点                                                                                  | 缺点         |
-|------------------|---------------------------------------------------------------------------------------|--------------|
-| DRBA_RIFE_v4.26  | 适应动画原始节奏的补帧模型，速度较快，配合涡轮加速模式在一些显卡上可实现实时观看速度 | -            |
-| DRBA_GmfSs_pg    | 高质量导出适应动画原始节奏的补帧结果，效果稳定 | 速度较慢     |
-
-**DRBA效果演示**
-
-<div style="display: flex; justify-content: center; align-items: center;">
-  <img src="/Statics/UserGuide/69.gif" width="300" style="display:inline-block;" />
-  <img src="/Statics/UserGuide/70.gif" width="300" style="display:inline-block;" />
-</div>
-
-GIF左侧为输入，右侧为导出效果,可以看见画面中的背景(线性运动部分)在补偿后依然保持线性运动，而画面中的人物(非线性运动部分)依然保持非线性的运动规则
-
-
-# 超分算法
 
 ::: tip
 使用这些算法需购买[专业版DLC](https://store.steampowered.com/app/1718750/SVFI_Professional/)
@@ -92,7 +17,7 @@ GIF左侧为输入，右侧为导出效果,可以看见画面中的背景(线性
 | ncnnCugan | 动漫 |  | √ | 
 | waifuCuda | 动漫 |  | × |
 |PureBasicVSR | 实拍 |  | × |
-| BasicVSR++ T3 | 实拍 | √ | × |
+| [BasicVSR++ T3](/zh/pages/restore-models/) | 实拍 | √ | × |
 | ATD | 实拍 | √ | × |
 | realESR | 通用 |  | × |
 | ncnnRealESR | 通用 |  | √ |
@@ -165,21 +90,9 @@ realESR的NCNN版本，A卡，I卡，N卡通用
 
 仅一个四倍放大模型(AnimeSR_v2_x4.pth), 效果相比cugan更保守
 
-### BasicVSRPlusPlusRestore 
+### BasicVSRPlusPlusRestore
 
-实拍超分算法，效果依赖超分序列长度
-
-::: tip
-该算法仅在公测Beta版本中可用
-:::
-
-::: warning
-此系列算法消耗显存较多，建议使用6G以上的显卡
-:::
-
-- basicvsrpp_ntire_t3_decompress_max_4x 四倍放大去压缩模型t3（推荐使用）
-
-- basicvsrpp_ntire_t3_decompress_max_4x_trt 四倍放大去压缩模型t3 (TensorRT加速)（较难编译，不建议使用）
+一倍画质恢复模型，详见[画质恢复模型说明](/zh/pages/restore-models/)。
 
 ### Anime4K 
 
@@ -284,15 +197,6 @@ realESR的NCNN版本，A卡，I卡，N卡通用
 
 <imgSlider :items="[
 {
-	first: '/Statics/UserGuide/SrCompare/t3_in.png',
-    second: '/Statics/UserGuide/SrCompare/t3_out.png',
-	name: 'BasicVSR++ Track3 （T3）',
-    desc: 'basicvsrpp-ntire-t3-decompress-max-4x 一倍修复模型，对高压缩画面修复效果极佳（速度较慢）'
-}
-]"/>
-
-<imgSlider :items="[
-{
 	first: '/Statics/UserGuide/SrCompare/aniscale_in.png',
     second: '/Statics/UserGuide/SrCompare/aniscale_out.png',
 	name: 'Aniscale Demo 1',
@@ -382,57 +286,3 @@ SVFI支持的超分模型onnx要求满足以下条件：
 - nc => number of convs, 
 - nb => number of blocks
 :::
-
-## 对一些放置在超分栏目的特殊模型的介绍
-
-### InPaint 去水印模型
-
-::: tip
-该算法仅在专业版DLC的公测Beta版本中可用，需要手动前往Steam设置-测试版中选择
-:::
-
-- inpaint_sttn_1x: 目前该模型仅支持一倍修复，无超分功能，需配合蒙版功能使用：
-
-开启流程如下：
-
-1. 开启超分功能并选择正确的模型
-<div align=center>
-<img src="/Statics/UserGuide/inpaint_1.png"  width=600>
-</div>
-
-2. 开启播放器功能
-<div align=center>
-<img src="/Statics/UserGuide/inpaint_2.png"  width=600>
-</div>
-
-3. 开启蒙版功能
-<div align=center>
-<img src="/Statics/UserGuide/inpaint_3.png"  width=600>
-</div>
-
-4. 绘制蒙版并保存
-
-<div align=center>
-<img src="/Statics/UserGuide/inpaint_4.png"  width=600>
-</div>
-
-该模型会自动识别每块蒙版区域内的静态水印并去除。请务必保证蒙版区域内留有足够的**动态变化内容**，否则无法自动识别。
-
-::: warning
-该模型对于**纯色背景/静态内容**上的水印识别及去除性能较差。
-:::
-
-5. 点击一键压制开始去水印
-
-<imgSlider :items="[
-{
-	first: '/Statics/UserGuide/SrCompare/inpaint_in.png',
-    second: '/Statics/UserGuide/SrCompare/inpaint_out.png',
-	name: 'InPaint去水印效果演示',
-    desc: '建议序列长度大于30'
-}
-]"/>
-
-### DeMosaic 去马赛克模型
-
-字面意思

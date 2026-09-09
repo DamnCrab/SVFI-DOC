@@ -1,8 +1,6 @@
 ---
 title: What is VFI
 permalink: /en/pages/what-is-vfi/
-sidebar: false
-toc: false
 ---
 
 ## Video Frame Interpolation = VFI
@@ -14,7 +12,7 @@ Common algorithms include "MEMC" based on [hardware](https://en.wikipedia.org/wi
 SVFI uses the deep learning-based frame interpolation algorithm [RIFE and its derivatives](https://github.com/megvii-research/ECCV2022-RIFE) to interpolate the frame, and its quality is better than other algorithms.
 
 ::: right
-[Description of SVFI built-in VFI](/en/pages/advanced-settings/#vfi-model)
+[Description of SVFI built-in VFI](/en/pages/vfi-settings/)
 :::
 
 

@@ -1,8 +1,6 @@
 ---
 title: 什么是压制
 permalink: /zh/pages/wiki-what-is-encode/
-sidebar: false
-toc: false
 ---
 
 

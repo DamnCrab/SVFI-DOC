@@ -1,8 +1,6 @@
 ---
 title: 什么是超分
 permalink: /zh/pages/what-is-sr/
-sidebar: false
-toc: false
 ---
 
 
@@ -15,7 +13,7 @@ toc: false
 SVFI使用基于深度网络的人工智能算法[RealESR](https://github.com/xinntao/Real-ESRGAN), [RealCUGAN](https://github.com/bilibili/ailab/tree/main/Real-CUGAN)等进行超分，其在动漫上的超分效果比其他算法更好。
 
 ::: right
-[SVFI内置超分算法说明](/zh/pages/advanced-settings/#对超分模型的介绍)
+[SVFI内置超分算法说明](/zh/pages/output-resolution/#超分算法介绍)
 :::
 
 效果参考：

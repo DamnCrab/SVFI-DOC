@@ -1,7 +1,6 @@
 ---
 title: 什么是帧率、分辨率和码率
 permalink: /zh/pages/fps-resolution-bitrate/
-sidebar: false
 ---
 
 ::: tip

@@ -45,7 +45,7 @@ permalink: /zh/pages/mustread/
 
 ## 高级选项说明
 
-若要研究高级设置选项，请阅读[高级设置详解](/zh/pages/advanced-settings/)
+若要研究高级设置选项，请阅读[任务基本设置说明](/zh/pages/task-basic/)
 
 ## 命令行选项说明
 

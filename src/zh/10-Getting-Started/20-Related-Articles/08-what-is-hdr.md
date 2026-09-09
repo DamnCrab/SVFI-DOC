@@ -1,8 +1,6 @@
 ---
 title: 什么是HDR
 permalink: /zh/pages/wiki-what-is-hdr/
-sidebar: false
-toc: false
 ---
 
 请查阅 <https://wangwei1237.github.io/2021/01/26/HDR-introduction/>

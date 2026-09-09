@@ -1,8 +1,6 @@
 ---
 title: Fund
 permalink: /en/pages/support-this-project/
-sidebar: false
-article: false
 ---
 
 ::: center

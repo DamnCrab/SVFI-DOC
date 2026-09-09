@@ -1,0 +1,87 @@
+---
+title: 任务基本设置说明
+permalink: /zh/pages/task-basic/
+---
+
+<div align=center>
+<img src="/Statics/UserGuide/BasicSettings.png"  width=600>
+</div>
+
+## 自动预设
+
+根据“速度优先”和“质量优先”的偏好自动控制高级设置中设置为“AUTO”的选项。
+
+目前能被该设置影响的选项包括设置为AUTO时的补帧模型选择以及压制选项。
+
+当该选项偏向“速度优先”时，会将相关设置调整为执行速度更快、但是输出质量可能一般的选项，否则调整为执行速度慢、但是输出质量普遍有保证的选项。
+
+## 基础IO控制
+
+设置输出是否带字幕、音频，输出的帧率是多少等。
+
+当**补帧倍率**选项被激活时，输出帧率 = 输入帧率 $\times$ **补帧倍率**。但是在实际输出时，软件仍然会按照输出帧率显示的帧率输出视频。换言之，这里的**补帧倍率**只是为了方便快速填写一些常见的输出帧率。
+
+::: tip
+有些补帧模型或流畅度优化模式必须使用1x倍率，因此需要手动点击**输出帧率**并设置为与输入帧率相同的帧率。
+:::
+
+## 工作状态恢复
+
+### 自动寻找进度
+
+::: tip
+
+- 当遇到任务中途断电或者其他以外情况终止任务导致程序退出的情况，可以通过点击**自动寻找进度**来恢复上次的区块位置。
+- 也可以直接将项目文件夹拖入软件中，软件将自动寻找该项目文件夹对应的进度。
+- 如果发现项目文件夹拖入后没有反应，注意不要使用具有系统管理员权限的Administrator账号登录Steam或开启软件。
+
+:::
+
+点击此按钮前请您先点击要恢复进度的任务条目。随后点击“**自动寻找进度**”，软件将自动恢复当前任务进度。
+
+<div align=center>
+<img src="/Statics/UserGuide/AutoLoadProgress.png"  width=600>
+</div>
+
+### 起始补帧时刻和结束补帧时刻
+
+可以选择需要补帧的时间段
+
+<div align=center>
+<img src="/Statics/UserGuide/TaskIOTimepoint.png"  width=600>
+</div>
+
+>输入格式: **小时:分钟:秒**
+
+::: warning
+指定起始补帧时刻和结束补帧时刻后，手动终止或断电后可能会导致进度恢复失败
+:::
+
+### 起始区块计数和起始输入帧数
+
+自动寻找进度失败或需手动指定补帧起始位置时用，可用于手动恢复补帧进度
+
+- 起始区块计数 = 输出文件夹中导出的**最后一个chunk数 + 1**（例如图中的chunk-001，应将起始区块计数为**1+1=2**）
+- 起始输入帧数 = 输出质量设置（渲染设置）中`单一输出区块大小 * (起始区块计数 - 1)`
+
+<div align=center>
+<img src="/Statics/UserGuide/8.png"  width=600>
+</div>
+
+<div align=center>
+<img src="/Statics/UserGuide/TaskIOChunk.png"  width=600>
+</div>
+
+<div align=center>
+<img src="/Statics/UserGuide/TaskChunkFrameCnt.png"  width=600>
+</div>
+
+如上图，一个视频chunk有1000帧
+
+### 复原至原点
+
+将起始区块和起始输入帧数归为系统默认值，**软件将自动搜索复原点并恢复任务进度**
+
+<div align=center>
+<img src="/Statics/UserGuide/61.gif"  width=600>
+</div>

@@ -164,6 +164,11 @@ export default hopeTheme({
         redirect: {
             autoLocale: true,
             defaultLocale: "/zh/",
+            config: {
+                "/": "/zh/",
+                "/zh/pages/advanced-settings/": "/zh/pages/task-basic/",
+                "/en/pages/advanced-settings/": "/en/pages/task-basic/",
+            },
         },
     },
 });

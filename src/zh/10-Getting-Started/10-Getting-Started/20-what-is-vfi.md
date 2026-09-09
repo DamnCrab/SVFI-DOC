@@ -1,8 +1,6 @@
 ---
 title: 什么是补帧
 permalink: /zh/pages/what-is-vfi/
-sidebar: false
-toc: false
 ---
 
 ## 补帧 = 内插帧 => Video Frame Interpolation = VFI
@@ -14,7 +12,7 @@ toc: false
 SVFI使用基于深度学习的插帧算法[RIFE及其衍生算法](https://github.com/megvii-research/ECCV2022-RIFE)进行补帧，其效果比其他算法更好。
 
 ::: right
-[SVFI内置补帧算法说明](/zh/pages/advanced-settings/#补帧设置)
+[SVFI内置补帧算法说明](/zh/pages/vfi-settings/)
 :::
 
 

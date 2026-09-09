@@ -1,8 +1,6 @@
 ---
 title: '支持这个项目'
 permalink: /zh/pages/support-this-project/
-sidebar: false
-article: false
 ---
 
 ::: center

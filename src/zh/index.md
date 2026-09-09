@@ -40,10 +40,10 @@ postList: none
 
 <cardList :items="[
 {
-	img: '/img/bilibili/mayoiuta.jpg',
+	img: '/img/bilibili/hitoshizuku.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
-	desc: '迷星叫（Mayoiuta）',
-	link: 'https://www.bilibili.com/video/BV1Qr421g7LT/',
+	desc: '壱雫空（Hitoshizuku）',
+	link: 'https://www.bilibili.com/video/BV1Gm41127gL/',
 	author: 'SVFI视觉',
 	avatar: '/img/logo.png'
 },
@@ -88,7 +88,7 @@ postList: none
 
 ## 📕 本文档建议阅读顺序
 
-- 视频处理基础与软件入门：[快速入门的所有文章](/zh/pages/fps-resolution-bitrate/) -> [必读导引](/zh/pages/mustread/) -> [预设](/zh/pages/svfi-presets/) -> [高级内容详解](/zh/pages/advanced-settings/) -> [模型选择介绍](/zh/pages/model-spec/)
+- 视频处理基础与软件入门：[快速入门的所有文章](/zh/pages/fps-resolution-bitrate/) -> [必读导引](/zh/pages/mustread/) -> [预设](/zh/pages/svfi-presets/) -> [任务基本设置说明](/zh/pages/task-basic/) -> [模型选择介绍](/zh/pages/model-spec/)
 - 软件报错、输出不一致等问题排查：[Q&A](/zh/pages/QA/) -> [使用技巧](/zh/pages/useful-tips/)
 - 软件进阶学习：[相关文章科普](/zh/pages/wiki-image-quality/) -> [其他进阶说明](/zh/pages/other-advanced-settings/) -> [SVFI命令行使用](/zh/pages/svfi-cli/)
 

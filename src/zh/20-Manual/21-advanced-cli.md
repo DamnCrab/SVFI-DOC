@@ -3,7 +3,7 @@ title: 命令行进阶讲解
 permalink: /zh/pages/svfi-cli/
 ---
 ::: warning
-此页说明属于进阶内容，请优先阅读[高级内容详解](/zh/pages/advanced-settings/)
+此页说明属于进阶内容，请优先阅读[任务基本设置说明](/zh/pages/task-basic/)
 :::
 SVFI 支持使用命令行调用
 ::: tip

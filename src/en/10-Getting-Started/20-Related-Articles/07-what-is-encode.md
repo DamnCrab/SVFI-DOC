@@ -1,8 +1,6 @@
 ---
 title: What is encoding
 permalink: /en/pages/wiki-what-is-encode/
-sidebar: false
-toc: false
 ---
 
 

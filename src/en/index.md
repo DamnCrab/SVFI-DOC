@@ -39,10 +39,10 @@ postList: none
 
 <cardList :items="[
 {
-	img: '/img/bilibili/mayoiuta.jpg',
+	img: '/img/bilibili/hitoshizuku.jpg',
 	name: 'BanG Dream! It\'s MyGO!!!!!',
-	desc: 'Mayoiuta',
-	link: 'https://www.bilibili.com/video/BV1Qr421g7LT/?share_source=copy_web',
+	desc: 'Hitoshizuku',
+	link: 'https://www.bilibili.com/video/BV1Gm41127gL/',
 	author: 'SVFI Vision',
 	avatar: '/img/logo.png'
 },
@@ -87,7 +87,7 @@ postList: none
 
 ## 📕 Suggested reading order of this document
 
-- Video Processing and Software Quick Start: [Quick start](/en/pages/fps-resolution-bitrate/) -> [Must-read guide](/en/pages/mustread/) -> [Presets](/en/pages/svfi-presets/) -> [Advanced Settings detailed explanation](/en/pages/advanced-settings/) -> [Model Specification](/en/pages/model-spec/)
+- Video Processing and Software Quick Start: [Quick start](/en/pages/fps-resolution-bitrate/) -> [Must-read guide](/en/pages/mustread/) -> [Presets](/en/pages/svfi-presets/) -> [Basic task settings](/en/pages/task-basic/) -> [Model Specification](/en/pages/model-spec/)
 - Software Crash and Problem troubleshooting: [Q&A](/en/pages/QA/) -> [Useful tips](/en/pages/useful-tips/)
 - Advanced learning: [Related articles](/en/pages/wiki-image-quality/) -> [Other advanced instructions](/en/pages/other-advanced-settings/) -> [SVFI command line usage](/en/pages/svfi-cli/)
 
