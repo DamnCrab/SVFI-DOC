@@ -4,28 +4,32 @@
 
 Children arrays in `src/.vuepress/navbar/zh.ts` and `src/.vuepress/navbar/en.ts` list the **canonical** article order for the main sections. When adding pages, keep zh/en child lists aligned.
 
-## `10.快速入门` subfolders
+## Folder map
 
-- `10.快速入门/10.快速入门/` mirrors `en/10.Getting Started/10.Getting Started/` (five articles: `10.` … `50.`).
-- `10.快速入门/20.相关文章（科普）/` contains extra wiki-style articles (`01.`, `03.`, `07.`, `08.`). They use `permalink: /pages/wiki-*/`. There may be **no** `src/en` file with `/en/pages/wiki-*/` yet. Treat as **unpaired** until an English page is added.
+| Chinese (under `src/zh/`) | English (under `src/en/`) |
+|---------------------------|---------------------------|
+| `10-Getting-Started/10-Getting-Started/` | same |
+| `10-Getting-Started/20-Related-Articles/` | same |
+| `20-Manual/` | same |
+| `30-FAQ/` | same |
+| `40-Support/` | same |
+
+Wiki-style articles (`01-image-quality.md`, `03-encoder.md`, `07-what-is-encode.md`, `08-what-is-hdr.md`) use `permalink: /zh/pages/wiki-*/` and `/en/pages/wiki-*/`.
 
 ## Filename pairing rule
 
-Always pair by:
+Pair by identical path after `src/zh/` vs `src/en/` (e.g. `20-Manual/22-model-spec.md` or `30-FAQ/10-tips.md`).
 
-1. Top-level mapped folder (see SKILL.md table).
-2. Basename leading token `NN.` (digits + dot), e.g. `22.模型选择说明.md` ↔ `22.Model Spec.md`.
-
-Do not pair by full Chinese/English title text.
+Do not pair by Chinese/English title text.
 
 ## Permalink pattern
 
 | Locale | Pattern |
 |--------|---------|
-| Chinese | `permalink: /pages/<slug>/` |
+| Chinese | `permalink: /zh/pages/<slug>/` |
 | English | `permalink: /en/pages/<slug>/` |
 
-Same `<slug>` for paired pages.
+Same `<slug>` for paired pages. Slug must be ASCII with no HTML-escaping needed.
 
 ## Static images
 

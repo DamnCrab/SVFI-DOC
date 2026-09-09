@@ -1,7 +1,7 @@
 import type {SidebarOptions} from "vuepress-theme-hope";
 
 /**
- * Manual sidebar: group `text` is what appears in vp-sidebar-links (not folder names like 10.快速入门).
+ * Manual sidebar: group `text` is what appears in vp-sidebar-links (not folder names like 10-Getting-Started).
  * Leaf labels come from each page’s frontmatter `title` / `shortTitle`.
  */
 export const zhSidebar: SidebarOptions = [
@@ -10,47 +10,47 @@ export const zhSidebar: SidebarOptions = [
         text: "快速入门",
         icon: "fa-solid fa-rocket",
         collapsible: true,
-        prefix: "10.快速入门/10.快速入门/",
+        prefix: "zh/10-Getting-Started/10-Getting-Started/",
         children: [
-            "10.什么是帧率、分辨率和码率.md",
-            "20.什么是补帧.md",
-            "30.什么是超分.md",
-            "40.快速上手SVFI.md",
-            "50.快速上手SVFI超分.md",
+            "10-framerate-resolution-bitrate.md",
+            "20-what-is-vfi.md",
+            "30-what-is-sr.md",
+            "40-svfi-quick-start.md",
+            "50-svfi-quick-start-sr.md",
         ],
     },
     {
         text: "相关文章科普",
         icon: "fa-solid fa-atom",
         collapsible: true,
-        prefix: "10.快速入门/20.相关文章（科普）/",
+        prefix: "zh/10-Getting-Started/20-Related-Articles/",
         children: [
-            "01.图像表示与画质.md",
-            "03.编码、编码器与封装格式.md",
-            "07.什么是压制.md",
-            "08.什么是HDR.md",
+            "01-image-quality.md",
+            "03-encoder.md",
+            "07-what-is-encode.md",
+            "08-what-is-hdr.md",
         ],
     },
     {
         text: "软件使用指南",
         icon: "fa-brands fa-readme",
         collapsible: true,
-        prefix: "20.指南/",
+        prefix: "zh/20-Manual/",
         children: [
-            "10.必读导引.md",
-            "20.高级内容详解.md",
-            "22.模型选择说明.md",
-            "21.命令行进阶讲解.md",
-            "23.其他进阶说明.md",
+            "10-quick-start.md",
+            "20-option-manuals.md",
+            "22-model-spec.md",
+            "21-advanced-cli.md",
+            "23-other-advanced-settings.md",
         ],
     },
     {
         text: "常见问题与预设",
         icon: "lightbulb",
         collapsible: true,
-        prefix: "30.常见问题解答/",
-        children: ["01.Q&A.md", "05.使用技巧.md", "10.预设.md"],
+        prefix: "zh/30-FAQ/",
+        children: ["01-qa.md", "10-tips.md", "20-presets.md"],
     },
-    "/40.支持/01.关于SVFI.md",
-    "/40.支持/10.支持.md",
+    "/zh/40-Support/01-about-svfi.md",
+    "/zh/40-Support/10-support.md",
 ];

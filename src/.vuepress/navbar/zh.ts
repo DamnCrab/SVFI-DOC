@@ -1,48 +1,48 @@
 import {navbar} from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
-    "/",
+    "/zh/",
     {
         text: "快速入门",
         icon: "fa-solid fa-rocket",
         children: [
-            "/10.快速入门/10.快速入门/10.什么是帧率、分辨率和码率.md",
-            "/10.快速入门/10.快速入门/20.什么是补帧.md",
-            "/10.快速入门/10.快速入门/30.什么是超分.md",
-            "/10.快速入门/10.快速入门/40.快速上手SVFI.md",
-            "/10.快速入门/10.快速入门/50.快速上手SVFI超分.md"
+            "/zh/10-Getting-Started/10-Getting-Started/10-framerate-resolution-bitrate.md",
+            "/zh/10-Getting-Started/10-Getting-Started/20-what-is-vfi.md",
+            "/zh/10-Getting-Started/10-Getting-Started/30-what-is-sr.md",
+            "/zh/10-Getting-Started/10-Getting-Started/40-svfi-quick-start.md",
+            "/zh/10-Getting-Started/10-Getting-Started/50-svfi-quick-start-sr.md",
         ],
     },
     {
         text: "相关文章科普",
         icon: "fa-solid fa-atom",
         children: [
-            "/10.快速入门/20.相关文章（科普）/01.图像表示与画质.md",
-            "/10.快速入门/20.相关文章（科普）/03.编码、编码器与封装格式.md",
-            "/10.快速入门/20.相关文章（科普）/07.什么是压制.md",
-            "/10.快速入门/20.相关文章（科普）/08.什么是HDR.md",
+            "/zh/10-Getting-Started/20-Related-Articles/01-image-quality.md",
+            "/zh/10-Getting-Started/20-Related-Articles/03-encoder.md",
+            "/zh/10-Getting-Started/20-Related-Articles/07-what-is-encode.md",
+            "/zh/10-Getting-Started/20-Related-Articles/08-what-is-hdr.md",
         ],
     },
     {
         text: "软件使用指南",
         icon: "fa-brands fa-readme",
         children: [
-            "/20.指南/10.必读导引.md",
-            "/20.指南/20.高级内容详解.md",
-            "/20.指南/22.模型选择说明.md",
-            "/20.指南/21.命令行进阶讲解.md",
-            "/20.指南/23.其他进阶说明.md"
+            "/zh/20-Manual/10-quick-start.md",
+            "/zh/20-Manual/20-option-manuals.md",
+            "/zh/20-Manual/22-model-spec.md",
+            "/zh/20-Manual/21-advanced-cli.md",
+            "/zh/20-Manual/23-other-advanced-settings.md",
         ],
     },
     {
         text: "常见问题与预设",
         icon: "lightbulb",
         children: [
-            "/30.常见问题解答/01.Q&A.md",
-            "/30.常见问题解答/05.使用技巧.md",
-            "/30.常见问题解答/10.预设.md",
+            "/zh/30-FAQ/01-qa.md",
+            "/zh/30-FAQ/10-tips.md",
+            "/zh/30-FAQ/20-presets.md",
         ],
     },
-    "/40.支持/01.关于SVFI.md",
-    "/40.支持/10.支持.md",
+    "/zh/40-Support/01-about-svfi.md",
+    "/zh/40-Support/10-support.md",
 ]);

@@ -38,6 +38,15 @@ export default hopeTheme({
                 editLink: "在 GitHub 上编辑此页",
             },
         },
+        "/zh/": {
+            navbar: zhNavbar,
+            sidebar: zhSidebar,
+            footer: "",
+            displayFooter: true,
+            metaLocales: {
+                editLink: "在 GitHub 上编辑此页",
+            },
+        },
         "/en/": {
             navbar: enNavbar,
             sidebar: enSidebar,
@@ -150,6 +159,11 @@ export default hopeTheme({
 
         git:{
 
+        },
+
+        redirect: {
+            autoLocale: true,
+            defaultLocale: "/zh/",
         },
     },
 });

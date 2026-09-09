@@ -1,0 +1,48 @@
+---
+title: 什么是补帧
+permalink: /zh/pages/what-is-vfi/
+sidebar: false
+toc: false
+---
+
+## 补帧 = 内插帧 => Video Frame Interpolation = VFI
+
+内插帧指通过某些特定算法提升视频帧率，即在帧与帧之间插入新的、原视频不含有的帧，以使观感更流畅。
+
+传统算法包括“基于”硬件的[MEMC](https://baike.baidu.com/item/%E8%BF%90%E5%8A%A8%E8%A1%A5%E5%81%BF/9194264), “基于”软件的[光流法](https://baike.baidu.com/item/%E5%85%89%E6%B5%81%E6%B3%95/180688)。
+
+SVFI使用基于深度学习的插帧算法[RIFE及其衍生算法](https://github.com/megvii-research/ECCV2022-RIFE)进行补帧，其效果比其他算法更好。
+
+::: right
+[SVFI内置补帧算法说明](/zh/pages/advanced-settings/#补帧设置)
+:::
+
+
+效果参考：
+
+<cardList :items="[
+{
+img: '/img/bilibili/yuan.jpg',
+name: '《原神》',
+desc: '剧情CM短片 8K60帧 SVFI补帧超分',
+link: 'https://www.bilibili.com/video/BV1FS4y1C7RD',
+author: 'SVFI视觉 ',
+avatar: '/img/logo.png'
+},
+{
+img: '/img/bilibili/umaron.jpg',
+name: '赛马娘',
+desc: '第二季 NCOP 8K60帧',
+link: 'https://www.bilibili.com/video/BV1QY411b7e4',
+author: 'SVFI视觉',
+avatar: '/img/logo.png',
+},
+{
+img: '/img/bilibili/emilia.jpg',
+name: 'Re：从零开始的异世界生活',
+desc: '第二季后半 NCED Believe in you',
+link: 'https://www.bilibili.com/video/BV1kF411p7FB',
+author: 'SVFI视觉',
+avatar: '/img/logo.png'
+}
+]"/>

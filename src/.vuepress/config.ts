@@ -15,6 +15,11 @@ export default defineUserConfig({
             title: "SVFI Doc",
             description: "SVFI用户使用文档",
         },
+        "/zh/": {
+            lang: "zh-CN",
+            title: "SVFI Doc",
+            description: "SVFI用户使用文档",
+        },
         "/en/": {
             lang: "en-US",
             title: "SVFI Doc",
