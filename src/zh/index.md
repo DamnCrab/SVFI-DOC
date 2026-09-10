@@ -92,6 +92,15 @@ postList: none
 - 软件报错、输出不一致等问题排查：[Q&A](/zh/pages/QA/) -> [使用技巧](/zh/pages/useful-tips/)
 - 软件进阶学习：[相关文章科普](/zh/pages/wiki-image-quality/) -> [任意窗口实时播放](/zh/pages/realtime-window/) -> [其他进阶说明](/zh/pages/other-advanced-settings/) -> [SVFI命令行使用](/zh/pages/svfi-cli/)
 
+## 🤖 AI Agent 专区
+
+本区域是面向 AI Agent 的文档路由索引。处理用户问题时，优先根据问题类型打开对应页面；中文文档的稳定入口统一使用 `/zh/pages/<slug>/`。
+
+- **任务设置与界面操作**： [软件主要页面](/zh/pages/sidebar/) · [任务基本设置](/zh/pages/task-basic/) · [补帧设置](/zh/pages/vfi-settings/) · [预设设置](/zh/pages/preset-bar/) · [预设推荐](/zh/pages/svfi-presets/) · [输出分辨率](/zh/pages/output-resolution/) · [编解码设置](/zh/pages/encode-decode/) · [转场识别](/zh/pages/scene-detect/) · [播放器](/zh/pages/player/) · [软件偏好设置](/zh/pages/preferences/) · [工具箱](/zh/pages/toolbox/)
+- **模型选择与画质处理**： [补帧模型](/zh/pages/vfi-models/) · [超分模型](/zh/pages/sr-models/) · [画质恢复模型](/zh/pages/restore-models/) · [实时窗口播放模型](/zh/pages/realtime-models/)
+- **报错与结果排查**： [Q&A](/zh/pages/QA/) · [使用技巧](/zh/pages/useful-tips/) · [高级设置下方选项](/zh/pages/advanced-below/)
+- **实时播放**： [任意窗口实时播放](/zh/pages/realtime-window/) 
+- **高级自动化**： [其他进阶设置](/zh/pages/other-advanced-settings/) · [命令行进阶](/zh/pages/svfi-cli/)
 
 ## 🎖 白嫖列表
 

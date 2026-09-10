@@ -1,1 +1,8 @@
-// place your custom styles here
+// Genre / model tags: pastel fill + dark text (FluentUI InfoBadge).
+.vp-badge.diy {
+  white-space: nowrap;
+  height: auto;
+  min-height: 18px;
+  line-height: 18px;
+  font-weight: 600;
+}

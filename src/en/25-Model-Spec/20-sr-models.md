@@ -4,184 +4,159 @@ permalink: /en/pages/sr-models/
 ---
 
 ::: tip
-This feature requires the purchase of the [Professional DLC](https://store.steampowered.com/app/1718750/SVFI_Professional/).
+Super-resolution requires the [Professional DLC](https://store.steampowered.com/app/1718750/SVFI_Professional/). All SR models are provided in the Professional version. **Beta** in the table means the model is available only on the public-beta branch.
 :::
 
-Currently, SVFI supports the following super-resolution algorithms.
+<Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Anti-Subtitle" color="#222" bgColor="#ffffe0"/> <Badge text="Decompress" color="#222" bgColor="#e6e6fa"/> <Badge text="Turbo-Only" color="#222" bgColor="#ffb6c1"/>
 
-| Algorithm Name | Applicable Genre | Requires BETA | Available on AMD GPUs |
-| :---: | :---: | :---: | :---: |
-| Anime4K | Anime |  | √ |
-| AnimeSR | Anime |  | × |
-| realCUGAN | Anime | | × |
-| ncnnCugan | Anime |  | √ | 
-| waifuCuda | Anime |  | × |
-| PureBasicVSR | Live Action |  | × |
-| [BasicVSR++ T3](/en/pages/restore-models/) | Live Action | √ | × |
-| ATD | Live Action | √ | × |
-| realESR | General |  | × |
-| ncnnRealESR | General |  | √ |
-| waifu2x | General |  | √ |
-| TensorRT(ONNX) | General |  | × |
-| Compact | General | √ | × |
-| SPAN | General | √ | × |
+**Recommendation** is product positioning (★★★★★ = current default pick). 1× restore models are detailed under [Image restoration models](/en/pages/restore-models/).
 
-:::tip
-SVFI defines the distinction between anime materials and live-action materials as follows:
+## Algorithm overview
 
-**Anime** materials are moving video clips mainly composed of flat image layers, and **the boundaries between each layer and the other layers are clear**. For example, hand-drawn 2D animation, most three-dimensional rendered two-dimensional pictures, etc.
+| Algorithm | Edition | Tags | Rec. | AMD |
+| :---: | :---: | :---: | :---: | :---: |
+| realCUGAN | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★☆ | × |
+| ncnnCugan | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★☆ | √ |
+| realESR | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | × |
+| ncnnRealESR | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | √ |
+| Anime4K | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | √ |
+| AnimeSR | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | × |
+| waifu2x | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | √ |
+| waifuCuda | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | × |
+| RTXSR | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | × |
+| TensorRT (ONNX) | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★★ | × |
+| Compact | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | × |
+| SPAN | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | × |
 
-**In Real Life** (IRL) materials are real-world pictures or computer-generated pictures captured using a single-lens camera, and **the individual layers and their boundaries cannot be distinguished by the naked eye**. For example, live-action movies, 3D CG, 3D game pictures, etc.
+::: tip
+SVFI’s genre split:
 
-In particular, we consider animations made with 3D/3G backgrounds + 2D characters to be in the anime material category.
+**Anime** is mostly flat layers with **clear layer boundaries** (hand-drawn 2D, most 3D-to-2D). 3D backgrounds + 2D characters still count as anime.
+
+**IRL** is single-camera live-action or CG where **layers cannot be told apart** (live-action film, 3D CG, 3D games).
 :::
 
 <div align=center>
 <img src="/screenshots/en/31-sr-settings.png"  width=600>
 </div>
 
-## Introduction to the Super-Resolution Model
+## realCUGAN / ncnnCugan
 
-### realCUGAN
+**Anime-first, excellent results.** up2x / 3x / 4x are scale factors; `pro` is the enhanced line, see the [official notes](https://github.com/bilibili/ailab/tree/main/Real-CUGAN). `conservative` is conservative; `no-denoise` skips denoise; `denoise_N` is denoise strength.
 
-**Exclusive for anime, the effect is very excellent**
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| Full realCUGAN pth set | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★★ | Main anime SR | CUDA only |
+| Matching ncnnCugan set | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★☆ | AMD / Intel / NVIDIA | A bit slower than CUDA |
 
-- up2x represents a 2x upscale, and 3x, 4x, etc. are similar.
-- The pro model is an enhanced version, see [official introduction](https://github.com/bilibili/ailab/tree/main/Real-CUGAN) for details.
-- Models with the word "conservative" are conservative models.
-- Models with "no-denoise" do not perform noise reduction.
-- Models with "denoise" perform noise reduction, and the number behind represents the noise reduction intensity.
+## realESR / ncnnRealESR
 
-- ncnnCUGAN
+**Usable on 3D anime; still anime-leaning.** RealESRGAN hallucinates more (sharper, punchier); RealESRNet smears more and keeps color. Models with `anime` in the name are faster; `anime` is official. `RealESR_RFDN` is fast for anime.
 
-The NCNN version of CUGAN (universal for AMD GPUs, NVIDIA GPUs, and Inte; GPUs), the introduction is the same as above.
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| RealESRGAN_x2plus / x4plus and anime variants | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | Clear and vivid | Easy to oversharpen |
+| RealESRNet_x4plus | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | Color-preserving smear | Less detail |
+| RealESR_RFDN_x2plus_anime110k | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★☆ | Fast | Locked to 2× |
+| RealESR_x2_anime_APISR_RRDB_GAN | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | APISR anime line | Beta only |
+| ncnn: animevideov3 x2/x3/x4, x4plus, x4plus-anime | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | Cross-vendor | Slightly below CUDA |
+| ncnn: AnimeJaNai / AniScale / LSDIR / nomo8ksc | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | Extra beta ncnn models | Available only on the public-beta branch |
 
-### realESR
+`realesr-animevideov3`: conservative anime-video SR, fast and stable; avoid TTA.
 
-**Applicable to both 3D anime, more suitable for anime**
+## AnimeSR
 
-- The RealESRGAN model tends to fill in the blanks, making the picture clearer and more vivid.
-- The RealESRNet model tends to smudge, but the picture retains its original color.
-- Models marked with "anime" are dedicated for anime super-resolution, and the speed is slightly faster than the previous two.
-- anime is the official model, and anime_110k is a self-trained model.
-- RealESR_RFDN is a self-trained super-resolution model with fast speed and is suitable for anime input.
+AnimeSR was developed by Tencent ARC Lab. Only `AnimeSR_v2_x4` is provided, and its look is more conservative than CUGAN.
 
-- ncnnRealESR
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| AnimeSR_v2_x4 | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | Tencent ARC; more conservative than CUGAN | 4× only |
 
-The NCNN version of realESR, universal for AMD GPUs, Intel GPUs, and NVIDIA GPUs.
-- realesr-animevideov3 (a relatively conservative anime video super-resolution model, with fast speed and high quality)
-- realesrgan-4xplus (4x upscale model)
-- realesrgan-4xplus-anime (4x anime upscale model)
+## Anime4K
 
-### AnimeSR 
+Anime4K is a very fast, conservative real-time anime SR algorithm with six presets: `Anime4K_Upscale_x2_A/B/C/D` are 2× presets (A is the default), followed by `x3` and `x4` presets.
 
-An anime super-resolution algorithm developed by Tencent ARC Lab
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| Anime4K_Upscale_x2 A/B/C/D, x3, x4 | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | Very fast, realtime-ish, conservative | Low detail ceiling |
 
-Only one 4x upscale model (AnimeSR_v2_x4.pth), the effect is more conservative compared to cugan.
+### Custom Anime4K
 
-### BasicVSRPlusPlusRestore
-
-A 1× restoration model. See [Image restoration models](/en/pages/restore-models/).
-
-### Anime4K 
-
-A super-fast real-time anime super-resolution algorithm, relatively conservative
-
-There are 6 preset scripts in total.
-- Anime4K_Upscale_x2 A/B/C/D are all 2x upscales (default is A).
-- Anime4K_Upscale_x3 is 3x upscale, and the x4 model is similar.
-
-#### Custom Anime4K models
-
-- In the installation folder `models\sr\Anime4K\models`, you can see the `.json` model configuration file.
-- Take `Anime4K_Upscale_x2_A.json` as an example.
+JSON chains live under `models\sr\Anime4K\models`. Example `Anime4K_Upscale_x2_A.json`:
 
 ```json
 {
   "shaders": [
-    {
-      "path": "Restore/Anime4K_Clamp_Highlights.glsl", "args": []
-    },
-    {
-      "path": "Restore/Anime4K_Restore_CNN_VL.glsl", "args": []
-    },
-    {
-      "path": "Upscale/Anime4K_Upscale_CNN_x2_VL.glsl", "args": ["upscale"]
-    }
+    { "path": "Restore/Anime4K_Clamp_Highlights.glsl", "args": [] },
+    { "path": "Restore/Anime4K_Restore_CNN_VL.glsl", "args": [] },
+    { "path": "Upscale/Anime4K_Upscale_CNN_x2_VL.glsl", "args": ["upscale"] }
   ]
 }
 ```
-- Among them, `Anime4K_Clamp_Highlights.glsl` and `Anime4K_Restore_CNN_VL.glsl` are 1x restoration algorithms, corresponding to `models\sr\Anime4K\Restore\Anime4K_Clamp_Highlights.glsl`. The `args` parameter of this model needs to be left empty.
-- `Anime4K_Upscale_CNN_x2_VL.glsl` is a 2x upscale algorithm, corresponding to `models\sr\Anime4K\Upscale\Anime4K_Upscale_CNN_x2_VL.glsl`. The `args` parameter of this model needs to be filled in with `upscale`.
-- Similar to the `Anime4K_AutoDownscalePre_x2.glsl` model, the `args` parameter needs to be filled in with `downscale`.
 
-- The order of the list is the actual calling order of the filters, and you can observe the model folder to freely combine, edit or create a new `.json` file to take effect.
+- 1× restore shaders (Clamp / Restore): empty `args`
+- 2× upscale shaders: `upscale`
+- `Anime4K_AutoDownscalePre_x2.glsl`-style: `downscale`
+- List order is execution order; edit or add JSON files as needed
 
-### waifu2x 
+## waifu2x
 
-A classic conservative super-resolution algorithm
+waifu2x is a classic conservative SR algorithm: `cunet` and `anime` are mainly for anime, while `photo` can be used for live-action footage.
 
-- The cunet model is used for anime super-resolution.
-- The photo model is used for real-world shooting.
-- anime is used for anime super-resolution.
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| waifu2x cunet / anime / photo | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | Classic conservative; photo for IRL | Old generation |
 
-- waifuCuda: CUDA implementation of waifu2x
+### waifuCuda
 
-Used for anime super-resolution, the speed and effect are somewhat similar to cugan.
+waifuCuda is the CUDA implementation of waifu2x; it is mainly for anime and has a speed and look somewhat similar to CUGAN.
 
-### Compact
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| waifuCuda nunif-cunet2x | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | CUDA port, CUGAN-like | CUDA only |
 
-::: tip
-This algorithm is only available in the beta version of the public test of the professional DLC, and you need to manually go to the Steam settings - beta version to select it.
-:::
+## RTXSR
 
-A super-resolution model structure, some models such as **AnimeJanai** are trained based on this structure.
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| rtxsr_q1–q4 | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | NVIDIA renderer SR, quality 1–4 | Needs the NVIDIA encode path |
 
-#### AnimeJanai
+## Compact / SPAN
 
-**Applicable to both 3D anime, more suitable for anime**
+Compact and SPAN are available only in the public-beta Professional version. In Steam, open the app properties → **Betas** and opt in first. Compact commonly hosts **AnimeJaNai** and **AniScale**; SPAN hosts **Nomos** and similar.
 
-- A weakened version of RealCUGAN, with poor depth-of-field recognition (easy to sharpen the background), less computing power and faster speed.
-- Speed: UltraSuper > Super > Compact model.
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| AnimeJaNai HD V3 Compact / Ultra / SuperUltra | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★☆ | Fast; SuperUltra > Ultra > Compact | Weak DoF, easy to sharpen backgrounds |
+| AnimeJaNai V2 three tiers | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★☆☆ | Previous JaNai | Behind V3 |
+| 2x-AniScale-compact / AniScale2S | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | Keeps detail, low smear/sharpen | Slower |
+| SPAN Nomos / ClearReality / PurePhoto | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | Many IRL/general models | SVFI loads `nf=48` only |
 
+AnimeJaNai works on 3D anime and some live-action footage, but is better suited to anime. It is a lighter CUGAN-like model with weak depth-of-field recognition, so it can sharpen backgrounds. Speed is generally `SuperUltra > Ultra > Compact`.
 
-### SPAN
+## TensorRT (ONNX)
 
-::: tip
-This algorithm is only available in the beta version of the public test of the professional DLC, and you need to manually go to the Steam settings - beta version to select it.
-:::
+NVIDIA acceleration. `qa_fte` is tagged <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Turbo-Only" color="#222" bgColor="#ffb6c1"/> and only runs on the Turbo path.
 
-A super-resolution model structure, some model series such as **Nomos** are trained based on this structure.
-
-
-### TensorRT 
-
-Dedicated acceleration for the NVIDIA GPU of some of the above super-resolution algorithms
-
-- All models of cugan can be accelerated.
-- real-animevideov3 is a model specifically prepared for anime video super-resolution in RealESR.
-- RealESRGANv2-animevideo-xsx2 2x anime video super-resolution upscale model.
-- RealESRGANv2-animevideo-xsx4 4x anime video super-resolution upscale model.
-
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | :---: | :---: | --- | --- |
+| CUGAN onnx set | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★☆ | TensorRT CUGAN | First compile is slow |
+| qa_fte v0/v1 (1× / 2× / 4×) | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Turbo-Only" color="#222" bgColor="#ffb6c1"/> | ★★★★★ | Good live-action results | Turbo required |
+| realesr-animevideov3-4x, RealESRGANv2-animevideo xsx2/xsx4 | <Badge text="Pro" type="warning"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> | ★★★★☆ | Light anime video | Fixed scale |
+| AnimeJaNai / AniScale / AniSD / Adore / Fallin / waifu2x cunet and similar | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | Extra beta onnx | Beta only; some filenames say `test_only` |
 
 ::: warning
-Since pre-compilation is required for processing using TRT, do not enable more than 1 thread when using TRT encoding for the first time.
-
-If an error occurs when using it for the first time, please try five or six times.
-
-If the error still occurs, please contact the developer.
-
-In theory, the effect is the same as the non-TRT version, but there are differences in individual scenarios.
+TRT must compile first: keep thread count at 1 on the first run. Retry five or six times on failure, then contact the developers. Quality should match the non-TRT sibling except on a few shots.
 :::
 
-## Visual Comparison Demonstration of Super-Resolution Models
+## Visual comparisons
 
 <imgSlider :items="[
 {
 	first: '/compare/01-aniscale-a-in.png',
     second: '/compare/01-aniscale-a-out.png',
 	name: 'Aniscale Demo 1',
-    desc: '2x-AniScale-compact, 2x super-resolution model, good details, low smearing and sharpening'
+    desc: '2x-AniScale-compact, strong detail, low smear/sharpen (lower VRAM, slower)'
 }]"/>
 
 <imgSlider :items="[
@@ -197,73 +172,61 @@ In theory, the effect is the same as the non-TRT version, but there are differen
 {
 	first: '/compare/03-animevideo-v3-in.png',
     second: '/compare/03-animevideo-v3-out.png',
-	name: 'ealesr-animevideov3-x2',
-    desc: 'Two-times super-resolution model, good details, slight smearing, medium sharpening'
+	name: 'realesr-animevideov3-x2',
+    desc: '2× SR, good detail, slight smear, medium sharpen (lower VRAM, faster; avoid TTA)'
 }
 ]"/>
 
+## Add OpenModelDB super-resolution models
 
-## Add Super-Resolution Models on OpenModelDB by Yourself
+SVFI can load extra model files that match its loaders. The Compact, SPAN, ATD, and ONNX (TensorRT) structures on [OpenModelDB](https://openmodeldb.info/) are compatible.
 
-SVFI supports adding super-resolution model weights that meet the requirements by oneself.
-
-[OpenModelDB](https://openmodeldb.info/) supports the model structure as shown in the following figure
 <div align=center>
 <img src="/external/openmodeldb/01-structures.png"  width=600>
 </div>
-Among them, the ones compatible with SVFI are Compact, SPAN, ATD, ONNX (TensorRT).
 
-### Example: Adding Compact or Compact Model
+### Example: add Compact
 
-- Search for Aniscale, and you can see the model to be tested, AniScale-2-Compact
+- Search Aniscale for AniScale-2-Compact
 <div align=center>
 <img src="/external/openmodeldb/02-aniscale-search.png"  width=600>
 </div>
 
-- Click to enter the first generation of Aniscale.
-- Pay attention to the model information Size on the right side, `64nf` represents the number of features ("model channel number"), and `16nc` represents the number of convolutions ("model depth").
+- Open the first-generation Aniscale page. Size: `64nf` = features (channels), `16nc` = convs (depth)
 <div align=center>
 <img src="/external/openmodeldb/03-model-info.png"  width=600>
 </div>
 
-- The strategy for SVFI to load Compact models is as follows:
-    - If the model name contains `super ultra` (from animejanai), `nf=24, nc=8`;
-    - If the model name contains `ultra` (from animejanai), `nf=64, nc=8`;
-    - Default `nf=64, nc=16`.
-- Looking back at Aniscale-2-Compact, it is found that there is no model information description on the web page, so it is considered that it uses the default model structure configuration, `nf=64, nc=16`.
-- Just download the pth model directly to `SVFI\models\sr\Compact\models` and it can be used. If there is no such folder, please create it manually.
+- Compact loading rules:
+    - name contains `super ultra` (AnimeJaNai): `nf=24, nc=8`
+    - name contains `ultra`: `nf=64, nc=8`
+    - default `nf=64, nc=16`
+- If Aniscale-2-Compact has no structure text, assume the default and put the pth in `SVFI\models\sr\Compact\models` (create the folder if needed)
 
-- The same is true for importing the SPAN model.
+SPAN is the same idea; only `nf=48` is supported. Other forks are not.
+
 <div align=center>
 <img src="/external/openmodeldb/04-span.png"  width=600>
 </div>
 
-SVFI can currently only load models with `nf=48`, and other models are not supported for the time being. Other modified models are also not supported.
+### Example: add a TensorRT model
 
-### Example: Adding TensorRT Model
+You can also add onnx such as [AnimeJaNai](https://github.com/the-database/mpv-upscale-2x_animejanai). Requirements:
 
-You can also add other supported super-resolution models such as [AnimeJanai](https://github.com/the-database/mpv-upscale-2x_animejanai).
+- One input and one output, both `[dynamic, 3, dynamic, dynamic]`
+- Input name `input`, output name `output`
+- Place under `SVFI\models\sr\TensorRT\models`
 
-The onnx requirements of the super-resolution model supported by SVFI are as follows:
-
-- There is only one input, and the dimension is `[dynamic, 3, dynamic, dynamic]`.
-- There is only one output, and the dimension is `[dynamic, 3, dynamic, dynamic]`.
-- The input node name is `input`, and the output node name is `output`.
-
-Put it in `SVFI\models\sr\TensorRT\models`.
-
-::: tip Model Compilation Instructions
-- After the model is compiled, a `.engine` file will be generated. For example, `realesrgan_2x.onnx.540x960_workspace128_fp16_io32_device0_8601.engine` indicates that the input size (patch size) of the model is 540x960.
-- Different patch sizes will lead to completely different super-resolution speeds, so the patch block size should be carefully selected, and try not to enable the patch block.
+::: tip Engine compile
+Compile produces an `.engine`, e.g. `realesrgan_2x.onnx.540x960_workspace128_fp16_io32_device0_8601.engine` means a 540×960 tile. Tile size changes speed a lot; prefer no tiling.
 :::
 
-### Other Model Rules
+### Other rules
 
-- Under the default state of esrgan, only models with `nf=64, nb=23` are supported.
-- When the model name contains `anime`, `nb` will be recognized as 6.
+- ESRGAN defaults to `nf=64, nb=23`; if the name contains `anime`, `nb` is treated as 6
 
-::: tip Terminology Explanation
-- nf => number of features, 
-- nc => number of convs, 
-- nb => number of blocks
+::: tip Terms
+- nf → number of features
+- nc → number of convs
+- nb → number of blocks
 :::

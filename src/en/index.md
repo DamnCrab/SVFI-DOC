@@ -91,6 +91,16 @@ postList: none
 - Software Crash and Problem troubleshooting: [Q&A](/en/pages/QA/) -> [Useful tips](/en/pages/useful-tips/)
 - Advanced learning: [Related articles](/en/pages/wiki-image-quality/) -> [Real-time window scaling](/en/pages/realtime-window/) -> [Other advanced instructions](/en/pages/other-advanced-settings/) -> [SVFI command line usage](/en/pages/svfi-cli/)
 
+## 🤖 AI Agent Area
+
+This section is a document routing index for AI Agents. When handling a user question, open the page matching the question type first. Stable English-document entry points consistently use `/en/pages/<slug>/`.
+
+- **Task settings and UI operation**: [Main software pages](/en/pages/sidebar/) · [Basic task settings](/en/pages/task-basic/) · [VFI settings](/en/pages/vfi-settings/) · [Preset settings](/en/pages/preset-bar/) · [Preset recommendations](/en/pages/svfi-presets/) · [Output resolution](/en/pages/output-resolution/) · [Encode/decode settings](/en/pages/encode-decode/) · [Scene detection](/en/pages/scene-detect/) · [Player](/en/pages/player/) · [Preferences](/en/pages/preferences/) · [Toolbox](/en/pages/toolbox/)
+- **Model selection and image processing**: [VFI models](/en/pages/vfi-models/) · [Super-resolution models](/en/pages/sr-models/) · [Image restoration models](/en/pages/restore-models/) · [Real-time window models](/en/pages/realtime-models/)
+- **Errors and output troubleshooting**: [Q&A](/en/pages/QA/) · [Useful tips](/en/pages/useful-tips/) · [Advanced settings below](/en/pages/advanced-below/)
+- **Realtime playback**: [Realtime playback in any window](/en/pages/realtime-window/)
+- **Advanced automation**: [Other advanced settings](/en/pages/other-advanced-settings/) · [Advanced command line](/en/pages/svfi-cli/)
+
 
 ## 🎖 Free tools
 

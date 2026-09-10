@@ -3,22 +3,36 @@ title: Image restoration models
 permalink: /en/pages/restore-models/
 ---
 
-These models appear in the super-resolution section of the software, but they run at **1×** (no upscale). Use them for decompression, watermark removal, demosaic, and similar restoration.
+These models appear in the super-resolution list or as restore toggles in Advanced settings. They run at **1×** (no upscale) for decompression, watermark removal, debanding, and demosaic. All of them are provided in the Professional version.
+
+<Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Anti-Subtitle" color="#222" bgColor="#ffffe0"/> <Badge text="Decompress" color="#222" bgColor="#e6e6fa"/> <Badge text="Turbo-Only" color="#222" bgColor="#ffb6c1"/>
+
+## Algorithm overview
+
+| Algorithm | Edition | Tags | Rec. | AMD |
+| :---: | :---: | :---: | :---: | :---: |
+| BasicVSR++ T3 | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Decompress" color="#222" bgColor="#e6e6fa"/> | ★★★★☆ | × |
+| Gloom | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | × |
+| InPaint STTN | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anti-Subtitle" color="#222" bgColor="#ffffe0"/> | ★★★☆☆ | × |
+| LaMa | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anti-Subtitle" color="#222" bgColor="#ffffe0"/> | ★★★☆☆ | × |
+| DeMosaic | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | × |
+| DLSS NR | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Turbo-Only" color="#222" bgColor="#ffb6c1"/> | ★★★☆☆ | × |
+| DeepDeband | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | × |
+| FMNet | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | × |
+
+::: warning
+Multi-frame restore (T3, Gloom, InPaint) is VRAM-heavy; 6 GB or more is safer.
+DeepDeband / FMNet are available only on the **public-beta** branch.
+:::
 
 ## BasicVSRPlusPlusRestore
 
-A real-world super-resolution algorithm that depends on the length of the super-resolution sequence for effect.
+IRL-oriented; quality depends on sequence length. T3 is included in the release Professional version; the `_trt` variant is available only on the public-beta branch.
 
-::: tip
-This algorithm is only available in the beta version of the public test.
-:::
-
-::: warning
-This series of algorithms consume a lot of video memory, it is recommended to use a graphics card with more than 6G.
-:::
-
-- basicvsrpp_ntire_t3_decompress_max_4x 4x upscale deencoding model t3 (recommended)
-- basicvsrpp_ntire_t3_decompress_max_4x_trt 4x upscale deencoding model t3 (TensorRT acceleration) (difficult to compile, not recommended)
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| basicvsrpp_ntire_t3_decompress_max_4x | <Badge text="Pro" type="warning"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Decompress" color="#222" bgColor="#e6e6fa"/> | ★★★★☆ | Excellent on heavily compressed footage | Slow and high VRAM; despite the 4x name, SVFI uses it as a 1× restore model |
+| basicvsrpp_ntire_t3_decompress_max_4x_trt | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Decompress" color="#222" bgColor="#e6e6fa"/> | ★★☆☆☆ | TensorRT attempt | Recommended only for GPUs with at least 16 GB VRAM |
 
 ### Visual comparison
 
@@ -27,21 +41,30 @@ This series of algorithms consume a lot of video memory, it is recommended to us
 	first: '/compare/04-t3-in.png',
     second: '/compare/04-t3-out.png',
 	name: 'BasicVSR++ Track3 (T3)',
-    desc: 'basicvsrpp-ntire-t3-decompress-max-4x, excellent restoration on highly compressed with slow speed'
+    desc: 'basicvsrpp-ntire-t3-decompress-max-4x 1× restore, excellent on heavy compression (slow)'
 }
 ]"/>
 
+## Gloom
+
+Gloom is available only on the public-beta branch. It is a multi-frame enhancement model for low-resolution footage and can restore before upscaling; then specify 2× output resolution to use it as an SR model. `Gloom-pro` sequence length must be 4n+1 (1 / 5 / 9 / …); try 16 for Gloom and 33 for pro.
+
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| Gloom_x1 | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | Uses multiple frames to enhance the image | High VRAM |
+| Gloom-pro_x1 | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★★☆ | Stronger pro path | At least 8 GB VRAM recommended |
+
 ## InPaint Watermark Removal Model
 
-::: tip
-This algorithm is only available in the beta version of the professional DLC, and you need to manually go to the Steam settings - beta version to select it.
-:::
+`InPaint_STTN` is available only in the public-beta Professional version. It performs 1× restoration and needs a static mask from the [internal player](/en/pages/player/#draw-a-static-mask).
 
-- inpaint_sttn_1x: Currently, this model only supports 1× restoration (no upscale). It needs a static mask from the [internal player](/en/pages/player/#draw-a-static-mask):
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| InPaint_STTN | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anti-Subtitle" color="#222" bgColor="#ffffe0"/> | ★★★☆☆ | Static watermarks inside the mask can be removed automatically | Fails on solid/static backgrounds; the mask must contain motion |
 
-The activation process is as follows:
+### Steps
 
-1. Enable the super-resolution function and select the correct model
+1. Enable super-resolution and select this model
 <div align=center>
 <img src="/screenshots/en/32-inpaint-select-model.png"  width=600>
 </div>
@@ -51,35 +74,79 @@ The activation process is as follows:
 <img src="/screenshots/en/33-inpaint-player.png"  width=600>
 </div>
 
-3. Enable the mask function
+3. Enable the mask
 <div align=center>
 <img src="/screenshots/en/34-inpaint-mask.png"  width=600>
 </div>
 
-4. Draw the mask and save it
+4. Draw and save
 
 <div align=center>
 <img src="/screenshots/en/35-inpaint-draw-mask.png"  width=600>
 </div>
 
-This model will automatically identify and remove static watermarks in each mask area. Please make sure there is enough **dynamic change content** in the mask area, otherwise it cannot be automatically identified.
+Leave enough **moving** content inside the mask, or detection fails.
 
 ::: warning
-This model has poor performance in identifying and removing watermarks on **solid background/static content**.
+Watermarks on **solid / fully static** backgrounds inpaint poorly.
 :::
 
-5. Click Encode to start removing watermarks
-
+5. Click Encode. Sequence length greater than 30 is recommended.
 
 <imgSlider :items="[
 {
 	first: '/compare/05-inpaint-in.png',
     second: '/compare/05-inpaint-out.png',
-	name: 'InPaint Watermark Removal Effect Demonstration',
-    desc: 'It is recommended that the sequence length is greater than 30'
+	name: 'InPaint watermark removal demo',
+    desc: 'Sequence length greater than 30 is recommended'
 }
 ]"/>
 
-## DeMosaic models
+## LaMa
 
-As the name suggests: models focused on **demosaic / mosaic-style** restoration (pixelation removal), when supported for your input.
+LaMa is a classic image erasure model. SVFI automatically detects subtitles in video and removes them. It is not suitable for solid-color still backgrounds.
+
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| big-lama | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anti-Subtitle" color="#222" bgColor="#ffffe0"/> | ★★★☆☆ | Classic erase network; works with a mask | Also weak on solid stills |
+
+## DeMosaic
+
+DeMosaic removes mosaic and pixelation from special-source footage. SVFI automatically detects and removes mosaics. In debug mode, it does not remove them, but shows the detected regions so the mosaic-detection threshold can be adjusted.
+
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| bvpp_x1 (DeMosaic, LADA) | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | Removes mosaics | Incompatible with the 16-bit workflow |
+
+## DLSS NR
+
+DLSS NR is a 1× denoise model that must use Turbo and currently supports only the 8-bit workflow. It is designed to add realistic lighting detail to game recordings.
+
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| DLSSNR_x1 | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="IRL" color="#222" bgColor="#90ee90"/> <Badge text="Turbo-Only" color="#222" bgColor="#ffb6c1"/> | ★★★☆☆ | Adds realistic lighting detail | Turbo required; currently 8-bit only |
+
+<imgSlider :items="[
+{
+	first: '/compare/06-dlss-off.png',
+    second: '/compare/06-dlss-on.png',
+	name: 'DLSS NR demo',
+    desc: 'Enable reconstruction guidance (reconstructed input motion vectors and depth information)'
+}
+]"/>
+
+## DeepDeband
+
+DeepDeband uses an AI algorithm to remove banding from video. **Available only on the public-beta branch**.
+
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| deepdeband-f / deepdeband-w | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | Reduces color banding | Unavailable on Turbo |
+
+## FMNet
+
+FMNet uses an AI algorithm to convert SDR video to HDR10 video. **Available only on the public-beta branch**. When enabled, the video becomes HDR10 with static metadata.
+
+| Model | Edition | Tags | Rec. | Strengths | Weaknesses |
+| --- | --- | --- | :---: | --- | --- |
+| FMNet anime_v1 / anime_v2 / final | <Badge text="Pro" type="warning"/> <Badge text="Beta" type="tip"/> | <Badge text="Anime" color="#222" bgColor="#add8e6"/> <Badge text="IRL" color="#222" bgColor="#90ee90"/> | ★★★☆☆ | Restore for HDR and color-grading scenarios | Unavailable on Turbo |
