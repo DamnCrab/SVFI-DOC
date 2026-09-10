@@ -62,7 +62,7 @@ With **Enable Frame Generation** on:
 
 RIFE weights are not the same UI as offline VFI, but they are the same family. Offline models: [Frame interpolation models](/en/pages/vfi-models/).
 
-FSR3/4 and XeSS frame generation use **Shared Frame Guidance** (Auto / Zero / Motion only / Depth only). Optical-flow backends: NVOF, AMD OF, Flow TRT.
+FSR3/4 and XeSS frame generation use **Shared Frame Guidance** (Auto / Zero / Motion only / Depth only). Optical-flow backends: NVOF, AMD OF.
 
 ## GPU and compatibility
 

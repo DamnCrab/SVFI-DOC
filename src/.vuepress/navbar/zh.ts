@@ -29,6 +29,7 @@ export const zhNavbar = navbar([
         children: [
             "/zh/20-Manual/10-quick-start.md",
             "/zh/20-Manual/11-sidebar.md",
+            "/zh/20-Manual/111-player.md",
             "/zh/20-Manual/12-task-basic.md",
             "/zh/20-Manual/13-scene-detect.md",
             "/zh/20-Manual/14-output-resolution.md",

@@ -229,12 +229,16 @@ For field background, you may consult the `SVFI-Skills\svfi-config-build` direct
 
 ### Mask drawing page
 
+Available after you open the mask canvas in the [internal player](/en/pages/player/#draw-a-static-mask).
+
 | Shortcut | Explanation |
 | ---- | ---- |
 | <kbd>Ctrl</kbd>+<kbd>Z</kbd> | Undo |
 | <kbd>Ctrl</kbd>+<kbd>R</kbd> | Redo |
 
 ### Player component
+
+Playback controls for the internal player. Feature overview: [Player introduction](/en/pages/player/).
 
 | Shortcut | Explanation |
 | ---- | ---- |

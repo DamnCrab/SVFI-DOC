@@ -62,7 +62,7 @@ CustomChain 可从 `effects` 目录下载或组合着色器，JSON 列表顺序�
 
 RIFE 权重与离线补帧不是同一套界面，但同属 RIFE 家族，离线模型介绍见[补帧模型说明](/zh/pages/vfi-models/)。
 
-FSR3/4 与 XeSS 帧生成使用「共享帧引导」（自动 / 全零 / 仅运动 / 仅深度）。光流后端可选 NVOF、AMD OF、Flow TRT。
+FSR3/4 与 XeSS 帧生成使用「共享帧引导」（自动 / 全零 / 仅运动 / 仅深度）。光流后端可选 NVOF、AMD OF。
 
 ## 显卡与兼容性
 

@@ -1,5 +1,5 @@
 ---
-title: 左侧标题栏页面说明
+title: 软件主要页面说明
 permalink: /zh/pages/sidebar/
 ---
 
@@ -9,7 +9,7 @@ permalink: /zh/pages/sidebar/
 
 ## 设置
 
-主设置页
+主设置页。任务列表右键可打开外部或内置播放器，详见[播放器介绍](/zh/pages/player/)。
 
 <div align=center>
 <img src="/screenshots/zh/12-main-page.png"  width=600>
@@ -37,6 +37,14 @@ permalink: /zh/pages/sidebar/
 <img src="/screenshots/zh/14-status-page.png"  width=600>
 </div>
 
+## 实时超补
+
+<div align=center>
+<img src="/screenshots/zh/40-realtime-interface.png"  width=600>
+</div>
+
+对任意窗口做实时超分或帧生成。详见[任意窗口实时播放](/zh/pages/realtime-window/)。
+
 ## 用户页
 
 查看已获得的软件成就与可扩展或已拥有的DLC
@@ -44,7 +52,3 @@ permalink: /zh/pages/sidebar/
 <div align=center>
 <img src="/screenshots/zh/15-steam-page.png"  width=600>
 </div>
-
-## 实时超补
-
-对任意窗口做实时超分或帧生成。详见[任意窗口实时播放](/zh/pages/realtime-window/)。

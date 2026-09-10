@@ -117,7 +117,7 @@ Feed motion vectors into DLSS-NR / OEM guidance, and Depth Anything estimated de
 
 ### Optical Flow Backend
 
-Motion-vector source: NVOF, AMD OF, or Flow TRT. NVIDIA Optical Flow also has a quality preset.
+Motion-vector source: NVOF or AMD OF. NVIDIA Optical Flow also has a quality preset.
 
 ## Workflow
 

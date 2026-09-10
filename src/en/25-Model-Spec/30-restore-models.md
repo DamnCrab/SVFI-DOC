@@ -37,7 +37,7 @@ This series of algorithms consume a lot of video memory, it is recommended to us
 This algorithm is only available in the beta version of the professional DLC, and you need to manually go to the Steam settings - beta version to select it.
 :::
 
-- inpaint_sttn_1x: Currently, this model only supports one-time restoration and has no super-resolution function. It needs to be used with the mask function:
+- inpaint_sttn_1x: Currently, this model only supports 1× restoration (no upscale). It needs a static mask from the [internal player](/en/pages/player/#draw-a-static-mask):
 
 The activation process is as follows:
 
@@ -46,7 +46,7 @@ The activation process is as follows:
 <img src="/screenshots/en/32-inpaint-select-model.png"  width=600>
 </div>
 
-2. Enable the player function
+2. Open the [internal player](/en/pages/player/)
 <div align=center>
 <img src="/screenshots/en/33-inpaint-player.png"  width=600>
 </div>

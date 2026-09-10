@@ -15,6 +15,8 @@ Currently this affects: frame interpolation model selection when set to AUTO, an
 
 When this option favors **speed**, related settings are tuned for faster runs with possibly middling output quality; otherwise they favor slower runs with generally more reliable output quality.
 
+With a task selected, click **Apply Auto Preset** to generate three presets based on the current input video, then click **Preview Presets** to inspect the recommended options.
+
 ## Basic I/O control
 
 Controls whether the output includes subtitles and audio, what the output frame rate is, and so on.
@@ -43,7 +45,7 @@ Please select the task entry whose progress you want to restore before clicking 
 
 ### Start point and End point
 
-You can select the time period that needs processing
+You can select the time period that needs processing. You can also mark it with the in/out buttons in the [internal player](/en/pages/player/#set-in-and-out-points); only that span is processed.
 
 <div align=center>
 <img src="/screenshots/en/18-io-timepoint.png"  width=600>

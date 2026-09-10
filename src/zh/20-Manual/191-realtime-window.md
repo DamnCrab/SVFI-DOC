@@ -117,7 +117,7 @@ ONNX、RTX Video、DLSS / DLSS-NR 等模式下还会出现对应的质量与细�
 
 ### 光流后端
 
-运动向量来源：NVOF、AMD OF、Flow TRT。NVIDIA 光流还可选质量档。
+运动向量来源：NVOF、AMD OF。NVIDIA 光流还可选质量档。
 
 ## 使用流程
 

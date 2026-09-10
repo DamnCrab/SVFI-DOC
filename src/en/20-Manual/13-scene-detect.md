@@ -49,16 +49,16 @@ This method enables the import of transitions manually marked using TC software 
 <img src="/screenshots/en/23-scene-detect-tc.png"  width=600>
 </div>
 
-You can also skip an external TC pass: with automatic scene detection off, run SVFI’s offline detector, then fine-tune the marks in the task player.
+You can also skip an external TC pass: with automatic scene detection off, run SVFI’s offline detector, then fine-tune the marks in the [internal player](/en/pages/player/#confirm-scene-detection-marks).
 
 1. Turn off **Enable scene detection**, then click **Transition Detection** to run an offline pass on the current input. The JSON path is filled in when it finishes.
-2. Right-click the task in the list and choose **Open internal player to split task segments** (or turn the player on).
+2. Right-click the task in the list and choose **Internal Player for Section Missions** (or turn the player on). Player usage: [Player introduction](/en/pages/player/).
 
 <div align=center>
 <img src="/screenshots/en/22-auto-scene-detect-A.png"  width=600>
 </div>
 
-3. In the player, switch to **Transition Confirmation**. Marks on the timeline are the detection result.
+3. In the player, switch to **Scenes**. Marks on the timeline are the detection result. See [Player introduction](/en/pages/player/#confirm-scene-detection-marks).
 4. Right-click the timeline to **Mark current frame as transition** or **Delete transition frame**.
 
 <div align=center>

@@ -88,7 +88,7 @@ postList: none
 
 ## 📕 本文档建议阅读顺序
 
-- 视频处理基础与软件入门：[快速入门的所有文章](/zh/pages/fps-resolution-bitrate/) -> [必读导引](/zh/pages/mustread/) -> [预设](/zh/pages/svfi-presets/) -> [任务基本设置说明](/zh/pages/task-basic/) -> [补帧模型说明](/zh/pages/vfi-models/) -> [超分模型说明](/zh/pages/sr-models/) -> [画质恢复模型说明](/zh/pages/restore-models/) -> [实时窗口播放模型说明](/zh/pages/realtime-models/)
+- 视频处理基础与软件入门：[快速入门的所有文章](/zh/pages/fps-resolution-bitrate/) -> [必读导引](/zh/pages/mustread/) -> [预设](/zh/pages/svfi-presets/) -> [任务基本设置说明](/zh/pages/task-basic/) -> [播放器介绍](/zh/pages/player/) -> [补帧模型说明](/zh/pages/vfi-models/) -> [超分模型说明](/zh/pages/sr-models/) -> [画质恢复模型说明](/zh/pages/restore-models/) -> [实时窗口播放模型说明](/zh/pages/realtime-models/)
 - 软件报错、输出不一致等问题排查：[Q&A](/zh/pages/QA/) -> [使用技巧](/zh/pages/useful-tips/)
 - 软件进阶学习：[相关文章科普](/zh/pages/wiki-image-quality/) -> [任意窗口实时播放](/zh/pages/realtime-window/) -> [其他进阶说明](/zh/pages/other-advanced-settings/) -> [SVFI命令行使用](/zh/pages/svfi-cli/)
 

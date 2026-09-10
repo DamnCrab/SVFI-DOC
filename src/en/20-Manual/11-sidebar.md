@@ -9,7 +9,7 @@ permalink: /en/pages/sidebar/
 
 ## Settings
 
-Main settings page
+Main settings page. Right-click a task to open the external or internal player; see [Player introduction](/en/pages/player/).
 
 <div align=center>
 <img src="/screenshots/en/12-main-page.png"  width=600>
@@ -37,6 +37,10 @@ View the program output information
 <img src="/screenshots/en/14-status-page.png"  width=600>
 </div>
 
+## Realtime
+
+Real-time super-resolution or frame generation on any window. See [Real-time window scaling](/en/pages/realtime-window/).
+
 ## User Page
 
 View the software achievements and expandable or owned DLCs
@@ -44,7 +48,3 @@ View the software achievements and expandable or owned DLCs
 <div align=center>
 <img src="/screenshots/en/15-steam-page.png"  width=600>
 </div>
-
-## Realtime
-
-Real-time super-resolution or frame generation on any window. See [Real-time window scaling](/en/pages/realtime-window/).

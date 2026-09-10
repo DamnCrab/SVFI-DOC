@@ -29,6 +29,7 @@ export const enNavbar = navbar([
     children: [
       "/en/20-Manual/10-quick-start.md",
       "/en/20-Manual/11-sidebar.md",
+      "/en/20-Manual/111-player.md",
       "/en/20-Manual/12-task-basic.md",
       "/en/20-Manual/13-scene-detect.md",
       "/en/20-Manual/14-output-resolution.md",

@@ -38,7 +38,7 @@ permalink: /zh/pages/restore-models/
 该算法仅在专业版DLC的公测Beta版本中可用，需要手动前往Steam设置-测试版中选择
 :::
 
-- inpaint_sttn_1x: 目前该模型仅支持一倍修复，无超分功能，需配合蒙版功能使用：
+- inpaint_sttn_1x: 目前该模型仅支持一倍修复，无超分功能，需配合[内置播放器](/zh/pages/player/#绘制静态蒙版)的静态蒙版使用：
 
 开启流程如下：
 
@@ -47,7 +47,7 @@ permalink: /zh/pages/restore-models/
 <img src="/screenshots/zh/32-inpaint-select-model.png"  width=600>
 </div>
 
-2. 开启播放器功能
+2. 开启[内置播放器](/zh/pages/player/)
 <div align=center>
 <img src="/screenshots/zh/33-inpaint-player.png"  width=600>
 </div>

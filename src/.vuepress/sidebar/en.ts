@@ -38,6 +38,7 @@ export const enSidebar: SidebarOptions = [
         children: [
             "10-quick-start.md",
             "11-sidebar.md",
+            "111-player.md",
             "12-task-basic.md",
             "13-scene-detect.md",
             "14-output-resolution.md",
